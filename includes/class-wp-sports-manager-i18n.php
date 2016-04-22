@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    WP_Sports_Manager
+ * @subpackage WP_Sports_Manager/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    WP_Sports_Manager
+ * @subpackage WP_Sports_Manager/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_i18n {
+class WP_Sports_Manager_i18n {
 
 
 	/**
