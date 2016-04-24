@@ -3,11 +3,11 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       http://example.com
+ * @link       http://sportsmanager.club
  * @since      0.0.1
  *
  * @package    WP_Sports_Manager
- * @subpackage WP_Sports_Manager/public
+ * @subpackage WP_Sports_Manager/includes
  */
 
 /**
@@ -17,8 +17,8 @@
  * enqueue the admin-specific stylesheet and JavaScript.
  *
  * @package    WP_Sports_Manager
- * @subpackage WP_Sports_Manager/public
- * @author     Your Name <email@example.com>
+ * @subpackage WP_Sports_Manager/includes
+ * @author     David Massiani <me@davidmassiani.com>
  */
 class WP_Sports_Manager_Settings_Roles {
 
@@ -31,7 +31,7 @@ class WP_Sports_Manager_Settings_Roles {
 	 */
 
 	public static function add_roles() {
-		$result = add_role(
+		$add_roles = add_role(
 			'members_club',
 			__( 'Club Member', 'wp-sports-manager' ),
 			array(

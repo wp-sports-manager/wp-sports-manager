@@ -3,8 +3,8 @@
 /**
  * Fired during plugin activation
  *
- * @link       http://example.com
- * @since      1.0.0
+ * @link       http://sportsmanager.club
+ * @since      0.0.1
  *
  * @package    WP_Sports_Manager
  * @subpackage WP_Sports_Manager/includes
@@ -15,10 +15,10 @@
  *
  * This class defines all code necessary to run during the plugin's activation.
  *
- * @since      1.0.0
+ * @since      0.0.1
  * @package    WP_Sports_Manager
  * @subpackage WP_Sports_Manager/includes
- * @author     Your Name <email@example.com>
+ * @author     David Massiani <me@davidmassiani.com>
  */
 class WP_Sports_Manager_Activator {
 
@@ -29,7 +29,7 @@ class WP_Sports_Manager_Activator {
 	 *
 	 * Long Description.
 	 *
-	 * @since    1.0.0
+	 * @since    0.0.1
 	 */
 	public static function activate() {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/settings/class-wp-sports-manager-settings-roles.php';

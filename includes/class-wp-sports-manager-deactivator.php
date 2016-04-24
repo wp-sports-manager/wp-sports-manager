@@ -3,8 +3,8 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       http://example.com
- * @since      1.0.0
+ * @link       http://sportsmanager.club
+ * @since      0.0.1
  *
  * @package    WP_Sports_Manager
  * @subpackage WP_Sports_Manager/includes
@@ -15,10 +15,10 @@
  *
  * This class defines all code necessary to run during the plugin's deactivation.
  *
- * @since      1.0.0
+ * @since      0.0.1
  * @package    WP_Sports_Manager
  * @subpackage WP_Sports_Manager/includes
- * @author     Your Name <email@example.com>
+ * @author     David Massiani <me@davidmassiani.com>
  */
 class WP_Sports_Manager_Deactivator {
 
@@ -27,7 +27,7 @@ class WP_Sports_Manager_Deactivator {
 	 *
 	 * Long Description.
 	 *
-	 * @since    1.0.0
+	 * @since    0.0.1
 	 */
 	public static function deactivate() {
 
