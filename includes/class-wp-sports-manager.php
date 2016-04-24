@@ -22,7 +22,7 @@
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since      1.0.0
+ * @since      0.0.1
  * @package    WP_Sports_Manager
  * @subpackage WP_Sports_Manager/includes
  * @author     Your Name <email@example.com>
@@ -33,7 +33,7 @@ class WP_Sports_Manager {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.0.1
 	 * @access   protected
 	 * @var      WP_Sports_Manager_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
@@ -42,7 +42,7 @@ class WP_Sports_Manager {
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.0.1
 	 * @access   protected
 	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
 	 */
@@ -51,11 +51,20 @@ class WP_Sports_Manager {
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.0.1
 	 * @access   protected
 	 * @var      string    $version    The current version of the plugin.
 	 */
 	protected $version;
+
+	/**
+	 * The settings.
+	 *
+	 * @since    0.0.1
+	 * @access   protected
+	 * @var      string    $settings    The settings.
+	 */
+	protected $settings;
 
 	/**
 	 * Define the core functionality of the plugin.
@@ -72,10 +81,29 @@ class WP_Sports_Manager {
 		$this->version = '0.0.1';
 
 		$this->load_dependencies();
+		// $this->load_settings();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 
+	}
+
+	/**
+	 * Load settings
+	 *
+	 * @since 	0.0.1
+	 * @access 	private
+	 */
+
+	private function load_settings() {
+
+		/**
+		 * The class responsible for orchestrating the settings of the
+		 * core plugin.
+		 */
+		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/settings/class-wp-sports-manager-settings-loader.php';
+
+		// $this->settings = new WP_Sports_Manager_Settings_Loader();
 	}
 
 	/**
