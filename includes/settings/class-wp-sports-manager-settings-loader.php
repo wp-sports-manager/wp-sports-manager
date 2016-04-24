@@ -64,7 +64,6 @@ class WP_Sports_Manager_Settings_Loader {
 	 *
 	 */
 	private function load_settings_roles() {
-		// return true or false
 		$this->roles = new WP_Sports_Manager_Settings_Roles;
 	}
 

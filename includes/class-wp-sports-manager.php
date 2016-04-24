@@ -81,7 +81,7 @@ class WP_Sports_Manager {
 		$this->version = '0.0.1';
 
 		$this->load_dependencies();
-		$this->load_settings();
+		// $this->load_settings();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
@@ -101,9 +101,9 @@ class WP_Sports_Manager {
 		 * The class responsible for orchestrating the settings of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/settings/class-wp-sports-manager-settings-loader.php';
+		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/settings/class-wp-sports-manager-settings-loader.php';
 
-		$this->settings = new WP_Sports_Manager_Settings_Loader();
+		// $this->settings = new WP_Sports_Manager_Settings_Loader();
 	}
 
 	/**

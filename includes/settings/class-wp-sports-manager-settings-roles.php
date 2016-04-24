@@ -29,23 +29,22 @@ class WP_Sports_Manager_Settings_Roles {
 	 * @param      string    $plugin_name       The name of the plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
-	public function __construct() {
 
-		// Roles for member's club
+	public static function add_roles() {
 		$result = add_role(
 			'members_club',
-			__( 'Club Member' ),
+			__( 'Club Member', 'wp-sports-manager' ),
 			array(
 				'read'         => true,  // true allows this capability
 				'edit_posts'   => true,
 				'delete_posts' => false, // Use false to explicitly deny
 			)
 		);
-		if ( null !== $result ) {
-			return true;
-		}else{
-			return false;
-		}
+
+	}
+
+	public static function remove_roles() {
+		remove_role( 'members_club' );
 	}
 
 }

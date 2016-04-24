@@ -22,6 +22,8 @@
  */
 class WP_Sports_Manager_Activator {
 
+	private $roles;
+
 	/**
 	 * Short Description. (use period)
 	 *
@@ -30,7 +32,8 @@ class WP_Sports_Manager_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/settings/class-wp-sports-manager-settings-roles.php';
+		WP_Sports_Manager_Settings_Roles::add_roles();
 	}
 
 }
