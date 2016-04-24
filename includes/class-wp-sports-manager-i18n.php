@@ -22,7 +22,7 @@
  * @since      1.0.0
  * @package    WP_Sports_Manager
  * @subpackage WP_Sports_Manager/includes
- * @author     Your Name <email@example.com>
+ * @author     David Massiani <me@davidmassiani.com>
  */
 class WP_Sports_Manager_i18n {
 
