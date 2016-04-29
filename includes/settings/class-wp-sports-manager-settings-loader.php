@@ -39,7 +39,6 @@ class WP_Sports_Manager_Settings_Loader {
 	public function __construct() {
 
 		$this->load_settings_dependencies();
-		$this->load_settings_roles();
 
 	}
 
@@ -54,17 +53,9 @@ class WP_Sports_Manager_Settings_Loader {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'settings/class-wp-sports-manager-settings-roles.php';
+		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'settings/class-wp-sports-manager-create-roles.php';
 
 	}
 
-	/**
-	 *
-	 * Set Roles
-	 *
-	 */
-	private function load_settings_roles() {
-		$this->roles = new WP_Sports_Manager_Settings_Roles;
-	}
 
 }

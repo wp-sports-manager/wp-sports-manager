@@ -32,8 +32,15 @@ class WP_Sports_Manager_Activator {
 	 * @since    0.0.1
 	 */
 	public static function activate() {
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/settings/class-wp-sports-manager-settings-roles.php';
-		WP_Sports_Manager_Settings_Roles::add_roles();
+
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-custom-post-type.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-roles.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-taxonomies.php';
+
+		new WP_Sports_Manager_Create_Custom_Post_Type();
+		new WP_Sports_Manager_Create_Roles();
+		new WP_Sports_Manager_Create_Taxonomies();
+
 	}
 
 }

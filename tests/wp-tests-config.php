@@ -38,4 +38,4 @@ define( 'WP_TESTS_TITLE', 'Sports Manager' );
 
 define( 'WP_PHP_BINARY', 'php' );
 
-define( 'WPLANG', '' );
+define( 'WPLANG', 'fr_FR' );
