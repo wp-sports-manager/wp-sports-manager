@@ -25,7 +25,7 @@
  * @author     David Massiani <me@davidmassiani.com>
  */
 class WP_Sports_Manager_i18n {
-
+ 
 
 	/**
 	 * Load the plugin text domain for translation.

@@ -20,7 +20,7 @@
  * @subpackage WP_Sports_Manager/includes
  * @author     David Massiani <me@davidmassiani.com>
  */
-class WP_Sports_Manager_Settings_Roles {
+class WP_Sports_Manager_Create_Menu {
 
 	/**
 	 * Initialize the class and set its properties.
@@ -30,21 +30,26 @@ class WP_Sports_Manager_Settings_Roles {
 	 * @param      string    $version    The version of this plugin.
 	 */
 
-	public static function add_roles() {
-		$add_roles = add_role(
-			'members_club',
-			__( 'Club Member', 'wp-sports-manager' ),
-			array(
-				'read'         => true,  // true allows this capability
-				'edit_posts'   => true,
-				'delete_posts' => false, // Use false to explicitly deny
-			)
-		);
-
+	public function __construct() {
 	}
 
-	public static function remove_roles() {
-		remove_role( 'members_club' );
+	/**
+	 * Add menu item
+	 */
+	public function admin_menu() {
+		global $menu;
+
+		if ( current_user_can( 'manage_wp_sports_manager' ) )
+			$menu[] = array( '', 'read', 'separator-wpsportsmanager', '', 'wp-menu-separator wpsportsmanager' );
+
+		$main_page = add_menu_page( __( 'Sports Manager', 'wp-sports-manager' ), 'Sports Manager', 'manage_options', 'wp-sports-manager', array( &$this, 'homepage' ), null, 30);
+	}
+
+	/**
+	 * Init the settings page
+	 */
+	public function homepage() {
+		WP_Sports_Manager_Admin::homepage();
 	}
 
 }

@@ -31,8 +31,8 @@ class WP_Sports_Manager_Deactivator {
 	 */
 	public static function deactivate() {
 
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/settings/class-wp-sports-manager-settings-roles.php';
-		WP_Sports_Manager_Settings_Roles::remove_roles();
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-roles.php';
+		WP_Sports_Manager_Create_Roles::remove_roles();
 
 	}
 

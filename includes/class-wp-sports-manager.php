@@ -67,6 +67,15 @@ class WP_Sports_Manager {
 	protected $settings;
 
 	/**
+	 * The typology.
+	 *
+	 * @since    0.0.1
+	 * @access   protected
+	 * @var      string    $typology    The typology.
+	 */
+	protected $typology;
+
+	/**
 	 * Define the core functionality of the plugin.
 	 *
 	 * Set the plugin name and the plugin version that can be used throughout the plugin.
@@ -80,10 +89,14 @@ class WP_Sports_Manager {
 		$this->plugin_name = 'wp-sports-manager';
 		$this->version = '0.0.1';
 
+		// add_action( 'init', array( $this, 'load_dependencies' ) );
+
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+		$this->create_admin_menu();
+
 
 	}
 
@@ -105,32 +118,33 @@ class WP_Sports_Manager {
 	 */
 	private function load_dependencies() {
 
-		/**
-		 * The class responsible for orchestrating the actions and filters of the
-		 * core plugin.
-		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-sports-manager-loader.php';
-
-		/**
-		 * The class responsible for defining internationalization functionality
-		 * of the plugin.
-		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-sports-manager-i18n.php';
-
-		/**
-		 * The class responsible for defining all actions that occur in the admin area.
-		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-sports-manager-admin.php';
-
-		/**
-		 * The class responsible for defining all actions that occur in the public-facing
-		 * side of the site.
-		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wp-sports-manager-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-menu.php';
 
 		$this->loader = new WP_Sports_Manager_Loader();
 
 	}
+
+
+	/**
+	 * Create menu
+	 *
+	 * Uses the WP_Sports_Manager_Create_Menu class in order to set the menu
+	 * with WordPress.
+	 *
+	 * @since    0.0.1
+	 * @access   private
+	 */
+	private function create_admin_menu() {
+
+		$create_menu = new WP_Sports_Manager_Create_Menu();
+
+		$this->loader->add_action( 'admin_menu', $create_menu, 'admin_menu' );
+
+	}	
 
 	/**
 	 * Define the locale for this plugin for internationalization.
@@ -180,6 +194,17 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 	}
+
+	/**
+	 * Return the typology of sports
+	 *
+	 * @since    0.0.1
+	 */
+	public function typology() {
+		$this->typology = 'baseball';
+		return $this->typology;
+	}
+
 
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
