@@ -37,7 +37,11 @@ class WP_Sports_Manager_Activator {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-roles.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-taxonomies.php';
 
-		new WP_Sports_Manager_Create_Custom_Post_Type();
+		// new WP_Sports_Manager_Create_Custom_Post_Type();
+
+		WP_Sports_Manager_Create_Custom_Post_Type::add_team_cpt();
+		WP_Sports_Manager_Create_Custom_Post_Type::add_match_cpt();
+
 		new WP_Sports_Manager_Create_Roles();
 		new WP_Sports_Manager_Create_Taxonomies();
 

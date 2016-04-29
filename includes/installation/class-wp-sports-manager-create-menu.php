@@ -46,7 +46,7 @@ class WP_Sports_Manager_Create_Menu {
 	}
 
 	/**
-	 * Init the settings page
+	 * Add Admin Homepage
 	 */
 	public function homepage() {
 		WP_Sports_Manager_Admin::homepage();

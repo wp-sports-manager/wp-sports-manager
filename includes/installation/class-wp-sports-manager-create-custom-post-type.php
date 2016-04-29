@@ -31,7 +31,82 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 	 */
 
 	public function __construct() {
-		$this->add_cpt();
+	}
+
+	public static function add_team_cpt() {
+
+		do_action( 'wpsm_team_register_custom_post_type' );
+
+		register_post_type( 'wpsm_teams',
+			apply_filters( 'wpsm_register_post_type_teams',
+				array(
+					'labels' => array(
+						'name' 					=> __( 'Team', 'wp-sports-manager' ),
+						'singular_name' 		=> __( 'Team', 'wp-sports-manager' ),
+						'add_new_item' 			=> __( 'Add New Team', 'wp-sports-manager' ),
+						'edit_item' 			=> __( 'Edit Team', 'wp-sports-manager' ),
+						'new_item' 				=> __( 'New', 'wp-sports-manager' ),
+						'view_item' 			=> __( 'View', 'wp-sports-manager' ),
+						'search_items' 			=> __( 'Search', 'wp-sports-manager' ),
+						'not_found' 			=> __( 'No results found.', 'wp-sports-manager' ),
+						'not_found_in_trash' 	=> __( 'No results found.', 'wp-sports-manager' ),
+					),
+					'public' 				=> false,
+					'show_ui' 				=> true,
+					'capability_type' 		=> 'edit_posts',
+					'map_meta_cap' 			=> true,
+					'publicly_queryable' 	=> true,
+					'exclude_from_search' 	=> false,
+					'hierarchical' 			=> false,
+					'supports' 				=> array( 'title', 'page-attributes', 'excerpt' ),
+					'has_archive' 			=> false,
+					'show_in_nav_menus' 	=> false,
+					'can_export' 			=> false,
+					'show_in_menu' 			=> false,
+				)
+			)
+		);
+
+		do_action( 'wpsm_after_team_register_custom_post_type' );
+
+	}
+
+	public static function add_match_cpt() {
+
+		do_action( 'wpsm_match_register_custom_post_type' );
+
+		register_post_type( 'wpsm_matchs',
+			apply_filters( 'wpsm_register_post_type_matchs',
+				array(
+					'labels' => array(
+						'name' 					=> __( 'Match', 'wp-sports-manager' ),
+						'singular_name' 		=> __( 'Match', 'wp-sports-manager' ),
+						'add_new_item' 			=> __( 'Add New Match', 'wp-sports-manager' ),
+						'edit_item' 			=> __( 'Edit Match', 'wp-sports-manager' ),
+						'new_item' 				=> __( 'New', 'wp-sports-manager' ),
+						'view_item' 			=> __( 'View', 'wp-sports-manager' ),
+						'search_items' 			=> __( 'Search', 'wp-sports-manager' ),
+						'not_found' 			=> __( 'No results found.', 'wp-sports-manager' ),
+						'not_found_in_trash' 	=> __( 'No results found.', 'wp-sports-manager' ),
+					),
+					'public' 				=> false,
+					'show_ui' 				=> true,
+					'capability_type' 		=> 'edit_posts',
+					'map_meta_cap' 			=> true,
+					'publicly_queryable' 	=> true,
+					'exclude_from_search' 	=> false,
+					'hierarchical' 			=> false,
+					'supports' 				=> array( 'title', 'page-attributes', 'excerpt' ),
+					'has_archive' 			=> false,
+					'show_in_nav_menus' 	=> false,
+					'can_export' 			=> false,
+					'show_in_menu' 			=> false,
+				)
+			)
+		);
+
+		do_action( 'wpsm_after_match_register_custom_post_type' );
+
 	}
 
 	private function add_cpt() {
