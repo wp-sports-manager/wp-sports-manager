@@ -57,6 +57,10 @@ register_deactivation_hook( __FILE__, 'deactivate_wp_sports_manager' );
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-wp-sports-manager.php';
 
+public function wpwm_load_textdomain() {
+	load_plugin_textdomain( 'wp-sports-manager', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+
 /**
  * Begins execution of the plugin.
  *
