@@ -13,13 +13,33 @@ class SampleTest extends WP_UnitTestCase {
 	}
 
 	function test_customPostTypeTeam() {
-		$team_cpt = post_type_exists( 'wpsm_teams' );
-		$this->assertTrue( $team_cpt );
+		$cpt = post_type_exists( 'wpsm_teams' );
+		$this->assertTrue( $cpt );
 	}
 
 	function test_customPostTypeMatch() {
-		$match_cpt = post_type_exists( 'wpsm_matchs' );
-		$this->assertTrue( $match_cpt );
+		$cpt = post_type_exists( 'wpsm_matchs' );
+		$this->assertTrue( $cpt );
+	}
+
+	function test_customPostTypeOpponent() {
+		$cpt = post_type_exists( 'wpsm_opponents' );
+		$this->assertTrue( $cpt );
+	}
+
+	function test_customPostTypeTraining() {
+		$cpt = post_type_exists( 'wpsm_trainings' );
+		$this->assertTrue( $cpt );
+	}
+
+	function test_customPostTypeTournament() {
+		$cpt = post_type_exists( 'wpsm_tournaments' );
+		$this->assertTrue( $cpt );
+	}
+
+	function test_customPostTypeMember() {
+		$cpt = post_type_exists( 'wpsm_members' );
+		$this->assertTrue( $cpt );
 	}
 }
 

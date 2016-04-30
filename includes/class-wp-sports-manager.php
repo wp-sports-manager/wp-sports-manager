@@ -142,11 +142,14 @@ class WP_Sports_Manager {
 	 */
 	private function create_custom_post_type() {
 
-		$add_team = new WP_Sports_Manager_Create_Custom_Post_Type();
-		$add_match = new WP_Sports_Manager_Create_Custom_Post_type();
+		$createCustomPostType = new WP_Sports_Manager_Create_Custom_Post_Type();
 
-		$this->loader->add_action( 'init', $add_team, 'add_team_cpt' );
-		$this->loader->add_action( 'init', $add_match, 'add_match_cpt' );
+		$this->loader->add_action( 'init', $createCustomPostType, 'add_team_cpt' );
+		$this->loader->add_action( 'init', $createCustomPostType, 'add_match_cpt' );
+		$this->loader->add_action( 'init', $createCustomPostType, 'add_opponent_cpt' );
+		$this->loader->add_action( 'init', $createCustomPostType, 'add_training_cpt' );
+		$this->loader->add_action( 'init', $createCustomPostType, 'add_tournaments_cpt' );
+		$this->loader->add_action( 'init', $createCustomPostType, 'add_members_cpt' );
 
 	}	
 
