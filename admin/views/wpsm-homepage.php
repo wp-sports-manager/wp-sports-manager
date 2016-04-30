@@ -17,3 +17,13 @@
 	<h1>WP Sports Manager</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, id! Molestias numquam doloribus nam quam enim totam dicta, tenetur minus, quisquam nemo quod dolor! Maiores perferendis, inventore quam. Vel, ducimus.</p>
 </div>
+
+<?php
+
+if( post_type_exists( 'wpsm_teams' ) ){
+	echo 'true';
+}else{
+	echo 'false';
+}
+
+?>

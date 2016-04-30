@@ -36,7 +36,7 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 	public static function add_team_cpt() {
 
 		do_action( 'wpsm_team_register_custom_post_type' );
-
+		
 		register_post_type( 'wpsm_teams',
 			apply_filters( 'wpsm_register_post_type_teams',
 				array(
@@ -51,7 +51,7 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 						'not_found' 			=> __( 'No results found.', 'wp-sports-manager' ),
 						'not_found_in_trash' 	=> __( 'No results found.', 'wp-sports-manager' ),
 					),
-					'public' 				=> false,
+					'public' 				=> true,
 					'show_ui' 				=> true,
 					'capability_type' 		=> 'edit_posts',
 					'map_meta_cap' 			=> true,
@@ -89,7 +89,7 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 						'not_found' 			=> __( 'No results found.', 'wp-sports-manager' ),
 						'not_found_in_trash' 	=> __( 'No results found.', 'wp-sports-manager' ),
 					),
-					'public' 				=> false,
+					'public' 				=> true,
 					'show_ui' 				=> true,
 					'capability_type' 		=> 'edit_posts',
 					'map_meta_cap' 			=> true,
