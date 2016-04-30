@@ -1,9 +1,9 @@
 <?php
 
-class InstallationTest extends WP_UnitTestCase {
+class SampleTest extends WP_UnitTestCase {
 
 	function test_pluginActif() {
-		$pluginActif = is_plugin_active( 'wp-sports-manager/wpsportsmanager.php' );
+		$pluginActif = is_plugin_active( 'wp-sports-manager/wp-sports-manager.php' );
 		$this->assertTrue( $pluginActif );
 	}
 

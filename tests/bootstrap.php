@@ -18,7 +18,7 @@ define( 'WP_TESTS_DIR', $path . '/tests' );
 /**
  * The path to the main file of the plugin to test.
  */
-define( 'TEST_PLUGIN_FILE', $path . '/wpsportsmanager.php' );
+define( 'TEST_PLUGIN_FILE', $path . '/wp-sports-manager.php' );
 
 /**
  *
@@ -42,7 +42,7 @@ function _manually_load_plugin() {
 	 *
 	 */
 	$plugins_to_active = array(
-		'wp-sports-manager/wpsportsmanager.php'
+		'wp-sports-manager/wp-sports-manager.php'
 	);
 	update_option( 'active_plugins', $plugins_to_active );
 

@@ -96,6 +96,7 @@ class WP_Sports_Manager {
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 		$this->create_admin_menu();
+		$this->create_custom_post_type();
 
 
 	}
@@ -123,11 +124,31 @@ class WP_Sports_Manager {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-sports-manager-admin.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wp-sports-manager-public.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-menu.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-custom-post-type.php';
 
 		$this->loader = new WP_Sports_Manager_Loader();
 
 	}
 
+
+	/**
+	 * Create CPT
+	 *
+	 * Uses the WP_Sports_Manager_Create_Menu class in order to set the menu
+	 * with WordPress.
+	 *
+	 * @since    0.0.1
+	 * @access   private
+	 */
+	private function create_custom_post_type() {
+
+		$add_team = new WP_Sports_Manager_Create_Custom_Post_Type();
+		$add_match = new WP_Sports_Manager_Create_Custom_Post_type();
+
+		$this->loader->add_action( 'init', $add_team, 'add_team_cpt' );
+		$this->loader->add_action( 'init', $add_match, 'add_match_cpt' );
+
+	}	
 
 	/**
 	 * Create menu

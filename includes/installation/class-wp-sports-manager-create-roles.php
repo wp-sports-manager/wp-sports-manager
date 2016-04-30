@@ -31,10 +31,9 @@ class WP_Sports_Manager_Create_Roles {
 	 */
 
 	public function __construct() {
-		$this->add_roles();
 	}
 	
-	private function add_roles() {
+	public static function add_roles() {
 
 		_x('Club Members', 'User role', 'wp-sports-manager' );
 
