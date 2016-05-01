@@ -82,8 +82,8 @@ class WP_Sports_Manager_Admin {
 	 * @since 0.0.1
 	 *
 	 */
-	public static function homepage() {
-		include 'views/wpsm-homepage.php';
+	public static function dashboard() {
+		include 'views/wpsm-dashboard.php';
 	}
 
 	/**

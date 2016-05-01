@@ -41,5 +41,34 @@ class SampleTest extends WP_UnitTestCase {
 		$cpt = post_type_exists( 'wpsm_members' );
 		$this->assertTrue( $cpt );
 	}
+
+	function test_customPostTypePlace() {
+		$cpt = post_type_exists( 'wpsm_places' );
+		$this->assertTrue( $cpt );
+	}
+
+	function test_customTaxCompetition() {
+		$competitions = taxonomy_exists('wpsm_competition');
+		$this->assertTrue( $competitions );
+	}
+
+	function test_customTaxTypologies() {
+		$typologies = taxonomy_exists('wpsm_typology');
+		$this->assertTrue( $typologies );
+	}
+
+	function test_customSeason() {
+		$seasons = taxonomy_exists('wpsm_season');
+		$this->assertTrue( $seasons );
+	}
+
+	function test_customMembersTypology() {
+		$typology = taxonomy_exists('wpsm_members_typology');
+		$this->assertTrue( $typology );
+	}
+
+	// todo : test if menu exist
+
+
 }
 

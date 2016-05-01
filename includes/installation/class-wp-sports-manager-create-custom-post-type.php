@@ -254,7 +254,7 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 	}
 
 	/**
-	 * Mambers Custom Post Type
+	 * Members Custom Post Type
 	 *
 	 *
 	 */
@@ -264,7 +264,7 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 		do_action( 'wpsm_member_register_custom_post_type' );
 
 		register_post_type( 'wpsm_members',
-			apply_filters( 'wpsm_register_post_type_mambers',
+			apply_filters( 'wpsm_register_post_type_members',
 				array(
 					'labels' => array(
 						'name' 					=> __( 'Members', 'wp-sports-manager' ),
@@ -297,13 +297,52 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 
 	}
 
-	private function add_cpt() {
+	/**
+	 * Places Custom Post Type
+	 *
+	 *
+	 */
+
+	public static function add_places_cpt() {
+
+		do_action( 'wpsm_place_register_custom_post_type' );
+
+		register_post_type( 'wpsm_places',
+			apply_filters( 'wpsm_register_post_type_places',
+				array(
+					'labels' => array(
+						'name' 					=> __( 'Places', 'wp-sports-manager' ),
+						'singular_name' 		=> __( 'Place', 'wp-sports-manager' ),
+						'add_new_item' 			=> __( 'Add New Place', 'wp-sports-manager' ),
+						'edit_item' 			=> __( 'Edit Place', 'wp-sports-manager' ),
+						'new_item' 				=> __( 'New', 'wp-sports-manager' ),
+						'view_item' 			=> __( 'View', 'wp-sports-manager' ),
+						'search_items' 			=> __( 'Search', 'wp-sports-manager' ),
+						'not_found' 			=> __( 'No results found.', 'wp-sports-manager' ),
+						'not_found_in_trash' 	=> __( 'No results found.', 'wp-sports-manager' ),
+					),
+					'public' 				=> true,
+					'show_ui' 				=> true,
+					'capability_type' 		=> 'edit_posts',
+					'map_meta_cap' 			=> true,
+					'publicly_queryable' 	=> true,
+					'exclude_from_search' 	=> false,
+					'hierarchical' 			=> false,
+					'supports' 				=> array( 'title', 'page-attributes', 'excerpt' ),
+					'has_archive' 			=> false,
+					'show_in_nav_menus' 	=> false,
+					'can_export' 			=> false,
+					'show_in_menu' 			=> false,
+				)
+			)
+		);
+
+		do_action( 'wpsm_after_place_register_custom_post_type' );
 
 	}
 
 	public static function remove_cpt() {
 		// remove ctp on unactivate
-
 	}
 
 }

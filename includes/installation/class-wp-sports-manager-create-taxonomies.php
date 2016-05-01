@@ -31,10 +31,134 @@ class WP_Sports_Manager_Create_Taxonomies {
 	 */
 
 	public function __construct() {
-		$this->add_taxonomies();
 	}
-	
-	private function add_taxonomies() {
+
+	/**
+	 * Add competition Taxonomy
+	 *
+	 *
+	 */
+	public static function add_competitions() {
+
+		$labels = array(
+			'name'              => _x( 'Competitions', 'taxonomy general name' ),
+			'singular_name'     => _x( 'Competition', 'taxonomy singular name' ),
+			'search_items'      => __( 'Search Competitions', 'wp-sports-manager' ),
+			'all_items'         => __( 'All Competitions', 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent Competition', 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent Competition:', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit Competition', 'wp-sports-manager' ),
+			'update_item'       => __( 'Update Competition', 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New Competition', 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New Competition Name', 'wp-sports-manager' ),
+			'menu_name'         => __( 'Competition', 'wp-sports-manager' ),
+		);
+
+		$args = array(
+			'labels'            => $labels,
+			'rewrite'           => array( 'slug' => 'wpsm_competition' ),
+		);
+
+		register_taxonomy( 'wpsm_competition', array( 'wpsm_teams' ), $args );
+
+	}
+
+	/**
+	 * Add team typologies Taxonomy
+	 * it's for sport who have multiple team inside like Baseball / Softball
+	 *
+	 */
+	public static function add_typologies() {
+
+		$pluriel = "Typologies";
+		$single = "Typologie";
+
+		$labels = array(
+			'name'              => _x( $pluriel , 'taxonomy general name' ),
+			'singular_name'     => _x( $single, 'taxonomy singular name' ),
+			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
+			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent ' . $single . ' :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit ' . $single, 'wp-sports-manager' ),
+			'update_item'       => __( 'Update ' . $single, 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New ' . $single, 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New ' . $single .' Name', 'wp-sports-manager' ),
+			'menu_name'         => __( $single, 'wp-sports-manager' ),
+		);
+
+		$args = array(
+			'labels'            => $labels,
+			'rewrite'           => array( 'slug' => 'wpsm_typology' ),
+		);
+
+		register_taxonomy( 'wpsm_typology', array( 'wpsm_teams' ), $args );
+
+	}
+
+	/**
+	 * Add team Seasons Taxonomy
+	 * it's for sport who have multiple team inside like Baseball / Softball
+	 *
+	 */
+	public static function add_seasons() {
+
+		$pluriel = "Seasons";
+		$single = "Season";
+
+		$labels = array(
+			'name'              => _x( $pluriel , 'taxonomy general name' ),
+			'singular_name'     => _x( $single, 'taxonomy singular name' ),
+			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
+			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent ' . $single . ' :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit ' . $single, 'wp-sports-manager' ),
+			'update_item'       => __( 'Update ' . $single, 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New ' . $single, 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New ' . $single .' Name', 'wp-sports-manager' ),
+			'menu_name'         => __( $single, 'wp-sports-manager' ),
+		);
+
+		$args = array(
+			'labels'            => $labels,
+			'rewrite'           => array( 'slug' => 'wpsm_season' ),
+		);
+
+		register_taxonomy( 'wpsm_season', array( 'wpsm_matchs' ), $args );
+
+	}
+
+	/**
+	 * Add team Seasons Taxonomy
+	 * it's for sport who have multiple team inside like Baseball / Softball
+	 *
+	 */
+	public static function add_members_typology() {
+
+		$pluriel = "Members typologies";
+		$single = "Members typology";
+
+		$labels = array(
+			'name'              => _x( $pluriel , 'taxonomy general name' ),
+			'singular_name'     => _x( $single, 'taxonomy singular name' ),
+			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
+			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent ' . $single . ' :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit ' . $single, 'wp-sports-manager' ),
+			'update_item'       => __( 'Update ' . $single, 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New ' . $single, 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New ' . $single .' Name', 'wp-sports-manager' ),
+			'menu_name'         => __( $single, 'wp-sports-manager' ),
+		);
+
+		$args = array(
+			'labels'            => $labels,
+			'rewrite'           => array( 'slug' => 'wpsm_members_typology' ),
+		);
+
+		register_taxonomy( 'wpsm_members_typology', array( 'wpsm_members' ), $args );
 
 	}
 

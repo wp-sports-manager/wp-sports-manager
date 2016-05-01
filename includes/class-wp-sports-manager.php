@@ -97,6 +97,7 @@ class WP_Sports_Manager {
 		$this->define_public_hooks();
 		$this->create_admin_menu();
 		$this->create_custom_post_type();
+		$this->create_custom_taxonomies();
 
 
 	}
@@ -125,6 +126,7 @@ class WP_Sports_Manager {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wp-sports-manager-public.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-menu.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-custom-post-type.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-taxonomies.php';
 
 		$this->loader = new WP_Sports_Manager_Loader();
 
@@ -150,6 +152,24 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_training_cpt' );
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_tournaments_cpt' );
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_members_cpt' );
+		$this->loader->add_action( 'init', $createCustomPostType, 'add_places_cpt' );
+
+	}
+
+	/**
+	 * Create Taxonomies
+	 *
+	 * @since    0.0.1
+	 * @access   private
+	 */
+	private function create_custom_taxonomies() {
+
+		$createCustomTaxonomies = new WP_Sports_Manager_Create_Taxonomies();
+
+		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_competitions' );
+		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_typologies' );
+		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_seasons' );
+		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_members_typology' );
 
 	}	
 
