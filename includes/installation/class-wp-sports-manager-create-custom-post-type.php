@@ -112,7 +112,7 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 					'has_archive' 			=> false,
 					'show_in_nav_menus' 	=> false,
 					'can_export' 			=> false,
-					'show_in_menu' 			=> false,
+					'show_in_menu' 			=> 'edit.php',
 				)
 			)
 		);

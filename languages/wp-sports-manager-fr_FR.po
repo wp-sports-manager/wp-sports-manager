@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Sports Manager\n"
-"POT-Creation-Date: 2016-04-29 10:49+0200\n"
-"PO-Revision-Date: 2016-04-29 10:50+0200\n"
+"POT-Creation-Date: 2016-05-01 15:40+0200\n"
+"PO-Revision-Date: 2016-05-01 15:43+0200\n"
 "Last-Translator: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language-Team: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language: fr_FR\n"
@@ -23,12 +23,155 @@ msgstr ""
 "X-Poedit-SearchPath-3: admin\n"
 "X-Poedit-SearchPath-4: public\n"
 
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:50
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:51
+msgid "Team"
+msgstr "Equipe"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:52
+msgid "Add New Team"
+msgstr "Ajouter une nouvelle équipe"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:53
+msgid "Edit Team"
+msgstr "Modifier l’équipe"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:54
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:98
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:142
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:186
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:230
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:274
+msgid "New"
+msgstr "Nouveau"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:55
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:99
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:143
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:187
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:231
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:275
+msgid "View"
+msgstr "Voir"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:56
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:100
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:144
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:188
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:232
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:276
+msgid "Search"
+msgstr "Rechercher"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:57
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:58
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:101
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:102
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:145
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:146
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:189
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:190
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:233
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:234
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:277
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:278
+msgid "No results found."
+msgstr "Aucun résultat !"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:94
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:95
+msgid "Match"
+msgstr ""
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:96
+msgid "Add New Match"
+msgstr "Ajouter un nouveau match"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:97
+msgid "Edit Match"
+msgstr "Modifier le match"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:138
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:139
+msgid "Opponent"
+msgstr "Adversaire"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:140
+msgid "Add New Opponent"
+msgstr "Ajouter un nouvel adversaire"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:141
+msgid "Edit Opponent"
+msgstr "Modifier l’adversaire"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:182
+msgid "Trainings"
+msgstr "Entrainements"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:183
+msgid "Training"
+msgstr "Entrainement"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:184
+msgid "Add New Training"
+msgstr "Ajouter un nouveau entrainement"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:185
+msgid "Edit Training"
+msgstr "Modifier l’entraînement "
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:226
+msgid "Tournaments"
+msgstr "Tournois"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:227
+msgid "Tournament"
+msgstr "Tournoi"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:228
+msgid "Add New Tournament"
+msgstr "Ajouter un nouveau tournoi"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:229
+msgid "Edit Tournament"
+msgstr "Modifier le tournoi"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:270
+msgid "Members"
+msgstr "Membres"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:271
+msgid "Member"
+msgstr "Membre"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:272
+msgid "Add New Member"
+msgstr "Ajouter un Membre"
+
+#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:273
+msgid "Edit Member"
+msgstr "Modifier le Membre"
+
 #: includes/installation/class-wp-sports-manager-create-menu.php:46
-#: includes/installation/class-wp-sports-manager-create-menu.php:47
 msgid "Sports Manager"
 msgstr "Directeur des Sports"
 
-#: includes/installation/class-wp-sports-manager-create-roles.php:39
+#: includes/installation/class-wp-sports-manager-create-menu.php:62
+#: includes/installation/class-wp-sports-manager-create-menu.php:63
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: includes/installation/class-wp-sports-manager-create-menu.php:77
+#: includes/installation/class-wp-sports-manager-create-menu.php:78
+msgid "Matchs"
+msgstr "Matchs"
+
+#: includes/installation/class-wp-sports-manager-create-menu.php:92
+#: includes/installation/class-wp-sports-manager-create-menu.php:93
+msgid "Teams"
+msgstr "Équipes"
+
+#: includes/installation/class-wp-sports-manager-create-roles.php:38
 msgctxt "User role"
 msgid "Club Members"
 msgstr "Membres du Club"

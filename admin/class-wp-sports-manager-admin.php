@@ -82,9 +82,44 @@ class WP_Sports_Manager_Admin {
 	 * @since 0.0.1
 	 *
 	 */
-
 	public static function homepage() {
 		include 'views/wpsm-homepage.php';
+	}
+
+	/**
+	 * Matchs view
+	 * @since 0.0.1
+	 *
+	 */
+	public static function matchs() {
+		include 'views/wpsm-matchs.php';
+	}
+
+	/**
+	 * Matchs view
+	 * @since 0.0.1
+	 *
+	 */
+	public static function teams() {
+		include 'views/wpsm-teams.php';
+	}
+
+	/**
+	 * Trainings view
+	 * @since 0.0.1
+	 *
+	 */
+	public static function trainings() {
+		include 'views/wpsm-trainings.php';
+	}
+
+	/**
+	 * Tournaments view
+	 * @since 0.0.1
+	 *
+	 */
+	public static function tournaments() {
+		include 'views/wpsm-tournaments.php';
 	}
 
 }
