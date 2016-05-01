@@ -27,3 +27,10 @@ if( post_type_exists( 'wpsm_teams' ) ){
 }
 
 ?>
+
+<h3>Team without trainings</h3>
+<h3>Players without teams</h3>
+<h3>Teams</h3>
+<h3>Players</h3>
+<h3>Next matchs</h3>
+<h3>Next tournaments</h3>

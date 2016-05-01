@@ -133,7 +133,7 @@ class WP_Sports_Manager_Create_Menu {
 	 * Add Admin Homepage
 	 */
 	public function homepage() {
-		WP_Sports_Manager_Admin::homepage();
+		WP_Sports_Manager_Admin::dashboard();
 	}
 
 	/**
