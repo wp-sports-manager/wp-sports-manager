@@ -127,6 +127,21 @@ class WP_Sports_Manager_Create_Menu {
 
 		); 
 
+		/**
+		 * Settings menu
+		 *
+		 */
+		$settings_page = add_submenu_page( 
+
+				null, // without menu in admin
+			__('Settings',' wp-sports-manager'), 
+			__('Settings', 'wp-sports-manager'), 
+				'manage_options', 
+				'wpsm-settings',
+				array( &$this, 'settings' )	
+
+		); 
+
 	}
 
 	/**
@@ -162,6 +177,13 @@ class WP_Sports_Manager_Create_Menu {
 	 */
 	public function tournaments() {
 		WP_Sports_Manager_Admin::tournaments();
+	}
+
+	/**
+	 * View Admin Settings
+	 */
+	public function settings() {
+		WP_Sports_Manager_Admin::settings();
 	}
 
 }

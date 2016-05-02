@@ -122,4 +122,13 @@ class WP_Sports_Manager_Admin {
 		include 'views/wpsm-tournaments.php';
 	}
 
+	/**
+	 * Tournaments view
+	 * @since 0.0.1
+	 *
+	 */
+	public static function settings() {
+		include 'views/wpsm-settings.php';
+	}
+
 }
