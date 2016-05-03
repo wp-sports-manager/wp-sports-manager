@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Sports Manager\n"
-"POT-Creation-Date: 2016-05-02 22:02+0200\n"
-"PO-Revision-Date: 2016-05-02 22:05+0200\n"
+"POT-Creation-Date: 2016-05-03 22:31+0200\n"
+"PO-Revision-Date: 2016-05-03 22:32+0200\n"
 "Last-Translator: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language-Team: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language: fr_FR\n"
@@ -196,10 +196,40 @@ msgstr "Matchs"
 msgid "Teams"
 msgstr "Équipes"
 
-#: includes/installation/class-wp-sports-manager-create-roles.php:42
+#: includes/installation/class-wp-sports-manager-create-menu.php:137
+#: includes/installation/class-wp-sports-manager-create-menu.php:138
+msgid "Settings"
+msgstr "Paramètres"
+
+#: includes/installation/class-wp-sports-manager-create-roles.php:44
 msgctxt "User role"
 msgid "Club Members"
 msgstr "Membres du Club"
+
+#: includes/installation/class-wp-sports-manager-create-roles.php:63
+msgctxt "User role"
+msgid "Desk Officer"
+msgstr "Bureau"
+
+#: includes/installation/class-wp-sports-manager-create-roles.php:82
+msgctxt "User role"
+msgid "Coach"
+msgstr "Entraîneur"
+
+#: includes/installation/class-wp-sports-manager-create-roles.php:101
+msgctxt "User role"
+msgid "Assistant"
+msgstr "Assistant"
+
+#: includes/installation/class-wp-sports-manager-create-roles.php:120
+msgctxt "User role"
+msgid "Player"
+msgstr "Joueur"
+
+#: includes/installation/class-wp-sports-manager-create-roles.php:139
+msgctxt "User role"
+msgid "Volunteer"
+msgstr "Volontaire"
 
 #: includes/installation/class-wp-sports-manager-create-taxonomies.php:44
 msgctxt "taxonomy general name"

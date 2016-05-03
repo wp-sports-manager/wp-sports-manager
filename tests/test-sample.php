@@ -10,6 +10,16 @@ class SampleTest extends WP_UnitTestCase {
 	function test_pluginInstallation() {
 		$role = get_role( 'members_club' );
 		$this->assertEquals( $role->name, 'members_club' );
+		$role = get_role( 'desk_officer' );
+		$this->assertEquals( $role->name, 'desk_officer' );
+		$role = get_role( 'coach' );
+		$this->assertEquals( $role->name, 'coach' );
+		$role = get_role( 'assistant' );
+		$this->assertEquals( $role->name, 'assistant' );
+		$role = get_role( 'player' );
+		$this->assertEquals( $role->name, 'player' );
+		$role = get_role( 'volunteer' );
+		$this->assertEquals( $role->name, 'volunteer' );
 	}
 
 	function test_customPostTypeTeam() {
