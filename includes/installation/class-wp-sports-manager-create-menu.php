@@ -133,7 +133,7 @@ class WP_Sports_Manager_Create_Menu {
 		 */
 		$settings_page = add_submenu_page( 
 
-				null, // without menu in admin
+			'wp-sports-manager',
 			__('Settings',' wp-sports-manager'), 
 			__('Settings', 'wp-sports-manager'), 
 				'manage_options', 

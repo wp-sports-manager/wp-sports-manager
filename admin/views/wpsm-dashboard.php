@@ -34,3 +34,4 @@ if( post_type_exists( 'wpsm_teams' ) ){
 <h3>Players</h3>
 <h3>Next matchs</h3>
 <h3>Next tournaments</h3>
+<h3>Season {{current}}</h3>

@@ -35,6 +35,12 @@ class WP_Sports_Manager_Create_Roles {
 	
 	public static function add_roles() {
 
+
+		/**
+		 * First role, enable for every member
+		 * members_club
+		 *
+		 */
 		_x('Club Members', 'User role', 'wp-sports-manager' );
 
 		add_role('members_club', 'Club Members');
@@ -49,20 +55,107 @@ class WP_Sports_Manager_Create_Roles {
 		// Add caps for manager
 		$role->add_cap('manage_wp_sports_manager');
 
-		// $add_roles = add_role(
-		// 	'members_club',
-		// 	__( 'Club Member', 'wp-sports-manager' ),
-		// 	array(
-		// 		'read'         => true,  // true allows this capability
-		// 		'edit_posts'   => true,
-		// 		'delete_posts' => false, // Use false to explicitly deny
-		// 	)
-		// );
+		/**
+		 * Desk Officer
+		 * desk_officer
+		 *
+		 */
+		_x('Desk Officer', 'User role', 'wp-sports-manager' );
+
+		add_role('desk_officer', 'Desk Officer');
+
+		// Add caps for Contributor role
+		$role = get_role('desk_officer');
+		$role->add_cap('edit_posts');
+		$role->add_cap('read');
+		$role->add_cap('level_1');
+		$role->add_cap('level_0');
+
+		// Add caps for manager
+		$role->add_cap('manage_wp_sports_manager');
+
+		/**
+		 * Coach
+		 * coach
+		 *
+		 */
+		_x('Coach', 'User role', 'wp-sports-manager' );
+
+		add_role('coach', 'Coach');
+
+		// Add caps for Contributor role
+		$role = get_role('coach');
+		$role->add_cap('edit_posts');
+		$role->add_cap('read');
+		$role->add_cap('level_1');
+		$role->add_cap('level_0');
+
+		// Add caps for manager
+		$role->add_cap('manage_wp_sports_manager');
+
+		/**
+		 * Assistant
+		 * assistant
+		 *
+		 */
+		_x('Assistant', 'User role', 'wp-sports-manager' );
+
+		add_role('assistant', 'Assistant');
+
+		// Add caps for Contributor role
+		$role = get_role('assistant');
+		$role->add_cap('edit_posts');
+		$role->add_cap('read');
+		$role->add_cap('level_1');
+		$role->add_cap('level_0');
+
+		// Add caps for manager
+		$role->add_cap('manage_wp_sports_manager');
+
+		/**
+		 * Player
+		 * player
+		 *
+		 */
+		_x('Player', 'User role', 'wp-sports-manager' );
+
+		add_role('player', 'Player');
+
+		// Add caps for Contributor role
+		$role = get_role('player');
+		$role->add_cap('edit_posts');
+		$role->add_cap('read');
+		$role->add_cap('level_1');
+		$role->add_cap('level_0');
+
+		// Add caps for manager
+		$role->add_cap('manage_wp_sports_manager');
+
+		/**
+		 * Volunteer
+		 * volunteer
+		 *
+		 */
+		_x('Volunteer', 'User role', 'wp-sports-manager' );
+
+		add_role('volunteer', 'Volunteer');
+
+		// Add caps for Contributor role
+		$role = get_role('volunteer');
+		$role->add_cap('read');
+		$role->add_cap('level_1');
+		$role->add_cap('level_0');
+
 
 	}
 
 	public static function remove_roles() {
 		remove_role( 'members_club' );
+		remove_role( 'desk_officer' );
+		remove_role( 'coach' );
+		remove_role( 'assistant' );
+		remove_role( 'player' );
+		remove_role( 'volunteer' );
 	}
 
 }
