@@ -152,7 +152,6 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_training_cpt' );
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_tournaments_cpt' );
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_members_cpt' );
-		$this->loader->add_action( 'init', $createCustomPostType, 'add_places_cpt' );
 
 	}
 
@@ -170,6 +169,7 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_typologies' );
 		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_seasons' );
 		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_members_typology' );
+		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_places' );
 
 	}	
 

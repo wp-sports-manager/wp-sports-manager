@@ -1,0 +1,54 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+@font-face {
+    font-family: 'wpsportsmanager';
+    src:    url('../font/wpsportsmanager.eot?x2x0qn');
+    src:    url('../font/wpsportsmanager.eot?x2x0qn#iefix') format('embedded-opentype'),
+        url('../font/wpsportsmanager.ttf?x2x0qn') format('truetype'),
+        url('../font/wpsportsmanager.woff?x2x0qn') format('woff'),
+        url('../font/wpsportsmanager.svg?x2x0qn#wpsportsmanager') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'wpsportsmanager' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * WP Sports Manager Icon Menu
+ * : Sports Manager
+ *
+ */
+#toplevel_page_wp-sports-manager .dashicons-before:before {
+	font-family: 'wpsportsmanager';
+	content: "\e900";
+}
+
+#toplevel_page_wpsm-matchs .dashicons-before:before {
+	font-family: 'wpsportsmanager';
+	content: "\e901";
+}
+
+#toplevel_page_wpsm-trainings .dashicons-before:before {
+	font-family: 'wpsportsmanager';
+	content: "\e902";
+}
+
+/*#toplevel_page_wpsm-tournaments .dashicons-before:before {
+	font-family: 'wpsportsmanager';
+	content: "\e903";
+}*/
