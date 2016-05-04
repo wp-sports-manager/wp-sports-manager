@@ -41,8 +41,8 @@ class WP_Sports_Manager_Create_Taxonomies {
 	public static function add_competitions() {
 
 		$labels = array(
-			'name'              => _x( 'Competitions', 'taxonomy general name' ),
-			'singular_name'     => _x( 'Competition', 'taxonomy singular name' ),
+			'name'              => _x( 'Competitions', 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( 'Competition', 'taxonomy singular name', 'wp-sports-manager' ),
 			'search_items'      => __( 'Search Competitions', 'wp-sports-manager' ),
 			'all_items'         => __( 'All Competitions', 'wp-sports-manager' ),
 			'parent_item'       => __( 'Parent Competition', 'wp-sports-manager' ),
@@ -59,7 +59,7 @@ class WP_Sports_Manager_Create_Taxonomies {
 			'rewrite'           => array( 'slug' => 'wpsm_competition' ),
 		);
 
-		register_taxonomy( 'wpsm_competition', array( 'wpsm_teams' ), $args );
+		register_taxonomy( 'wpsm_competition', array( 'wpsm_tournaments', 'wpsm_matchs' ), $args );
 
 	}
 
@@ -74,8 +74,8 @@ class WP_Sports_Manager_Create_Taxonomies {
 		$single = "Typologie";
 
 		$labels = array(
-			'name'              => _x( $pluriel , 'taxonomy general name' ),
-			'singular_name'     => _x( $single, 'taxonomy singular name' ),
+			'name'              => _x( $pluriel , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( $single, 'taxonomy singular name', 'wp-sports-manager' ),
 			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
 			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
 			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
@@ -107,8 +107,8 @@ class WP_Sports_Manager_Create_Taxonomies {
 		$single = "Season";
 
 		$labels = array(
-			'name'              => _x( $pluriel , 'taxonomy general name' ),
-			'singular_name'     => _x( $single, 'taxonomy singular name' ),
+			'name'              => _x( $pluriel , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( $single, 'taxonomy singular name', 'wp-sports-manager' ),
 			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
 			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
 			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
@@ -140,8 +140,8 @@ class WP_Sports_Manager_Create_Taxonomies {
 		$single = "Members typology";
 
 		$labels = array(
-			'name'              => _x( $pluriel , 'taxonomy general name' ),
-			'singular_name'     => _x( $single, 'taxonomy singular name' ),
+			'name'              => _x( $pluriel , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( $single, 'taxonomy singular name', 'wp-sports-manager' ),
 			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
 			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
 			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
@@ -159,6 +159,39 @@ class WP_Sports_Manager_Create_Taxonomies {
 		);
 
 		register_taxonomy( 'wpsm_members_typology', array( 'wpsm_members' ), $args );
+
+	}
+
+	/**
+	 * Add places Taxonomy
+	 * it's for sport who have multiple team inside like Baseball / Softball
+	 *
+	 */
+	public static function add_places() {
+
+		$pluriel = "Places";
+		$single = "Place";
+
+		$labels = array(
+			'name'              => _x( $pluriel , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( $single, 'taxonomy singular name', 'wp-sports-manager' ),
+			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
+			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent ' . $single . ' :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit ' . $single, 'wp-sports-manager' ),
+			'update_item'       => __( 'Update ' . $single, 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New ' . $single, 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New ' . $single .' Name', 'wp-sports-manager' ),
+			'menu_name'         => __( $single, 'wp-sports-manager' ),
+		);
+
+		$args = array(
+			'labels'            => $labels,
+			'rewrite'           => array( 'slug' => 'wpsm_place' ),
+		);
+
+		register_taxonomy( 'wpsm_place', array( 'wpsm_opponents', 'wpsm_tournaments', 'wpsm_matchs', 'wpms_trainings' ), $args );
 
 	}
 

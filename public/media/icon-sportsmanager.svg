@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>80 - Spotlight Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="80---Spotlight-Copy-4" fill="#FFFFFF">
+            <g id="original-copy" transform="translate(5.000000, 0.000000)">
+                <path d="M35,70 C54.3299662,70 70,54.3299662 70,35 C70,15.6700338 54.3299662,0 35,0 C15.6700338,0 0,15.6700338 0,35 C0,54.3299662 15.6700338,70 35,70 Z M35,67.375 C52.8802188,67.375 67.375,52.8802188 67.375,35 C67.375,17.1197812 52.8802188,2.625 35,2.625 C17.1197812,2.625 2.625,17.1197812 2.625,35 C2.625,52.8802188 17.1197812,67.375 35,67.375 Z" id="Combined-Shape-Copy"></path>
+                <path d="M41,56 L29.7832168,56 L29.7832168,34.2941176 C29.7832168,31.6579896 29.8391603,29.246249 29.951049,27.0588235 C29.2610688,27.900141 28.4032685,28.7788372 27.3776224,29.6949384 L22.7342657,33.5369357 L17,26.4699042 L31.041958,15 L41,15 L41,56 Z" id="1"></path>
+            </g>
+            <path d="M23,65 C23,65 31.6352539,68.2944336 40,68.2944336 C48.3647461,68.2944336 58,65 58,65 L58,79 L40,72.8369141 L23,79 L23,65 Z" id="Rectangle-14"></path>
+        </g>
+    </g>
+</svg>
