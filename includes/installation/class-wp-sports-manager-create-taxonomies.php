@@ -70,21 +70,18 @@ class WP_Sports_Manager_Create_Taxonomies {
 	 */
 	public static function add_typologies() {
 
-		$pluriel = "Typologies";
-		$single = "Typologie";
-
 		$labels = array(
-			'name'              => _x( $pluriel , 'taxonomy general name', 'wp-sports-manager' ),
-			'singular_name'     => _x( $single, 'taxonomy singular name', 'wp-sports-manager' ),
-			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
-			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
-			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
-			'parent_item_colon' => __( 'Parent ' . $single . ' :', 'wp-sports-manager' ),
-			'edit_item'         => __( 'Edit ' . $single, 'wp-sports-manager' ),
-			'update_item'       => __( 'Update ' . $single, 'wp-sports-manager' ),
-			'add_new_item'      => __( 'Add New ' . $single, 'wp-sports-manager' ),
-			'new_item_name'     => __( 'New ' . $single .' Name', 'wp-sports-manager' ),
-			'menu_name'         => __( $single, 'wp-sports-manager' ),
+			'name'              => _x( "Typologies" , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( "Typologie", 'taxonomy singular name', 'wp-sports-manager' ),
+			'search_items'      => __( 'Search ' . "Typologies", 'wp-sports-manager' ),
+			'all_items'         => __( 'All ' . "Typologies", 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent ' . "Typologie", 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent ' . "Typologie" . ' :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit ' . "Typologie", 'wp-sports-manager' ),
+			'update_item'       => __( 'Update ' . "Typologie", 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New ' . "Typologie", 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New ' . "Typologie" .' Name', 'wp-sports-manager' ),
+			'menu_name'         => __( "Typologie", 'wp-sports-manager' ),
 		);
 
 		$args = array(
@@ -103,21 +100,18 @@ class WP_Sports_Manager_Create_Taxonomies {
 	 */
 	public static function add_seasons() {
 
-		$pluriel = "Seasons";
-		$single = "Season";
-
 		$labels = array(
-			'name'              => _x( $pluriel , 'taxonomy general name', 'wp-sports-manager' ),
-			'singular_name'     => _x( $single, 'taxonomy singular name', 'wp-sports-manager' ),
-			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
-			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
-			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
-			'parent_item_colon' => __( 'Parent ' . $single . ' :', 'wp-sports-manager' ),
-			'edit_item'         => __( 'Edit ' . $single, 'wp-sports-manager' ),
-			'update_item'       => __( 'Update ' . $single, 'wp-sports-manager' ),
-			'add_new_item'      => __( 'Add New ' . $single, 'wp-sports-manager' ),
-			'new_item_name'     => __( 'New ' . $single .' Name', 'wp-sports-manager' ),
-			'menu_name'         => __( $single, 'wp-sports-manager' ),
+			'name'              => _x( "Seasons" , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( "Season", 'taxonomy singular name', 'wp-sports-manager' ),
+			'search_items'      => __( 'Search ' . "Seasons", 'wp-sports-manager' ),
+			'all_items'         => __( 'All ' . "Seasons", 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent ' . "Season", 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent ' . "Season" . ' :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit ' . "Season", 'wp-sports-manager' ),
+			'update_item'       => __( 'Update ' . "Season", 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New ' . "Season", 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New ' . "Season" .' Name', 'wp-sports-manager' ),
+			'menu_name'         => __( "Season", 'wp-sports-manager' ),
 		);
 
 		$args = array(
@@ -136,21 +130,18 @@ class WP_Sports_Manager_Create_Taxonomies {
 	 */
 	public static function add_members_typology() {
 
-		$pluriel = "Members typologies";
-		$single = "Members typology";
-
 		$labels = array(
-			'name'              => _x( $pluriel , 'taxonomy general name', 'wp-sports-manager' ),
-			'singular_name'     => _x( $single, 'taxonomy singular name', 'wp-sports-manager' ),
-			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
-			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
-			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
-			'parent_item_colon' => __( 'Parent ' . $single . ' :', 'wp-sports-manager' ),
-			'edit_item'         => __( 'Edit ' . $single, 'wp-sports-manager' ),
-			'update_item'       => __( 'Update ' . $single, 'wp-sports-manager' ),
-			'add_new_item'      => __( 'Add New ' . $single, 'wp-sports-manager' ),
-			'new_item_name'     => __( 'New ' . $single .' Name', 'wp-sports-manager' ),
-			'menu_name'         => __( $single, 'wp-sports-manager' ),
+			'name'              => _x( "Members typologies" , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( "Members typology", 'taxonomy singular name', 'wp-sports-manager' ),
+			'search_items'      => __( 'Search ' . "Members typologies", 'wp-sports-manager' ),
+			'all_items'         => __( 'All ' . "Members typologies", 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent ' . "Members typology", 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent ' . "Members typology" . ' :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit ' . "Members typology", 'wp-sports-manager' ),
+			'update_item'       => __( 'Update ' . "Members typology", 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New ' . "Members typology", 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New ' . "Members typology" .' Name', 'wp-sports-manager' ),
+			'menu_name'         => __( "Members typology", 'wp-sports-manager' ),
 		);
 
 		$args = array(
@@ -169,21 +160,18 @@ class WP_Sports_Manager_Create_Taxonomies {
 	 */
 	public static function add_places() {
 
-		$pluriel = "Places";
-		$single = "Place";
-
 		$labels = array(
-			'name'              => _x( $pluriel , 'taxonomy general name', 'wp-sports-manager' ),
-			'singular_name'     => _x( $single, 'taxonomy singular name', 'wp-sports-manager' ),
-			'search_items'      => __( 'Search ' . $pluriel, 'wp-sports-manager' ),
-			'all_items'         => __( 'All ' . $pluriel, 'wp-sports-manager' ),
-			'parent_item'       => __( 'Parent ' . $single, 'wp-sports-manager' ),
-			'parent_item_colon' => __( 'Parent ' . $single . ' :', 'wp-sports-manager' ),
-			'edit_item'         => __( 'Edit ' . $single, 'wp-sports-manager' ),
-			'update_item'       => __( 'Update ' . $single, 'wp-sports-manager' ),
-			'add_new_item'      => __( 'Add New ' . $single, 'wp-sports-manager' ),
-			'new_item_name'     => __( 'New ' . $single .' Name', 'wp-sports-manager' ),
-			'menu_name'         => __( $single, 'wp-sports-manager' ),
+			'name'              => _x( "Places" , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( "Place", 'taxonomy singular name', 'wp-sports-manager' ),
+			'search_items'      => __( 'Search ' . "Places", 'wp-sports-manager' ),
+			'all_items'         => __( 'All ' . "Places", 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent ' . "Place", 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent ' . "Place" . ' :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit ' . "Place", 'wp-sports-manager' ),
+			'update_item'       => __( 'Update ' . "Place", 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New ' . "Place", 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New ' . "Place" .' Name', 'wp-sports-manager' ),
+			'menu_name'         => __( "Place", 'wp-sports-manager' ),
 		);
 
 		$args = array(

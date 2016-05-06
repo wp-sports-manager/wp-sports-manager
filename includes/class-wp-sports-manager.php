@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
 /**
  * The file that defines the core plugin class
  *
@@ -7,7 +11,7 @@
  * public-facing side of the site and the admin area.
  *
  * @link       http://sportsmanager.club
- * @since      0.0.1
+ * @since      0.0.2
  *
  * @package    WP_Sports_Manager
  * @subpackage WP_Sports_Manager/includes
@@ -22,7 +26,7 @@
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since      0.0.1
+ * @since      0.0.2
  * @package    WP_Sports_Manager
  * @subpackage WP_Sports_Manager/includes
  * @author     David Massiani <me@davidmassiani.com>
@@ -87,7 +91,7 @@ class WP_Sports_Manager {
 	public function __construct() {
 
 		$this->plugin_name = 'wp-sports-manager';
-		$this->version = '0.0.1';
+		$this->version = '0.0.2';
 
 		// add_action( 'init', array( $this, 'load_dependencies' ) );
 
@@ -95,10 +99,13 @@ class WP_Sports_Manager {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
-		$this->create_admin_menu();
 		$this->create_custom_post_type();
 		$this->create_custom_taxonomies();
 
+		if ( is_admin() ) {
+			$this->create_admin_menu();
+			$this->admin_taxonomies_fields();
+		}
 
 	}
 
@@ -127,6 +134,19 @@ class WP_Sports_Manager {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-menu.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-custom-post-type.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-taxonomies.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions-wpsm.php';
+
+		if ( is_admin() ) {
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wp-sports-manager-admin-taxonomies.php';
+		}
+
+		// if ( defined( 'DOING_AJAX' ) ) {
+		// 	$this->ajax_includes();
+		// }
+
+		// if ( ! is_admin() || defined( 'DOING_AJAX' ) ) {
+		// 	$this->frontend_includes();
+		// }
 
 		$this->loader = new WP_Sports_Manager_Loader();
 
@@ -185,10 +205,22 @@ class WP_Sports_Manager {
 	private function create_admin_menu() {
 
 		$create_menu = new WP_Sports_Manager_Create_Menu();
-
 		$this->loader->add_action( 'admin_menu', $create_menu, 'admin_menu' );
 
 	}	
+
+
+	/**
+	 * Add WPSM Place fields
+	 *
+	 * @since 	0.0.1
+	 * @access 	private
+	 */
+	private function admin_taxonomies_fields() {
+
+		$admin_taxonomies = new WP_Sports_Manager_Admin_Taxonomies();
+
+	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
@@ -202,8 +234,7 @@ class WP_Sports_Manager {
 	private function set_locale() {
 
 		$plugin_i18n = new WP_Sports_Manager_i18n();
-
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
+		$this->loader->add_action( 'init', $plugin_i18n, 'load_plugin_textdomain' );
 
 	}
 
@@ -217,7 +248,6 @@ class WP_Sports_Manager {
 	private function define_admin_hooks() {
 
 		$plugin_admin = new WP_Sports_Manager_Admin( $this->get_plugin_name(), $this->get_version() );
-
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
@@ -233,7 +263,6 @@ class WP_Sports_Manager {
 	private function define_public_hooks() {
 
 		$plugin_public = new WP_Sports_Manager_Public( $this->get_plugin_name(), $this->get_version() );
-
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
