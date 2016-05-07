@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * This action is documented in includes/class-wp-sports-manager-activator.php
  */
 function activate_wp_sports_manager() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wp-sports-manager-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpsm-activator.php';
 	WP_Sports_Manager_Activator::activate();
 }
 
@@ -44,7 +44,7 @@ function activate_wp_sports_manager() {
  * This action is documented in includes/class-wp-sports-manager-deactivator.php
  */
 function deactivate_wp_sports_manager() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wp-sports-manager-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpsm-deactivator.php';
 	WP_Sports_Manager_Deactivator::deactivate();
 }
 
@@ -55,7 +55,7 @@ register_deactivation_hook( __FILE__, 'deactivate_wp_sports_manager' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-wp-sports-manager.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-wpsm.php';
 
 /**
  * Begins execution of the plugin.
