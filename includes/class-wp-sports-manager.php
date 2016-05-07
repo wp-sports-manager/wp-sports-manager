@@ -191,6 +191,7 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_seasons' );
 		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_members_typology' );
 		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_places' );
+		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_clubs' );
 
 	}	
 

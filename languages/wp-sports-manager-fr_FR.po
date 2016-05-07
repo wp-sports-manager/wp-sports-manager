@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Sports Manager\n"
-"POT-Creation-Date: 2016-05-05 23:42+0200\n"
-"PO-Revision-Date: 2016-05-05 23:47+0200\n"
+"POT-Creation-Date: 2016-05-07 12:15+0200\n"
+"PO-Revision-Date: 2016-05-07 12:17+0200\n"
 "Last-Translator: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language-Team: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language: fr_FR\n"
@@ -23,19 +23,26 @@ msgstr ""
 "X-Poedit-SearchPath-3: admin\n"
 "X-Poedit-SearchPath-4: public\n"
 
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:80
+#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:107
+#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:134
 msgid "Address"
 msgstr "Adresse"
 
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:83
-msgid "Drag the marker to the venue's location."
+#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:109
+#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:137
+msgid ""
+"Address is used by your public or opponent to found you. Be most precise."
 msgstr ""
+"L’adresse est utilisée par votre public ou adversaire pour vous trouver. "
+"Soyez le plus précis possible."
 
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:86
+#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:112
+#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:141
 msgid "Latitude"
 msgstr "Latitude"
 
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:90
+#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:116
+#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:147
 msgid "Longitude"
 msgstr "Longitude"
 
@@ -191,8 +198,8 @@ msgstr "Tableau de bord"
 #: includes/installation/class-wp-sports-manager-create-menu.php:297
 #: includes/installation/class-wp-sports-manager-create-menu.php:382
 #: includes/installation/class-wp-sports-manager-create-menu.php:383
-#: includes/installation/class-wp-sports-manager-create-menu.php:467
-#: includes/installation/class-wp-sports-manager-create-menu.php:468
+#: includes/installation/class-wp-sports-manager-create-menu.php:481
+#: includes/installation/class-wp-sports-manager-create-menu.php:482
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -211,8 +218,8 @@ msgstr "Matchs"
 #: includes/installation/class-wp-sports-manager-create-menu.php:327
 #: includes/installation/class-wp-sports-manager-create-menu.php:412
 #: includes/installation/class-wp-sports-manager-create-menu.php:413
-#: includes/installation/class-wp-sports-manager-create-menu.php:454
-#: includes/installation/class-wp-sports-manager-create-menu.php:455
+#: includes/installation/class-wp-sports-manager-create-menu.php:468
+#: includes/installation/class-wp-sports-manager-create-menu.php:469
 msgid "Add"
 msgstr "Ajouter"
 
@@ -253,8 +260,14 @@ msgstr "Équipes"
 msgid "Opponents"
 msgstr "Adversaires"
 
-#: includes/installation/class-wp-sports-manager-create-menu.php:439
 #: includes/installation/class-wp-sports-manager-create-menu.php:440
+#: includes/installation/class-wp-sports-manager-create-menu.php:441
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:204
+msgid "Club"
+msgstr "Club"
+
+#: includes/installation/class-wp-sports-manager-create-menu.php:453
+#: includes/installation/class-wp-sports-manager-create-menu.php:454
 msgid "Club Members"
 msgstr "Membres du Club"
 
@@ -517,6 +530,48 @@ msgstr "Nouveau nom du lieu"
 #: includes/installation/class-wp-sports-manager-create-taxonomies.php:174
 msgid "Place"
 msgstr "Lieu"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:194
+msgctxt "taxonomy general name"
+msgid "Club"
+msgstr "Club"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:195
+msgctxt "taxonomy singular name"
+msgid "Club"
+msgstr "Club"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:196
+msgid "Search Club"
+msgstr "Rechercher un club"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:197
+msgid "All Club"
+msgstr "Tous les clubs"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:198
+msgid "Parent Club"
+msgstr "Club parent"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:199
+msgid "Parent Club :"
+msgstr "Club parent :"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:200
+msgid "Edit Club"
+msgstr "Modifier le club"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:201
+msgid "Update Club"
+msgstr "Mettre à jour le club"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:202
+msgid "Add New Club"
+msgstr "Ajouter un nouveau club"
+
+#: includes/installation/class-wp-sports-manager-create-taxonomies.php:203
+msgid "New Club Name"
+msgstr "Ajouter nouveau club"
 
 #. Plugin Name of the plugin/theme
 msgid "WP Sports Manager"

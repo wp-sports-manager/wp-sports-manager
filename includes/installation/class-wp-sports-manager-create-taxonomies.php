@@ -183,6 +183,36 @@ class WP_Sports_Manager_Create_Taxonomies {
 
 	}
 
+	/**
+	 * Add opponents Club Taxonomy
+	 * it's for sport who have multiple team inside like Baseball / Softball
+	 *
+	 */
+	public static function add_clubs() {
+
+		$labels = array(
+			'name'              => _x( "Club" , 'taxonomy general name', 'wp-sports-manager' ),
+			'singular_name'     => _x( "Club", 'taxonomy singular name', 'wp-sports-manager' ),
+			'search_items'      => __( 'Search Club', 'wp-sports-manager' ),
+			'all_items'         => __( 'All Club', 'wp-sports-manager' ),
+			'parent_item'       => __( 'Parent Club', 'wp-sports-manager' ),
+			'parent_item_colon' => __( 'Parent Club :', 'wp-sports-manager' ),
+			'edit_item'         => __( 'Edit Club', 'wp-sports-manager' ),
+			'update_item'       => __( 'Update Club', 'wp-sports-manager' ),
+			'add_new_item'      => __( 'Add New Club', 'wp-sports-manager' ),
+			'new_item_name'     => __( 'New Club Name', 'wp-sports-manager' ),
+			'menu_name'         => __( "Club", 'wp-sports-manager' ),
+		);
+
+		$args = array(
+			'labels'            => $labels,
+			'rewrite'           => array( 'slug' => 'wpsm_clubs' ),
+		);
+
+		register_taxonomy( 'wpsm_clubs', array( 'wpsm_opponents' ), $args );
+
+	}
+
 	public static function remove_taxonomies() {
 
 	}

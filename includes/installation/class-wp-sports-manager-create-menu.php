@@ -430,6 +430,20 @@ class WP_Sports_Manager_Create_Menu {
 
 				); 
 
+				/**
+				 * Add club
+				 *
+				 */
+				add_submenu_page( 
+
+					'wpsm-opponents',
+					__('Club', 'wp-sports-manager'), 
+					__('Club', 'wp-sports-manager'),
+						'edit_posts', 
+						'edit-tags.php?taxonomy=wpsm_clubs&post_type=wpsm_opponents'
+
+				); 
+
 		/**
 		 * Members menu
 		 *
