@@ -34,7 +34,7 @@ class WP_Sports_Manager_Modify_Menu {
 		'matchs' => array( 'place', 'competition', 'season' ),
 		'trainings' => array( 'season', 'place' ), 
 		'tournaments' => array( 'competition', 'season', 'place' ), 
-		'opponents' => array( 'place' )
+		'opponents' => array( 'place', 'clubs' )
 	);
 
 	/**
