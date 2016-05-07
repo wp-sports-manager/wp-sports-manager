@@ -132,6 +132,7 @@ class WP_Sports_Manager {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-sports-manager-admin.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wp-sports-manager-public.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-menu.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-modify-menu.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-custom-post-type.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wp-sports-manager-create-taxonomies.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions-wpsm.php';
@@ -206,6 +207,7 @@ class WP_Sports_Manager {
 
 		$create_menu = new WP_Sports_Manager_Create_Menu();
 		$this->loader->add_action( 'admin_menu', $create_menu, 'admin_menu' );
+		$menu_correction = new WP_Sports_Manager_Modify_Menu();
 
 	}	
 

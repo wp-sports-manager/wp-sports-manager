@@ -155,7 +155,7 @@ class WP_Sports_Manager_Create_Menu {
 					__('Seasons', 'wp-sports-manager'), 
 					__('Seasons', 'wp-sports-manager'),
 						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_season'
+						'edit-tags.php?taxonomy=wpsm_season&post_type=wpsm_matchs'
 
 				); 
 
@@ -169,7 +169,7 @@ class WP_Sports_Manager_Create_Menu {
 					__('Places', 'wp-sports-manager'), 
 					__('Places', 'wp-sports-manager'),
 						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_place'
+						'edit-tags.php?taxonomy=wpsm_place&post_type=wpsm_matchs'
 
 				); 
 
@@ -268,7 +268,7 @@ class WP_Sports_Manager_Create_Menu {
 					__('Seasons', 'wp-sports-manager'), 
 					__('Seasons', 'wp-sports-manager'),
 						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_season'
+						'edit-tags.php?taxonomy=wpsm_season&post_type=wpsm_trainings'
 
 				); 
 
@@ -282,7 +282,7 @@ class WP_Sports_Manager_Create_Menu {
 					__('Places', 'wp-sports-manager'), 
 					__('Places', 'wp-sports-manager'),
 						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_place'
+						'edit-tags.php?taxonomy=wpsm_place&post_type=wpsm_trainings'
 
 				); 
 
@@ -340,7 +340,7 @@ class WP_Sports_Manager_Create_Menu {
 					__('Competitions', 'wp-sports-manager'), 
 					__('Competitions', 'wp-sports-manager'),
 						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_competition'
+						'edit-tags.php?taxonomy=wpsm_competition&post_type=wpsm_tournaments'
 
 				); 
 
@@ -354,7 +354,7 @@ class WP_Sports_Manager_Create_Menu {
 					__('Seasons', 'wp-sports-manager'), 
 					__('Seasons', 'wp-sports-manager'),
 						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_season'
+						'edit-tags.php?taxonomy=wpsm_season&post_type=wpsm_tournaments'
 
 				); 
 
@@ -368,7 +368,7 @@ class WP_Sports_Manager_Create_Menu {
 					__('Places', 'wp-sports-manager'), 
 					__('Places', 'wp-sports-manager'),
 						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_place'
+						'edit-tags.php?taxonomy=wpsm_place&post_type=wpsm_tournaments'
 
 				); 
 
@@ -426,7 +426,7 @@ class WP_Sports_Manager_Create_Menu {
 					__('Places', 'wp-sports-manager'), 
 					__('Places', 'wp-sports-manager'),
 						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_place'
+						'edit-tags.php?taxonomy=wpsm_place&post_type=wpsm_opponents'
 
 				); 
 
