@@ -84,8 +84,6 @@ class WP_Sports_Manager_Admin_Taxonomies {
 	 		$t_id = $term->term_id;
 			$term_meta = get_option( "taxonomy_$t_id" );
 
-			var_dump($terms);
-
 			/**
 			 * Assign values 
 			 *
