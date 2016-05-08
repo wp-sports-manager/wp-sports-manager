@@ -58,26 +58,39 @@ class WP_Sports_Manager_Admin_Matchs_Fields {
 				'name'    => __( 'Team', 'cmb2' ),
 				'desc'    => __( 'Drag posts from the left column to the right column to attach them to this page.<br />You may rearrange the order of the posts in the right column by dragging and dropping.', 'cmb2' ),
 				'id'      => 'attached_cmb2_attached_posts_team',
-				'type'    => 'custom_attached_posts',
+				'type'    => 'custom_teams_match',
 				'options' => array(
 					'show_thumbnails' => true, // Show thumbnails on the left
 					'filter_boxes'    => true, // Show a text box for filtering the results
-					'query_args'      => array( 'post_type' => 'wpsm_members' ), // override the get_posts args
+					'query_args'      => array( 'post_type' => 'wpsm_teams' ), // override the get_posts args
 				)
 			) );
 
 			// This field depend of typology
 			$cmb_demo->add_field( array(
-				'name'    => __( 'Opponent', 'cmb2' ),
+				'name'    => __( 'Opponents', 'cmb2' ),
 				'desc'    => __( 'Drag posts from the left column to the right column to attach them to this page.<br />You may rearrange the order of the posts in the right column by dragging and dropping.', 'cmb2' ),
-				'id'      => 'attached_cmb2_attached_posts_opponent',
-				'type'    => 'custom_attached_posts',
+				'id'      => 'attached_cmb2_attached_teams_match',
+				'type'    => 'custom_teams_match',
 				'options' => array(
 					'show_thumbnails' => true, // Show thumbnails on the left
 					'filter_boxes'    => true, // Show a text box for filtering the results
-					'query_args'      => array( 'post_type' => 'wpsm_opponents' ), // override the get_posts args
+					'query_args'      => array( 'post_type' => array('wpsm_teams','wpsm_opponents') ), // override the get_posts args
 				)
 			) );
+
+			// // This field depend of typology
+			// $cmb_demo->add_field( array(
+			// 	'name'    => __( 'Opponent', 'cmb2' ),
+			// 	'desc'    => __( 'Drag posts from the left column to the right column to attach them to this page.<br />You may rearrange the order of the posts in the right column by dragging and dropping.', 'cmb2' ),
+			// 	'id'      => 'attached_cmb2_attached_posts_opponent',
+			// 	'type'    => 'custom_attached_posts',
+			// 	'options' => array(
+			// 		'show_thumbnails' => true, // Show thumbnails on the left
+			// 		'filter_boxes'    => true, // Show a text box for filtering the results
+			// 		'query_args'      => array( 'post_type' => 'wpsm_opponents' ), // override the get_posts args
+			// 	)
+			// ) );
 
 			$cmb_demo->add_field( array(
 				'name'       => __( 'Test Text', 'cmb2' ),

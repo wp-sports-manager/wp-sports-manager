@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Sports Manager\n"
-"POT-Creation-Date: 2016-05-07 12:15+0200\n"
-"PO-Revision-Date: 2016-05-07 12:17+0200\n"
+"POT-Creation-Date: 2016-05-07 23:19+0200\n"
+"PO-Revision-Date: 2016-05-07 23:21+0200\n"
 "Last-Translator: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language-Team: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language: fr_FR\n"
@@ -23,555 +23,1197 @@ msgstr ""
 "X-Poedit-SearchPath-3: admin\n"
 "X-Poedit-SearchPath-4: public\n"
 
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:107
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:134
+#: includes/admin/class-wpsm-admin-matchs-fields.php:46
+#: includes/vendors/cmb2/example-functions.php:80
+#: includes/vendors/cmb2/tests/test-cmb-field.php:293
+msgid "Test Metabox"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:58
+#: includes/installation/class-wpsm-create-custom-post-type.php:67
+#: includes/installation/class-wpsm-create-custom-post-type.php:68
+msgid "Team"
+msgstr "Equipe"
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:59
+#: includes/admin/class-wpsm-admin-matchs-fields.php:72
+#: includes/vendors/cmb2-attached-posts/example-field-setup.php:31
+msgid ""
+"Drag posts from the left column to the right column to attach them to this "
+"page.<br />You may rearrange the order of the posts in the right column by "
+"dragging and dropping."
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:71
+#: includes/installation/class-wpsm-create-custom-post-type.php:161
+msgid "Opponent"
+msgstr "Adversaire"
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:83
+#: includes/vendors/cmb2/example-functions.php:91
+#: includes/vendors/cmb2/example-functions.php:383
+msgid "Test Text"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:84
+#: includes/admin/class-wpsm-admin-matchs-fields.php:95
+#: includes/admin/class-wpsm-admin-matchs-fields.php:103
+#: includes/admin/class-wpsm-admin-matchs-fields.php:111
+#: includes/admin/class-wpsm-admin-matchs-fields.php:120
+#: includes/admin/class-wpsm-admin-matchs-fields.php:128
+#: includes/admin/class-wpsm-admin-matchs-fields.php:143
+#: includes/admin/class-wpsm-admin-matchs-fields.php:151
+#: includes/admin/class-wpsm-admin-matchs-fields.php:159
+#: includes/admin/class-wpsm-admin-matchs-fields.php:176
+#: includes/admin/class-wpsm-admin-matchs-fields.php:185
+#: includes/admin/class-wpsm-admin-matchs-fields.php:198
+#: includes/admin/class-wpsm-admin-matchs-fields.php:205
+#: includes/admin/class-wpsm-admin-matchs-fields.php:212
+#: includes/admin/class-wpsm-admin-matchs-fields.php:226
+#: includes/admin/class-wpsm-admin-matchs-fields.php:239
+#: includes/admin/class-wpsm-admin-matchs-fields.php:252
+#: includes/admin/class-wpsm-admin-matchs-fields.php:264
+#: includes/admin/class-wpsm-admin-matchs-fields.php:273
+#: includes/admin/class-wpsm-admin-matchs-fields.php:281
+#: includes/admin/class-wpsm-admin-matchs-fields.php:290
+#: includes/admin/class-wpsm-admin-matchs-fields.php:297
+#: includes/admin/class-wpsm-admin-matchs-fields.php:311
+#: includes/vendors/cmb2/example-functions.php:92
+#: includes/vendors/cmb2/example-functions.php:104
+#: includes/vendors/cmb2/example-functions.php:112
+#: includes/vendors/cmb2/example-functions.php:120
+#: includes/vendors/cmb2/example-functions.php:129
+#: includes/vendors/cmb2/example-functions.php:137
+#: includes/vendors/cmb2/example-functions.php:152
+#: includes/vendors/cmb2/example-functions.php:160
+#: includes/vendors/cmb2/example-functions.php:168
+#: includes/vendors/cmb2/example-functions.php:185
+#: includes/vendors/cmb2/example-functions.php:194
+#: includes/vendors/cmb2/example-functions.php:207
+#: includes/vendors/cmb2/example-functions.php:214
+#: includes/vendors/cmb2/example-functions.php:221
+#: includes/vendors/cmb2/example-functions.php:235
+#: includes/vendors/cmb2/example-functions.php:248
+#: includes/vendors/cmb2/example-functions.php:261
+#: includes/vendors/cmb2/example-functions.php:273
+#: includes/vendors/cmb2/example-functions.php:282
+#: includes/vendors/cmb2/example-functions.php:290
+#: includes/vendors/cmb2/example-functions.php:299
+#: includes/vendors/cmb2/example-functions.php:306
+#: includes/vendors/cmb2/example-functions.php:320
+#: includes/vendors/cmb2/example-functions.php:384
+#: includes/vendors/cmb2/example-functions.php:475
+#: includes/vendors/cmb2/example-functions.php:483
+#: includes/vendors/cmb2/example-functions.php:490
+#: includes/vendors/cmb2/example-functions.php:497
+#: includes/vendors/cmb2/example-functions.php:504
+#: includes/vendors/cmb2/example-functions.php:511
+#: includes/vendors/cmb2/example-functions.php:518
+#: includes/vendors/cmb2/example-functions.php:545
+#: includes/vendors/cmb2/example-functions.php:553
+#: includes/vendors/cmb2/example-functions.php:560
+#: includes/vendors/cmb2/example-functions.php:597
+#: includes/vendors/cmb2/tests/test-cmb-field.php:305
+msgid "field description (optional)"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:94
+#: includes/vendors/cmb2/example-functions.php:103
+msgid "Test Text Small"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:102
+#: includes/vendors/cmb2/example-functions.php:111
+msgid "Test Text Medium"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:110
+#: includes/vendors/cmb2/example-functions.php:119
+msgid "Website URL"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:119
+#: includes/vendors/cmb2/example-functions.php:128
+msgid "Test Text Email"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:127
+#: includes/vendors/cmb2/example-functions.php:136
+msgid "Test Time"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:135
+#: includes/admin/class-wpsm-admin-matchs-fields.php:136
+#: includes/vendors/cmb2/example-functions.php:144
+#: includes/vendors/cmb2/example-functions.php:145
+msgid "Time zone"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:142
+#: includes/vendors/cmb2/example-functions.php:151
+msgid "Test Date Picker"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:150
+#: includes/vendors/cmb2/example-functions.php:159
+msgid "Test Date Picker (UNIX timestamp)"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:158
+#: includes/vendors/cmb2/example-functions.php:167
+msgid "Test Date/Time Picker Combo (UNIX timestamp)"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:175
+#: includes/vendors/cmb2/example-functions.php:184
+msgid "Test Money"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:184
+#: includes/vendors/cmb2/example-functions.php:193
+msgid "Test Color Picker"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:197
+#: includes/vendors/cmb2/example-functions.php:206
+msgid "Test Text Area"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:204
+#: includes/vendors/cmb2/example-functions.php:213
+msgid "Test Text Area Small"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:211
+#: includes/vendors/cmb2/example-functions.php:220
+msgid "Test Text Area for Code"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:218
+#: includes/vendors/cmb2/example-functions.php:227
+msgid "Test Title Weeeee"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:219
+#: includes/vendors/cmb2/example-functions.php:228
+msgid "This is a title description"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:225
+#: includes/vendors/cmb2/example-functions.php:234
+msgid "Test Select"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:231
+#: includes/admin/class-wpsm-admin-matchs-fields.php:244
+#: includes/admin/class-wpsm-admin-matchs-fields.php:256
+#: includes/vendors/cmb2/example-functions.php:240
+#: includes/vendors/cmb2/example-functions.php:253
+#: includes/vendors/cmb2/example-functions.php:265
+msgid "Option One"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:232
+#: includes/admin/class-wpsm-admin-matchs-fields.php:245
+#: includes/admin/class-wpsm-admin-matchs-fields.php:257
+#: includes/vendors/cmb2/example-functions.php:241
+#: includes/vendors/cmb2/example-functions.php:254
+#: includes/vendors/cmb2/example-functions.php:266
+msgid "Option Two"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:233
+#: includes/admin/class-wpsm-admin-matchs-fields.php:246
+#: includes/admin/class-wpsm-admin-matchs-fields.php:258
+#: includes/vendors/cmb2/example-functions.php:242
+#: includes/vendors/cmb2/example-functions.php:255
+#: includes/vendors/cmb2/example-functions.php:267
+msgid "Option Three"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:238
+#: includes/vendors/cmb2/example-functions.php:247
+msgid "Test Radio inline"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:251
+#: includes/vendors/cmb2/example-functions.php:260
+msgid "Test Radio"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:263
+#: includes/vendors/cmb2/example-functions.php:272
+msgid "Test Taxonomy Radio"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:272
+#: includes/vendors/cmb2/example-functions.php:281
+msgid "Test Taxonomy Select"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:280
+#: includes/vendors/cmb2/example-functions.php:289
+msgid "Test Taxonomy Multi Checkbox"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:289
+#: includes/vendors/cmb2/example-functions.php:298
+msgid "Test Checkbox"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:296
+#: includes/vendors/cmb2/example-functions.php:305
+#: includes/vendors/cmb2/tests/test-cmb-field.php:304
+msgid "Test Multi Checkbox"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:302
+#: includes/vendors/cmb2/example-functions.php:311
+#: includes/vendors/cmb2/tests/test-cmb-field.php:310
+msgid "Check One"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:303
+#: includes/vendors/cmb2/example-functions.php:312
+#: includes/vendors/cmb2/tests/test-cmb-field.php:311
+msgid "Check Two"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:304
+#: includes/vendors/cmb2/example-functions.php:313
+#: includes/vendors/cmb2/tests/test-cmb-field.php:312
+msgid "Check Three"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:310
+#: includes/vendors/cmb2/example-functions.php:319
+msgid "Test wysiwyg"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:318
+#: includes/vendors/cmb2/example-functions.php:327
+msgid "Test Image"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:319
+#: includes/admin/class-wpsm-admin-opponents-fields.php:55
+#: includes/vendors/cmb2/example-functions.php:328
+msgid "Upload an image or enter a URL."
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:325
+#: includes/vendors/cmb2/example-functions.php:334
+msgid "Multiple Files"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:326
+#: includes/vendors/cmb2/example-functions.php:335
+msgid "Upload or add multiple images/attachments."
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:333
+#: includes/vendors/cmb2/example-functions.php:342
+msgid "oEmbed"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:334
+#: includes/vendors/cmb2/example-functions.php:343
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
+"href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress.org/"
+"Embeds</a>."
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:356
+#: includes/vendors/cmb2/example-functions.php:403
+msgid "Repeating Field Group"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:364
+#: includes/vendors/cmb2/example-functions.php:411
+msgid "Generates reusable form entries"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:366
+#: includes/vendors/cmb2/example-functions.php:413
+msgid "Entry {#}"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:367
+#: includes/vendors/cmb2/example-functions.php:414
+msgid "Add Another Entry"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:368
+#: includes/vendors/cmb2/example-functions.php:415
+msgid "Remove Entry"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:381
+#: includes/vendors/cmb2/example-functions.php:428
+msgid "Entry Title"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:388
+#: includes/vendors/cmb2/example-functions.php:435
+msgid "Description"
+msgstr "Description"
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:389
+#: includes/vendors/cmb2/example-functions.php:436
+msgid "Write a short description for this entry"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:395
+#: includes/vendors/cmb2/example-functions.php:442
+msgid "Entry Image"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-matchs-fields.php:401
+#: includes/vendors/cmb2/example-functions.php:448
+msgid "Image Caption"
+msgstr ""
+
+#: includes/admin/class-wpsm-admin-opponents-fields.php:48
+msgid "Opponents informations"
+msgstr "Informations des adversaires"
+
+#: includes/admin/class-wpsm-admin-opponents-fields.php:54
+msgid "Logo"
+msgstr "Logo"
+
+#: includes/admin/class-wpsm-admin-opponents-fields.php:61
+msgid "City"
+msgstr "VIlle"
+
+#: includes/admin/class-wpsm-admin-opponents-fields.php:62
+msgid "Drag the marker to set the exact location"
+msgstr "Déplacez le marqueur pour définir le lieu exact"
+
+#: includes/admin/class-wpsm-admin-opponents-fields.php:73
+msgid "Name of your opponent"
+msgstr "Nom de l’adversaire"
+
+#: includes/admin/class-wpsm-admin-taxonomies.php:125
+#: includes/admin/class-wpsm-admin-taxonomies.php:152
 msgid "Address"
 msgstr "Adresse"
 
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:109
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:137
+#: includes/admin/class-wpsm-admin-taxonomies.php:127
+#: includes/admin/class-wpsm-admin-taxonomies.php:155
 msgid ""
 "Address is used by your public or opponent to found you. Be most precise."
 msgstr ""
 "L’adresse est utilisée par votre public ou adversaire pour vous trouver. "
 "Soyez le plus précis possible."
 
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:112
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:141
+#: includes/admin/class-wpsm-admin-taxonomies.php:130
+#: includes/admin/class-wpsm-admin-taxonomies.php:159
 msgid "Latitude"
 msgstr "Latitude"
 
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:116
-#: includes/admin/class-wp-sports-manager-admin-taxonomies.php:147
+#: includes/admin/class-wpsm-admin-taxonomies.php:134
+#: includes/admin/class-wpsm-admin-taxonomies.php:165
 msgid "Longitude"
 msgstr "Longitude"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:54
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:55
-msgid "Team"
-msgstr "Equipe"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:56
+#: includes/installation/class-wpsm-create-custom-post-type.php:69
 msgid "Add New Team"
 msgstr "Ajouter une nouvelle équipe"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:57
+#: includes/installation/class-wpsm-create-custom-post-type.php:70
 msgid "Edit Team"
 msgstr "Modifier l’équipe"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:58
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:102
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:149
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:196
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:243
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:290
+#: includes/installation/class-wpsm-create-custom-post-type.php:71
+#: includes/installation/class-wpsm-create-custom-post-type.php:116
+#: includes/installation/class-wpsm-create-custom-post-type.php:164
+#: includes/installation/class-wpsm-create-custom-post-type.php:215
+#: includes/installation/class-wpsm-create-custom-post-type.php:263
+#: includes/installation/class-wpsm-create-custom-post-type.php:311
 msgid "New"
 msgstr "Nouveau"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:59
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:103
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:150
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:197
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:244
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:291
+#: includes/installation/class-wpsm-create-custom-post-type.php:72
+#: includes/installation/class-wpsm-create-custom-post-type.php:117
+#: includes/installation/class-wpsm-create-custom-post-type.php:165
+#: includes/installation/class-wpsm-create-custom-post-type.php:216
+#: includes/installation/class-wpsm-create-custom-post-type.php:264
+#: includes/installation/class-wpsm-create-custom-post-type.php:312
 msgid "View"
 msgstr "Voir"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:60
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:104
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:151
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:198
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:245
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:292
+#: includes/installation/class-wpsm-create-custom-post-type.php:73
+#: includes/installation/class-wpsm-create-custom-post-type.php:118
+#: includes/installation/class-wpsm-create-custom-post-type.php:166
+#: includes/installation/class-wpsm-create-custom-post-type.php:217
+#: includes/installation/class-wpsm-create-custom-post-type.php:265
+#: includes/installation/class-wpsm-create-custom-post-type.php:313
 msgid "Search"
 msgstr "Rechercher"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:61
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:62
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:105
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:106
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:152
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:153
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:199
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:200
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:246
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:247
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:293
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:294
+#: includes/installation/class-wpsm-create-custom-post-type.php:74
+#: includes/installation/class-wpsm-create-custom-post-type.php:75
+#: includes/installation/class-wpsm-create-custom-post-type.php:119
+#: includes/installation/class-wpsm-create-custom-post-type.php:120
+#: includes/installation/class-wpsm-create-custom-post-type.php:167
+#: includes/installation/class-wpsm-create-custom-post-type.php:168
+#: includes/installation/class-wpsm-create-custom-post-type.php:218
+#: includes/installation/class-wpsm-create-custom-post-type.php:219
+#: includes/installation/class-wpsm-create-custom-post-type.php:266
+#: includes/installation/class-wpsm-create-custom-post-type.php:267
+#: includes/installation/class-wpsm-create-custom-post-type.php:314
+#: includes/installation/class-wpsm-create-custom-post-type.php:315
 msgid "No results found."
 msgstr "Aucun résultat !"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:98
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:99
+#: includes/installation/class-wpsm-create-custom-post-type.php:112
+#: includes/installation/class-wpsm-create-custom-post-type.php:113
 msgid "Match"
 msgstr "Match"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:100
+#: includes/installation/class-wpsm-create-custom-post-type.php:114
 msgid "Add New Match"
 msgstr "Ajouter un nouveau match"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:101
+#: includes/installation/class-wpsm-create-custom-post-type.php:115
 msgid "Edit Match"
 msgstr "Modifier le match"
 
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:145
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:146
-msgid "Opponent"
-msgstr "Adversaire"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:147
-msgid "Add New Opponent"
-msgstr "Ajouter un nouvel adversaire"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:148
-msgid "Edit Opponent"
-msgstr "Modifier l’adversaire"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:192
-#: includes/installation/class-wp-sports-manager-create-menu.php:238
-#: includes/installation/class-wp-sports-manager-create-menu.php:239
-msgid "Trainings"
-msgstr "Entrainements"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:193
-msgid "Training"
-msgstr "Entrainement"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:194
-msgid "Add New Training"
-msgstr "Ajouter un nouveau entrainement"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:195
-msgid "Edit Training"
-msgstr "Modifier l’entraînement "
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:239
-#: includes/installation/class-wp-sports-manager-create-menu.php:310
-#: includes/installation/class-wp-sports-manager-create-menu.php:311
-msgid "Tournaments"
-msgstr "Tournois"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:240
-msgid "Tournament"
-msgstr "Tournoi"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:241
-msgid "Add New Tournament"
-msgstr "Ajouter un nouveau tournoi"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:242
-msgid "Edit Tournament"
-msgstr "Modifier le tournoi"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:286
-msgid "Members"
-msgstr "Membres"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:287
-msgid "Member"
-msgstr "Membre"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:288
-msgid "Add New Member"
-msgstr "Ajouter un Membre"
-
-#: includes/installation/class-wp-sports-manager-create-custom-post-type.php:289
-msgid "Edit Member"
-msgstr "Modifier le Membre"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:66
-msgid "Sports Manager"
-msgstr "Directeur des Sports"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:82
-#: includes/installation/class-wp-sports-manager-create-menu.php:83
-msgid "Dashboard"
-msgstr "Tableau de bord"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:97
-#: includes/installation/class-wp-sports-manager-create-menu.php:98
-#: includes/installation/class-wp-sports-manager-create-menu.php:183
-#: includes/installation/class-wp-sports-manager-create-menu.php:184
-#: includes/installation/class-wp-sports-manager-create-menu.php:225
-#: includes/installation/class-wp-sports-manager-create-menu.php:226
-#: includes/installation/class-wp-sports-manager-create-menu.php:296
-#: includes/installation/class-wp-sports-manager-create-menu.php:297
-#: includes/installation/class-wp-sports-manager-create-menu.php:382
-#: includes/installation/class-wp-sports-manager-create-menu.php:383
-#: includes/installation/class-wp-sports-manager-create-menu.php:481
-#: includes/installation/class-wp-sports-manager-create-menu.php:482
-msgid "Settings"
-msgstr "Paramètres"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:111
-#: includes/installation/class-wp-sports-manager-create-menu.php:112
-msgid "Matchs"
-msgstr "Matchs"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:127
-#: includes/installation/class-wp-sports-manager-create-menu.php:128
-#: includes/installation/class-wp-sports-manager-create-menu.php:212
-#: includes/installation/class-wp-sports-manager-create-menu.php:213
-#: includes/installation/class-wp-sports-manager-create-menu.php:254
-#: includes/installation/class-wp-sports-manager-create-menu.php:255
-#: includes/installation/class-wp-sports-manager-create-menu.php:326
-#: includes/installation/class-wp-sports-manager-create-menu.php:327
-#: includes/installation/class-wp-sports-manager-create-menu.php:412
-#: includes/installation/class-wp-sports-manager-create-menu.php:413
-#: includes/installation/class-wp-sports-manager-create-menu.php:468
-#: includes/installation/class-wp-sports-manager-create-menu.php:469
-msgid "Add"
-msgstr "Ajouter"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:141
-#: includes/installation/class-wp-sports-manager-create-menu.php:142
-#: includes/installation/class-wp-sports-manager-create-menu.php:340
-#: includes/installation/class-wp-sports-manager-create-menu.php:341
-msgid "Competitions"
-msgstr "Compétitions"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:155
-#: includes/installation/class-wp-sports-manager-create-menu.php:156
-#: includes/installation/class-wp-sports-manager-create-menu.php:268
-#: includes/installation/class-wp-sports-manager-create-menu.php:269
-#: includes/installation/class-wp-sports-manager-create-menu.php:354
-#: includes/installation/class-wp-sports-manager-create-menu.php:355
-msgid "Seasons"
-msgstr "Saisons"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:169
-#: includes/installation/class-wp-sports-manager-create-menu.php:170
-#: includes/installation/class-wp-sports-manager-create-menu.php:282
-#: includes/installation/class-wp-sports-manager-create-menu.php:283
-#: includes/installation/class-wp-sports-manager-create-menu.php:368
-#: includes/installation/class-wp-sports-manager-create-menu.php:369
-#: includes/installation/class-wp-sports-manager-create-menu.php:426
-#: includes/installation/class-wp-sports-manager-create-menu.php:427
-msgid "Places"
-msgstr "Lieux"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:197
-#: includes/installation/class-wp-sports-manager-create-menu.php:198
-msgid "Teams"
-msgstr "Équipes"
-
-#: includes/installation/class-wp-sports-manager-create-menu.php:396
-#: includes/installation/class-wp-sports-manager-create-menu.php:397
+#: includes/installation/class-wpsm-create-custom-post-type.php:160
 msgid "Opponents"
 msgstr "Adversaires"
 
-#: includes/installation/class-wp-sports-manager-create-menu.php:440
-#: includes/installation/class-wp-sports-manager-create-menu.php:441
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:204
-msgid "Club"
-msgstr "Club"
+#: includes/installation/class-wpsm-create-custom-post-type.php:162
+msgid "Add New Opponent"
+msgstr "Ajouter un nouvel adversaire"
 
-#: includes/installation/class-wp-sports-manager-create-menu.php:453
-#: includes/installation/class-wp-sports-manager-create-menu.php:454
+#: includes/installation/class-wpsm-create-custom-post-type.php:163
+msgid "Edit Opponent"
+msgstr "Modifier l’adversaire"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:211
+#: includes/installation/class-wpsm-create-menu.php:238
+#: includes/installation/class-wpsm-create-menu.php:239
+msgid "Trainings"
+msgstr "Entrainements"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:212
+msgid "Training"
+msgstr "Entrainement"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:213
+msgid "Add New Training"
+msgstr "Ajouter un nouveau entrainement"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:214
+msgid "Edit Training"
+msgstr "Modifier l’entraînement "
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:259
+#: includes/installation/class-wpsm-create-menu.php:310
+#: includes/installation/class-wpsm-create-menu.php:311
+msgid "Tournaments"
+msgstr "Tournois"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:260
+msgid "Tournament"
+msgstr "Tournoi"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:261
+msgid "Add New Tournament"
+msgstr "Ajouter un nouveau tournoi"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:262
+msgid "Edit Tournament"
+msgstr "Modifier le tournoi"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:307
+msgid "Members"
+msgstr "Membres"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:308
+msgid "Member"
+msgstr "Membre"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:309
+msgid "Add New Member"
+msgstr "Ajouter un Membre"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:310
+msgid "Edit Member"
+msgstr "Modifier le Membre"
+
+#: includes/installation/class-wpsm-create-menu.php:66
+msgid "Sports Manager"
+msgstr "Directeur des Sports"
+
+#: includes/installation/class-wpsm-create-menu.php:82
+#: includes/installation/class-wpsm-create-menu.php:83
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: includes/installation/class-wpsm-create-menu.php:97
+#: includes/installation/class-wpsm-create-menu.php:98
+#: includes/installation/class-wpsm-create-menu.php:183
+#: includes/installation/class-wpsm-create-menu.php:184
+#: includes/installation/class-wpsm-create-menu.php:225
+#: includes/installation/class-wpsm-create-menu.php:226
+#: includes/installation/class-wpsm-create-menu.php:296
+#: includes/installation/class-wpsm-create-menu.php:297
+#: includes/installation/class-wpsm-create-menu.php:382
+#: includes/installation/class-wpsm-create-menu.php:383
+#: includes/installation/class-wpsm-create-menu.php:467
+#: includes/installation/class-wpsm-create-menu.php:468
+msgid "Settings"
+msgstr "Paramètres"
+
+#: includes/installation/class-wpsm-create-menu.php:111
+#: includes/installation/class-wpsm-create-menu.php:112
+msgid "Matchs"
+msgstr "Matchs"
+
+#: includes/installation/class-wpsm-create-menu.php:127
+#: includes/installation/class-wpsm-create-menu.php:128
+#: includes/installation/class-wpsm-create-menu.php:212
+#: includes/installation/class-wpsm-create-menu.php:213
+#: includes/installation/class-wpsm-create-menu.php:254
+#: includes/installation/class-wpsm-create-menu.php:255
+#: includes/installation/class-wpsm-create-menu.php:326
+#: includes/installation/class-wpsm-create-menu.php:327
+#: includes/installation/class-wpsm-create-menu.php:454
+#: includes/installation/class-wpsm-create-menu.php:455
+msgid "Add"
+msgstr "Ajouter"
+
+#: includes/installation/class-wpsm-create-menu.php:141
+#: includes/installation/class-wpsm-create-menu.php:142
+#: includes/installation/class-wpsm-create-menu.php:340
+#: includes/installation/class-wpsm-create-menu.php:341
+msgid "Competitions"
+msgstr "Compétitions"
+
+#: includes/installation/class-wpsm-create-menu.php:155
+#: includes/installation/class-wpsm-create-menu.php:156
+#: includes/installation/class-wpsm-create-menu.php:268
+#: includes/installation/class-wpsm-create-menu.php:269
+#: includes/installation/class-wpsm-create-menu.php:354
+#: includes/installation/class-wpsm-create-menu.php:355
+msgid "Seasons"
+msgstr "Saisons"
+
+#: includes/installation/class-wpsm-create-menu.php:169
+#: includes/installation/class-wpsm-create-menu.php:170
+#: includes/installation/class-wpsm-create-menu.php:282
+#: includes/installation/class-wpsm-create-menu.php:283
+#: includes/installation/class-wpsm-create-menu.php:368
+#: includes/installation/class-wpsm-create-menu.php:369
+msgid "Places"
+msgstr "Lieux"
+
+#: includes/installation/class-wpsm-create-menu.php:197
+#: includes/installation/class-wpsm-create-menu.php:198
+msgid "Teams"
+msgstr "Équipes"
+
+#: includes/installation/class-wpsm-create-menu.php:439
+#: includes/installation/class-wpsm-create-menu.php:440
 msgid "Club Members"
 msgstr "Membres du Club"
 
-#: includes/installation/class-wp-sports-manager-create-roles.php:48
+#: includes/installation/class-wpsm-create-roles.php:48
 msgctxt "User role"
 msgid "Club Members"
 msgstr "Membres du Club"
 
-#: includes/installation/class-wp-sports-manager-create-roles.php:67
+#: includes/installation/class-wpsm-create-roles.php:67
 msgctxt "User role"
 msgid "Desk Officer"
 msgstr "Bureau"
 
-#: includes/installation/class-wp-sports-manager-create-roles.php:86
+#: includes/installation/class-wpsm-create-roles.php:86
 msgctxt "User role"
 msgid "Coach"
 msgstr "Entraîneur"
 
-#: includes/installation/class-wp-sports-manager-create-roles.php:105
+#: includes/installation/class-wpsm-create-roles.php:105
 msgctxt "User role"
 msgid "Assistant"
 msgstr "Assistant"
 
-#: includes/installation/class-wp-sports-manager-create-roles.php:124
+#: includes/installation/class-wpsm-create-roles.php:124
 msgctxt "User role"
 msgid "Player"
 msgstr "Joueur"
 
-#: includes/installation/class-wp-sports-manager-create-roles.php:143
+#: includes/installation/class-wpsm-create-roles.php:143
 msgctxt "User role"
 msgid "Volunteer"
 msgstr "Volontaire"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:44
+#: includes/installation/class-wpsm-create-taxonomies.php:44
 msgctxt "taxonomy general name"
 msgid "Competitions"
 msgstr "Compétitions"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:45
+#: includes/installation/class-wpsm-create-taxonomies.php:45
 msgctxt "taxonomy singular name"
 msgid "Competition"
 msgstr "Compétition"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:46
+#: includes/installation/class-wpsm-create-taxonomies.php:46
 msgid "Search Competitions"
 msgstr "Recherche une compétition"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:47
+#: includes/installation/class-wpsm-create-taxonomies.php:47
 msgid "All Competitions"
 msgstr "Toutes les compétitions"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:48
+#: includes/installation/class-wpsm-create-taxonomies.php:48
 msgid "Parent Competition"
 msgstr "Compétition parent"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:49
+#: includes/installation/class-wpsm-create-taxonomies.php:49
 msgid "Parent Competition:"
 msgstr "Compétition parent :"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:50
+#: includes/installation/class-wpsm-create-taxonomies.php:50
 msgid "Edit Competition"
 msgstr "Éditer la compétition"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:51
+#: includes/installation/class-wpsm-create-taxonomies.php:51
 msgid "Update Competition"
 msgstr "Mettre à jour la compétition"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:52
+#: includes/installation/class-wpsm-create-taxonomies.php:52
 msgid "Add New Competition"
 msgstr "Ajouter une nouvelle compétition"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:53
+#: includes/installation/class-wpsm-create-taxonomies.php:53
 msgid "New Competition Name"
 msgstr "Nouveau nom de compétition"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:54
+#: includes/installation/class-wpsm-create-taxonomies.php:54
 msgid "Competition"
 msgstr "Compétition"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:74
+#: includes/installation/class-wpsm-create-taxonomies.php:74
 msgctxt "taxonomy general name"
 msgid "Typologies"
 msgstr "Typologies"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:75
+#: includes/installation/class-wpsm-create-taxonomies.php:75
 msgctxt "taxonomy singular name"
 msgid "Typologie"
 msgstr "Typologie"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:76
+#: includes/installation/class-wpsm-create-taxonomies.php:76
 msgid "Search Typologies"
 msgstr "Rechercher"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:77
+#: includes/installation/class-wpsm-create-taxonomies.php:77
 msgid "All Typologies"
 msgstr "Toutes les Typologies"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:78
+#: includes/installation/class-wpsm-create-taxonomies.php:78
 msgid "Parent Typologie"
 msgstr "Typologie parent"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:79
+#: includes/installation/class-wpsm-create-taxonomies.php:79
 msgid "Parent Typologie :"
 msgstr "Typologie parent :"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:80
+#: includes/installation/class-wpsm-create-taxonomies.php:80
 msgid "Edit Typologie"
 msgstr "Modifier la Typologie"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:81
+#: includes/installation/class-wpsm-create-taxonomies.php:81
 msgid "Update Typologie"
 msgstr "Mettre à jour la typologie"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:82
+#: includes/installation/class-wpsm-create-taxonomies.php:82
 msgid "Add New Typologie"
 msgstr "Ajouter une nouvelle typologie"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:83
+#: includes/installation/class-wpsm-create-taxonomies.php:83
 msgid "New Typologie Name"
 msgstr "Nouvelle typologie"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:84
+#: includes/installation/class-wpsm-create-taxonomies.php:84
 msgid "Typologie"
 msgstr "Typologie"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:104
+#: includes/installation/class-wpsm-create-taxonomies.php:104
 msgctxt "taxonomy general name"
 msgid "Seasons"
 msgstr "Saisons"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:105
+#: includes/installation/class-wpsm-create-taxonomies.php:105
 msgctxt "taxonomy singular name"
 msgid "Season"
 msgstr "Saison"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:106
+#: includes/installation/class-wpsm-create-taxonomies.php:106
 msgid "Search Seasons"
 msgstr "Recherche de saisons"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:107
+#: includes/installation/class-wpsm-create-taxonomies.php:107
 msgid "All Seasons"
 msgstr "Toutes les saisons"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:108
+#: includes/installation/class-wpsm-create-taxonomies.php:108
 msgid "Parent Season"
 msgstr "Saison parent"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:109
+#: includes/installation/class-wpsm-create-taxonomies.php:109
 msgid "Parent Season :"
 msgstr "Saison parent :"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:110
+#: includes/installation/class-wpsm-create-taxonomies.php:110
 msgid "Edit Season"
 msgstr "Éditer la saison"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:111
+#: includes/installation/class-wpsm-create-taxonomies.php:111
 msgid "Update Season"
 msgstr "Mettre à jour la saison"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:112
+#: includes/installation/class-wpsm-create-taxonomies.php:112
 msgid "Add New Season"
 msgstr "Ajouter une nouvelle saison"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:113
+#: includes/installation/class-wpsm-create-taxonomies.php:113
 msgid "New Season Name"
 msgstr "Nom de la nouvelle saison"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:114
+#: includes/installation/class-wpsm-create-taxonomies.php:114
 msgid "Season"
 msgstr "Saison"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:134
+#: includes/installation/class-wpsm-create-taxonomies.php:134
 msgctxt "taxonomy general name"
 msgid "Members typologies"
 msgstr "Typologies de membres"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:135
+#: includes/installation/class-wpsm-create-taxonomies.php:135
 msgctxt "taxonomy singular name"
 msgid "Members typology"
 msgstr "Typologie des membres"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:136
+#: includes/installation/class-wpsm-create-taxonomies.php:136
 msgid "Search Members typologies"
 msgstr "Recherche parmi les Membres"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:137
+#: includes/installation/class-wpsm-create-taxonomies.php:137
 msgid "All Members typologies"
 msgstr "Toutes les typologies de membres"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:138
+#: includes/installation/class-wpsm-create-taxonomies.php:138
 msgid "Parent Members typology"
 msgstr "Parent des typologies des membres"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:139
+#: includes/installation/class-wpsm-create-taxonomies.php:139
 msgid "Parent Members typology :"
 msgstr "Typologie des membres parents :"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:140
+#: includes/installation/class-wpsm-create-taxonomies.php:140
 msgid "Edit Members typology"
 msgstr "Modifier la typologie des membres"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:141
+#: includes/installation/class-wpsm-create-taxonomies.php:141
 msgid "Update Members typology"
 msgstr "Typologie des membres mise à jour"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:142
+#: includes/installation/class-wpsm-create-taxonomies.php:142
 msgid "Add New Members typology"
 msgstr "Ajouter la typologie de nouveaux membres"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:143
+#: includes/installation/class-wpsm-create-taxonomies.php:143
 msgid "New Members typology Name"
 msgstr "Typologie des membres parents :"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:144
+#: includes/installation/class-wpsm-create-taxonomies.php:144
 msgid "Members typology"
 msgstr "Typologie des membres"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:164
+#: includes/installation/class-wpsm-create-taxonomies.php:164
 msgctxt "taxonomy general name"
 msgid "Places"
 msgstr "Lieux"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:165
+#: includes/installation/class-wpsm-create-taxonomies.php:165
 msgctxt "taxonomy singular name"
 msgid "Place"
 msgstr "Lieu"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:166
+#: includes/installation/class-wpsm-create-taxonomies.php:166
 msgid "Search Places"
 msgstr "Rechercher un lieu"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:167
+#: includes/installation/class-wpsm-create-taxonomies.php:167
 msgid "All Places"
 msgstr "Tous les lieux"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:168
+#: includes/installation/class-wpsm-create-taxonomies.php:168
 msgid "Parent Place"
 msgstr "Lieu parent"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:169
+#: includes/installation/class-wpsm-create-taxonomies.php:169
 msgid "Parent Place :"
 msgstr "Lieu parent :"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:170
+#: includes/installation/class-wpsm-create-taxonomies.php:170
 msgid "Edit Place"
 msgstr "Editer un lieu"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:171
+#: includes/installation/class-wpsm-create-taxonomies.php:171
 msgid "Update Place"
 msgstr "Mettre à jour le lieu"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:172
+#: includes/installation/class-wpsm-create-taxonomies.php:172
 msgid "Add New Place"
 msgstr "Ajouter un lieu"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:173
+#: includes/installation/class-wpsm-create-taxonomies.php:173
 msgid "New Place Name"
 msgstr "Nouveau nom du lieu"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:174
+#: includes/installation/class-wpsm-create-taxonomies.php:174
 msgid "Place"
 msgstr "Lieu"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:194
+#: includes/installation/class-wpsm-create-taxonomies.php:194
 msgctxt "taxonomy general name"
 msgid "Club"
 msgstr "Club"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:195
+#: includes/installation/class-wpsm-create-taxonomies.php:195
 msgctxt "taxonomy singular name"
 msgid "Club"
 msgstr "Club"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:196
+#: includes/installation/class-wpsm-create-taxonomies.php:196
 msgid "Search Club"
 msgstr "Rechercher un club"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:197
+#: includes/installation/class-wpsm-create-taxonomies.php:197
 msgid "All Club"
 msgstr "Tous les clubs"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:198
+#: includes/installation/class-wpsm-create-taxonomies.php:198
 msgid "Parent Club"
 msgstr "Club parent"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:199
+#: includes/installation/class-wpsm-create-taxonomies.php:199
 msgid "Parent Club :"
 msgstr "Club parent :"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:200
+#: includes/installation/class-wpsm-create-taxonomies.php:200
 msgid "Edit Club"
 msgstr "Modifier le club"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:201
+#: includes/installation/class-wpsm-create-taxonomies.php:201
 msgid "Update Club"
 msgstr "Mettre à jour le club"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:202
+#: includes/installation/class-wpsm-create-taxonomies.php:202
 msgid "Add New Club"
 msgstr "Ajouter un nouveau club"
 
-#: includes/installation/class-wp-sports-manager-create-taxonomies.php:203
+#: includes/installation/class-wpsm-create-taxonomies.php:203
 msgid "New Club Name"
 msgstr "Ajouter nouveau club"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:204
+msgid "Club"
+msgstr "Club"
+
+#: includes/vendors/cmb2-attached-posts/example-field-setup.php:22
+#: includes/vendors/cmb2-attached-posts/example-field-setup.php:30
+msgid "Attached Posts"
+msgstr ""
+
+#: includes/vendors/cmb2-attached-posts/init.php:72
+#, php-format
+msgid "Filter %s"
+msgstr ""
+
+#: includes/vendors/cmb2-attached-posts/init.php:94
+#, php-format
+msgid "Available %s"
+msgstr ""
+
+#: includes/vendors/cmb2-attached-posts/init.php:122
+#: includes/vendors/cmb2-attached-posts/init.php:200
+msgid "Edit"
+msgstr ""
+
+#: includes/vendors/cmb2-attached-posts/init.php:132
+#, php-format
+msgid "Attached %s"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:374
+msgid "About Page Metabox"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:467
+msgid "User Profile Metabox"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:474
+#: includes/vendors/cmb2/example-functions.php:544
+msgid "Extra Info"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:482
+msgid "Avatar"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:489
+msgid "Facebook URL"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:496
+msgid "Twitter URL"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:503
+msgid "Google+ URL"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:510
+msgid "Linkedin URL"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:517
+msgid "User Field"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:537
+msgid "Category Metabox"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:552
+msgid "Term Image"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:559
+msgid "Arbitrary Term Field"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:581
+msgid "Theme Options Metabox"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:596
+msgid "Site Background Color"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2.php:122
+msgid "Metabox configuration is required to have an ID parameter"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2.php:375
+msgid "Click to toggle"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Ajax.php:65
+msgid "Please Try Again"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Ajax.php:155
+#: includes/vendors/cmb2/tests/cmb-tests-base.php:51
+#: includes/vendors/cmb2/tests/test-cmb-ajax.php:75
+msgid "Remove Embed"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Ajax.php:159
+#: includes/vendors/cmb2/tests/cmb-tests-base.php:57
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Field.php:1030
+msgid "Add Group"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Field.php:1031
+msgid "Remove Group"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Field.php:1053
+#: includes/vendors/cmb2/includes/CMB2_Field.php:1057
+#: includes/vendors/cmb2/tests/test-cmb-field.php:265
+msgid "None"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:86
+#: includes/vendors/cmb2/includes/CMB2_JS.php:119
+msgid "Clear"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:87
+msgid "Default"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:88
+msgid "Select Color"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:89
+msgid "Current Color"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:109
+msgctxt "Valid formatDate string for jquery-ui datepicker"
+msgid "mm/dd/yy"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:110
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:111
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:112
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:113
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:114
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:115
+msgid "Next"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:116
+msgid "Prev"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:117
+msgid "Today"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:118
+#: includes/vendors/cmb2/includes/CMB2_JS.php:128
+msgid "Done"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:122
+msgid "Choose Time"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:123
+msgid "Time"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:124
+msgid "Hour"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:125
+msgid "Minute"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:126
+msgid "Second"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:127
+msgid "Now"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:129
+msgctxt ""
+"Valid formatting string, as per http://trentrichardson.com/examples/"
+"timepicker/"
+msgid "hh:mm TT"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:135
+msgid "Use this file"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:136
+msgid "Use these files"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:137
+#: includes/vendors/cmb2/includes/CMB2_Types.php:1021
+msgid "Remove Image"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:138
+#: includes/vendors/cmb2/includes/CMB2_Types.php:357
+#: includes/vendors/cmb2/includes/CMB2_Types.php:1040
+#: includes/vendors/cmb2/tests/test-cmb-types.php:155
+#: includes/vendors/cmb2/tests/test-cmb-types.php:163
+#: includes/vendors/cmb2/tests/test-cmb-types.php:780
+#: includes/vendors/cmb2/tests/test-cmb-types.php:807
+msgid "Remove"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:139
+#: includes/vendors/cmb2/includes/CMB2_Types.php:1035
+#: includes/vendors/cmb2/tests/test-cmb-types.php:780
+#: includes/vendors/cmb2/tests/test-cmb-types.php:807
+msgid "File:"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:140
+#: includes/vendors/cmb2/includes/CMB2_Types.php:1038
+#: includes/vendors/cmb2/tests/test-cmb-types.php:780
+#: includes/vendors/cmb2/tests/test-cmb-types.php:807
+msgid "Download"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_JS.php:141
+msgid "Select / Deselect All"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Types.php:298
+msgid "Add Row"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Types.php:768
+#: includes/vendors/cmb2/includes/CMB2_Types.php:816
+msgid "No terms"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_Types.php:884
+#: includes/vendors/cmb2/tests/test-cmb-types.php:737
+#: includes/vendors/cmb2/tests/test-cmb-types.php:761
+msgid "Add or Upload Files"
+msgstr "Ajoutez ou téléchargez des fichiers"
+
+#: includes/vendors/cmb2/includes/CMB2_Types.php:945
+#: includes/vendors/cmb2/tests/test-cmb-types.php:789
+#: includes/vendors/cmb2/tests/test-cmb-types.php:807
+msgid "Add or Upload File"
+msgstr "Ajoutez ou charger un fichier"
+
+#: includes/vendors/cmb2/includes/CMB2_hookup.php:120
+msgid ""
+"Term Metadata is a WordPress > 4.4 feature. Please upgrade your WordPress "
+"install."
+msgstr ""
+
+#: includes/vendors/cmb2/includes/CMB2_hookup.php:124
+msgid "Term metaboxes configuration requires a 'taxonomies' parameter"
+msgstr ""
+
+#: includes/vendors/cmb2/includes/helper-functions.php:250
+msgid "Save"
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "WP Sports Manager"

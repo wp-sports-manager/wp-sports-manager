@@ -141,6 +141,7 @@ class WP_Sports_Manager {
 		if ( is_admin() ) {
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/CMB2/init.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb2-attached-posts/cmb2-attached-posts-field.php';
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb2-teams-to-match/cmb2-attached-teams-match.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb_field_map/cmb-field-map.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-taxonomies.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-matchs-fields.php';
