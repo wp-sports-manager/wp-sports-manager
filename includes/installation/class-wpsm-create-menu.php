@@ -305,87 +305,87 @@ class WP_Sports_Manager_Create_Menu {
 		 * Tournaments menu
 		 *
 		 */
-		$tournaments_page = add_menu_page( 
+		// $tournaments_page = add_menu_page( 
 
-			__('Tournaments',' wp-sports-manager'), 
-			__('Tournaments', 'wp-sports-manager'), 
-				'manage_options', 
-				'wpsm-tournaments',
-				array( &$this, 'tournaments' ),
-				'dashicons-networking',
-				$this->order['tournaments']	
-		); 
+		// 	__('Tournaments',' wp-sports-manager'), 
+		// 	__('Tournaments', 'wp-sports-manager'), 
+		// 		'manage_options', 
+		// 		'wpsm-tournaments',
+		// 		array( &$this, 'tournaments' ),
+		// 		'dashicons-networking',
+		// 		$this->order['tournaments']	
+		// ); 
 
-				/**
-				 * Add Matchs
-				 *
-				 */
-				add_submenu_page( 
+		// 		/**
+		// 		 * Add Matchs
+		// 		 *
+		// 		 */
+		// 		add_submenu_page( 
 
-					'wpsm-tournaments',
-					__('Add'), 
-					__('Add'), 
-						'edit_posts', 
-						'post-new.php?post_type=wpsm_tournaments'
+		// 			'wpsm-tournaments',
+		// 			__('Add'), 
+		// 			__('Add'), 
+		// 				'edit_posts', 
+		// 				'post-new.php?post_type=wpsm_tournaments'
 
-				); 
+		// 		); 
 
-				/**
-				 * Add Competitions
-				 *
-				 */
-				add_submenu_page( 
+		// 		/**
+		// 		 * Add Competitions
+		// 		 *
+		// 		 */
+		// 		add_submenu_page( 
 
-					'wpsm-tournaments',
-					__('Competitions', 'wp-sports-manager'), 
-					__('Competitions', 'wp-sports-manager'),
-						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_competition&post_type=wpsm_tournaments'
+		// 			'wpsm-tournaments',
+		// 			__('Competitions', 'wp-sports-manager'), 
+		// 			__('Competitions', 'wp-sports-manager'),
+		// 				'edit_posts', 
+		// 				'edit-tags.php?taxonomy=wpsm_competition&post_type=wpsm_tournaments'
 
-				); 
+		// 		); 
 
-				/**
-				 * Add seasons
-				 *
-				 */
-				add_submenu_page( 
+		// 		*
+		// 		 * Add seasons
+		// 		 *
+				 
+		// 		add_submenu_page( 
 
-					'wpsm-tournaments',
-					__('Seasons', 'wp-sports-manager'), 
-					__('Seasons', 'wp-sports-manager'),
-						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_season&post_type=wpsm_tournaments'
+		// 			'wpsm-tournaments',
+		// 			__('Seasons', 'wp-sports-manager'), 
+		// 			__('Seasons', 'wp-sports-manager'),
+		// 				'edit_posts', 
+		// 				'edit-tags.php?taxonomy=wpsm_season&post_type=wpsm_tournaments'
 
-				); 
+		// 		); 
 
-				/**
-				 * Add places
-				 *
-				 */
-				add_submenu_page( 
+		// 		/**
+		// 		 * Add places
+		// 		 *
+		// 		 */
+		// 		add_submenu_page( 
 
-					'wpsm-tournaments',
-					__('Places', 'wp-sports-manager'), 
-					__('Places', 'wp-sports-manager'),
-						'edit_posts', 
-						'edit-tags.php?taxonomy=wpsm_place&post_type=wpsm_tournaments'
+		// 			'wpsm-tournaments',
+		// 			__('Places', 'wp-sports-manager'), 
+		// 			__('Places', 'wp-sports-manager'),
+		// 				'edit_posts', 
+		// 				'edit-tags.php?taxonomy=wpsm_place&post_type=wpsm_tournaments'
 
-				); 
+		// 		); 
 
-				/**
-				 * Settings Tournaments
-				 *
-				 */
-				add_submenu_page( 
+		// 		/**
+		// 		 * Settings Tournaments
+		// 		 *
+		// 		 */
+		// 		add_submenu_page( 
 
-					'wpsm-tournaments',
-					__('Settings',' wp-sports-manager'), 
-					__('Settings', 'wp-sports-manager'), 
-						'manage_options', 
-						'wpsm-settings',
-						array( &$this, 'settingsTournaments' )
+		// 			'wpsm-tournaments',
+		// 			__('Settings',' wp-sports-manager'), 
+		// 			__('Settings', 'wp-sports-manager'), 
+		// 				'manage_options', 
+		// 				'wpsm-settings',
+		// 				array( &$this, 'settingsTournaments' )
 
-				); 
+		// 		); 
 
 		// /**
 		//  * Opponents menu
@@ -434,43 +434,43 @@ class WP_Sports_Manager_Create_Menu {
 		 * Members menu
 		 *
 		 */
-		$members_page = add_menu_page( 
+		// $members_page = add_menu_page( 
 
-			__('Club Members',' wp-sports-manager'), 
-			__('Club Members', 'wp-sports-manager'), 
-				'manage_options', 
-				'wpsm-members',
-				array( &$this, 'members' ),	
-				'dashicons-id-alt',
-				$this->order['members']	
-		); 
-				/**
-				 * Add Matchs
-				 *
-				 */
-				add_submenu_page( 
+		// 	__('Club Members',' wp-sports-manager'), 
+		// 	__('Club Members', 'wp-sports-manager'), 
+		// 		'manage_options', 
+		// 		'wpsm-members',
+		// 		array( &$this, 'members' ),	
+		// 		'dashicons-id-alt',
+		// 		$this->order['members']	
+		// ); 
+		// 		/**
+		// 		 * Add Matchs
+		// 		 *
+		// 		 */
+		// 		add_submenu_page( 
 
-					'wpsm-members',
-					__('Add'), 
-					__('Add'), 
-						'edit_posts', 
-						'post-new.php?post_type=wpsm_members'
+		// 			'wpsm-members',
+		// 			__('Add'), 
+		// 			__('Add'), 
+		// 				'edit_posts', 
+		// 				'post-new.php?post_type=wpsm_members'
 
-				); 
-				/**
-				 * Settings Teams
-				 *
-				 */
-				add_submenu_page( 
+		// 		); 
+		// 		/**
+		// 		 * Settings Teams
+		// 		 *
+		// 		 */
+		// 		add_submenu_page( 
 
-					'wpsm-members',
-					__('Settings',' wp-sports-manager'), 
-					__('Settings', 'wp-sports-manager'), 
-						'manage_options', 
-						'wpsm-members',
-						array( &$this, 'settingsMembers' )
+		// 			'wpsm-members',
+		// 			__('Settings',' wp-sports-manager'), 
+		// 			__('Settings', 'wp-sports-manager'), 
+		// 				'manage_options', 
+		// 				'wpsm-members',
+		// 				array( &$this, 'settingsMembers' )
 
-				); 
+		// 		); 
 
 	}
 

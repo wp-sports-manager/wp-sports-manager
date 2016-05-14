@@ -59,25 +59,7 @@ class WP_Sports_Manager_Admin_Taxonomies {
 		// add_action('category_edit_form', 'category_edit_form');
 		// add_action('category_add_form_fields','category_edit_form_fields');
 		// add_action('category_add_form','category_edit_form');
-		add_action('add_meta_boxes',array( $this, 'init_metabox'));
-		add_action('save_post',array( $this, 'save_metabox'));
 	}
-
-
-		public function init_metabox(){
-		  add_meta_box('url_crea', 'URL du site', 'url_crea', 'wpsm_matchs', 'normal');
-		}
-
-		public function url_crea($post){
-		  $url = get_post_meta($post->ID,'_url_crea',true);
-		  echo '<label for="url_meta">URL du site cré :</label>';
-		  echo '<input id="url_meta" type="url" name="url_site" value="'.$url.'" />';
-		}
-
-		public function save_metabox($post_id){
-		if(isset($_POST['url_site']))
-		  update_post_meta($post_id, '_url_crea', esc_url($_POST['url_site']));
-		}
 
 	/**
 	 * Add wpsm place fields.

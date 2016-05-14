@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Sports Manager\n"
-"POT-Creation-Date: 2016-05-07 23:19+0200\n"
-"PO-Revision-Date: 2016-05-07 23:21+0200\n"
+"POT-Creation-Date: 2016-05-14 16:20+0200\n"
+"PO-Revision-Date: 2016-05-14 16:20+0200\n"
 "Last-Translator: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language-Team: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language: fr_FR\n"
@@ -38,6 +38,7 @@ msgstr "Equipe"
 #: includes/admin/class-wpsm-admin-matchs-fields.php:59
 #: includes/admin/class-wpsm-admin-matchs-fields.php:72
 #: includes/vendors/cmb2-attached-posts/example-field-setup.php:31
+#: includes/vendors/cmb2-teams-to-match/example-field-setup.php:31
 msgid ""
 "Drag posts from the left column to the right column to attach them to this "
 "page.<br />You may rearrange the order of the posts in the right column by "
@@ -45,334 +46,81 @@ msgid ""
 msgstr ""
 
 #: includes/admin/class-wpsm-admin-matchs-fields.php:71
-#: includes/installation/class-wpsm-create-custom-post-type.php:161
-msgid "Opponent"
-msgstr "Adversaire"
+#: includes/installation/class-wpsm-create-custom-post-type.php:160
+msgid "Opponents"
+msgstr "Adversaires"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:83
-#: includes/vendors/cmb2/example-functions.php:91
-#: includes/vendors/cmb2/example-functions.php:383
-msgid "Test Text"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:54
+msgid "Personal profil"
+msgstr "Profil personnel"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:84
-#: includes/admin/class-wpsm-admin-matchs-fields.php:95
-#: includes/admin/class-wpsm-admin-matchs-fields.php:103
-#: includes/admin/class-wpsm-admin-matchs-fields.php:111
-#: includes/admin/class-wpsm-admin-matchs-fields.php:120
-#: includes/admin/class-wpsm-admin-matchs-fields.php:128
-#: includes/admin/class-wpsm-admin-matchs-fields.php:143
-#: includes/admin/class-wpsm-admin-matchs-fields.php:151
-#: includes/admin/class-wpsm-admin-matchs-fields.php:159
-#: includes/admin/class-wpsm-admin-matchs-fields.php:176
-#: includes/admin/class-wpsm-admin-matchs-fields.php:185
-#: includes/admin/class-wpsm-admin-matchs-fields.php:198
-#: includes/admin/class-wpsm-admin-matchs-fields.php:205
-#: includes/admin/class-wpsm-admin-matchs-fields.php:212
-#: includes/admin/class-wpsm-admin-matchs-fields.php:226
-#: includes/admin/class-wpsm-admin-matchs-fields.php:239
-#: includes/admin/class-wpsm-admin-matchs-fields.php:252
-#: includes/admin/class-wpsm-admin-matchs-fields.php:264
-#: includes/admin/class-wpsm-admin-matchs-fields.php:273
-#: includes/admin/class-wpsm-admin-matchs-fields.php:281
-#: includes/admin/class-wpsm-admin-matchs-fields.php:290
-#: includes/admin/class-wpsm-admin-matchs-fields.php:297
-#: includes/admin/class-wpsm-admin-matchs-fields.php:311
-#: includes/vendors/cmb2/example-functions.php:92
-#: includes/vendors/cmb2/example-functions.php:104
-#: includes/vendors/cmb2/example-functions.php:112
-#: includes/vendors/cmb2/example-functions.php:120
-#: includes/vendors/cmb2/example-functions.php:129
-#: includes/vendors/cmb2/example-functions.php:137
-#: includes/vendors/cmb2/example-functions.php:152
-#: includes/vendors/cmb2/example-functions.php:160
-#: includes/vendors/cmb2/example-functions.php:168
-#: includes/vendors/cmb2/example-functions.php:185
-#: includes/vendors/cmb2/example-functions.php:194
-#: includes/vendors/cmb2/example-functions.php:207
-#: includes/vendors/cmb2/example-functions.php:214
-#: includes/vendors/cmb2/example-functions.php:221
-#: includes/vendors/cmb2/example-functions.php:235
-#: includes/vendors/cmb2/example-functions.php:248
-#: includes/vendors/cmb2/example-functions.php:261
-#: includes/vendors/cmb2/example-functions.php:273
-#: includes/vendors/cmb2/example-functions.php:282
-#: includes/vendors/cmb2/example-functions.php:290
-#: includes/vendors/cmb2/example-functions.php:299
-#: includes/vendors/cmb2/example-functions.php:306
-#: includes/vendors/cmb2/example-functions.php:320
-#: includes/vendors/cmb2/example-functions.php:384
-#: includes/vendors/cmb2/example-functions.php:475
-#: includes/vendors/cmb2/example-functions.php:483
-#: includes/vendors/cmb2/example-functions.php:490
-#: includes/vendors/cmb2/example-functions.php:497
-#: includes/vendors/cmb2/example-functions.php:504
-#: includes/vendors/cmb2/example-functions.php:511
-#: includes/vendors/cmb2/example-functions.php:518
-#: includes/vendors/cmb2/example-functions.php:545
-#: includes/vendors/cmb2/example-functions.php:553
-#: includes/vendors/cmb2/example-functions.php:560
-#: includes/vendors/cmb2/example-functions.php:597
-#: includes/vendors/cmb2/tests/test-cmb-field.php:305
-msgid "field description (optional)"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:71
+msgid "First Name"
+msgstr "Prénom"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:94
-#: includes/vendors/cmb2/example-functions.php:103
-msgid "Test Text Small"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:73
+#: includes/admin/class-wpsm-admin-members-fields.php:79
+msgid "used for login : firstname.lastname"
+msgstr "Utilisé pour la connexion: prénom.nom"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:102
-#: includes/vendors/cmb2/example-functions.php:111
-msgid "Test Text Medium"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:78
+msgid "Last Name"
+msgstr "Nom"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:110
-#: includes/vendors/cmb2/example-functions.php:119
-msgid "Website URL"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:85
+msgid "Nickname"
+msgstr "Surnom"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:119
-#: includes/vendors/cmb2/example-functions.php:128
-msgid "Test Text Email"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:91
+msgid "Phone"
+msgstr "Téléphone"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:127
-#: includes/vendors/cmb2/example-functions.php:136
-msgid "Test Time"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:97
+msgid "Email"
+msgstr "Email"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:135
-#: includes/admin/class-wpsm-admin-matchs-fields.php:136
-#: includes/vendors/cmb2/example-functions.php:144
-#: includes/vendors/cmb2/example-functions.php:145
-msgid "Time zone"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:119
+msgid "Player profil"
+msgstr "Profil du joueur"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:142
-#: includes/vendors/cmb2/example-functions.php:151
-msgid "Test Date Picker"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:125
+msgid "Role"
+msgstr "Rôle"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:150
-#: includes/vendors/cmb2/example-functions.php:159
-msgid "Test Date Picker (UNIX timestamp)"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:130
+#: includes/sports/wpsm_baseball.php:166
+msgid "Sorry, no terms could be found."
+msgstr "Désolé, aucun terme n’a pu être trouvée."
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:158
-#: includes/vendors/cmb2/example-functions.php:167
-msgid "Test Date/Time Picker Combo (UNIX timestamp)"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:135
+msgid "Birthday"
+msgstr "Date de naissance"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:175
-#: includes/vendors/cmb2/example-functions.php:184
-msgid "Test Money"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:147
+msgid "Arrival date"
+msgstr "Date d’arrivée"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:184
-#: includes/vendors/cmb2/example-functions.php:193
-msgid "Test Color Picker"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:159
+msgid "License Number"
+msgstr "Numéro de licence"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:197
-#: includes/vendors/cmb2/example-functions.php:206
-msgid "Test Text Area"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:165
+msgid "License validity"
+msgstr "Validité de la licence"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:204
-#: includes/vendors/cmb2/example-functions.php:213
-msgid "Test Text Area Small"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:167
+msgid "until"
+msgstr "Jusque"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:211
-#: includes/vendors/cmb2/example-functions.php:220
-msgid "Test Text Area for Code"
-msgstr ""
+#: includes/admin/class-wpsm-admin-members-fields.php:177
+msgid "Photo"
+msgstr "Photo"
 
-#: includes/admin/class-wpsm-admin-matchs-fields.php:218
-#: includes/vendors/cmb2/example-functions.php:227
-msgid "Test Title Weeeee"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:219
-#: includes/vendors/cmb2/example-functions.php:228
-msgid "This is a title description"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:225
-#: includes/vendors/cmb2/example-functions.php:234
-msgid "Test Select"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:231
-#: includes/admin/class-wpsm-admin-matchs-fields.php:244
-#: includes/admin/class-wpsm-admin-matchs-fields.php:256
-#: includes/vendors/cmb2/example-functions.php:240
-#: includes/vendors/cmb2/example-functions.php:253
-#: includes/vendors/cmb2/example-functions.php:265
-msgid "Option One"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:232
-#: includes/admin/class-wpsm-admin-matchs-fields.php:245
-#: includes/admin/class-wpsm-admin-matchs-fields.php:257
-#: includes/vendors/cmb2/example-functions.php:241
-#: includes/vendors/cmb2/example-functions.php:254
-#: includes/vendors/cmb2/example-functions.php:266
-msgid "Option Two"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:233
-#: includes/admin/class-wpsm-admin-matchs-fields.php:246
-#: includes/admin/class-wpsm-admin-matchs-fields.php:258
-#: includes/vendors/cmb2/example-functions.php:242
-#: includes/vendors/cmb2/example-functions.php:255
-#: includes/vendors/cmb2/example-functions.php:267
-msgid "Option Three"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:238
-#: includes/vendors/cmb2/example-functions.php:247
-msgid "Test Radio inline"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:251
-#: includes/vendors/cmb2/example-functions.php:260
-msgid "Test Radio"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:263
-#: includes/vendors/cmb2/example-functions.php:272
-msgid "Test Taxonomy Radio"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:272
-#: includes/vendors/cmb2/example-functions.php:281
-msgid "Test Taxonomy Select"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:280
-#: includes/vendors/cmb2/example-functions.php:289
-msgid "Test Taxonomy Multi Checkbox"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:289
-#: includes/vendors/cmb2/example-functions.php:298
-msgid "Test Checkbox"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:296
-#: includes/vendors/cmb2/example-functions.php:305
-#: includes/vendors/cmb2/tests/test-cmb-field.php:304
-msgid "Test Multi Checkbox"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:302
-#: includes/vendors/cmb2/example-functions.php:311
-#: includes/vendors/cmb2/tests/test-cmb-field.php:310
-msgid "Check One"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:303
-#: includes/vendors/cmb2/example-functions.php:312
-#: includes/vendors/cmb2/tests/test-cmb-field.php:311
-msgid "Check Two"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:304
-#: includes/vendors/cmb2/example-functions.php:313
-#: includes/vendors/cmb2/tests/test-cmb-field.php:312
-msgid "Check Three"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:310
-#: includes/vendors/cmb2/example-functions.php:319
-msgid "Test wysiwyg"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:318
-#: includes/vendors/cmb2/example-functions.php:327
-msgid "Test Image"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:319
+#: includes/admin/class-wpsm-admin-members-fields.php:178
 #: includes/admin/class-wpsm-admin-opponents-fields.php:55
 #: includes/vendors/cmb2/example-functions.php:328
 msgid "Upload an image or enter a URL."
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:325
-#: includes/vendors/cmb2/example-functions.php:334
-msgid "Multiple Files"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:326
-#: includes/vendors/cmb2/example-functions.php:335
-msgid "Upload or add multiple images/attachments."
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:333
-#: includes/vendors/cmb2/example-functions.php:342
-msgid "oEmbed"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:334
-#: includes/vendors/cmb2/example-functions.php:343
-msgid ""
-"Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
-"href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress.org/"
-"Embeds</a>."
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:356
-#: includes/vendors/cmb2/example-functions.php:403
-msgid "Repeating Field Group"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:364
-#: includes/vendors/cmb2/example-functions.php:411
-msgid "Generates reusable form entries"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:366
-#: includes/vendors/cmb2/example-functions.php:413
-msgid "Entry {#}"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:367
-#: includes/vendors/cmb2/example-functions.php:414
-msgid "Add Another Entry"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:368
-#: includes/vendors/cmb2/example-functions.php:415
-msgid "Remove Entry"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:381
-#: includes/vendors/cmb2/example-functions.php:428
-msgid "Entry Title"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:388
-#: includes/vendors/cmb2/example-functions.php:435
-msgid "Description"
-msgstr "Description"
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:389
-#: includes/vendors/cmb2/example-functions.php:436
-msgid "Write a short description for this entry"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:395
-#: includes/vendors/cmb2/example-functions.php:442
-msgid "Entry Image"
-msgstr ""
-
-#: includes/admin/class-wpsm-admin-matchs-fields.php:401
-#: includes/vendors/cmb2/example-functions.php:448
-msgid "Image Caption"
-msgstr ""
+msgstr "Ajouter une image ou entrer une URL."
 
 #: includes/admin/class-wpsm-admin-opponents-fields.php:48
 msgid "Opponents informations"
@@ -394,26 +142,26 @@ msgstr "Déplacez le marqueur pour définir le lieu exact"
 msgid "Name of your opponent"
 msgstr "Nom de l’adversaire"
 
-#: includes/admin/class-wpsm-admin-taxonomies.php:125
-#: includes/admin/class-wpsm-admin-taxonomies.php:152
+#: includes/admin/class-wpsm-admin-taxonomies.php:107
+#: includes/admin/class-wpsm-admin-taxonomies.php:134
 msgid "Address"
 msgstr "Adresse"
 
-#: includes/admin/class-wpsm-admin-taxonomies.php:127
-#: includes/admin/class-wpsm-admin-taxonomies.php:155
+#: includes/admin/class-wpsm-admin-taxonomies.php:109
+#: includes/admin/class-wpsm-admin-taxonomies.php:137
 msgid ""
 "Address is used by your public or opponent to found you. Be most precise."
 msgstr ""
 "L’adresse est utilisée par votre public ou adversaire pour vous trouver. "
 "Soyez le plus précis possible."
 
-#: includes/admin/class-wpsm-admin-taxonomies.php:130
-#: includes/admin/class-wpsm-admin-taxonomies.php:159
+#: includes/admin/class-wpsm-admin-taxonomies.php:112
+#: includes/admin/class-wpsm-admin-taxonomies.php:141
 msgid "Latitude"
 msgstr "Latitude"
 
-#: includes/admin/class-wpsm-admin-taxonomies.php:134
-#: includes/admin/class-wpsm-admin-taxonomies.php:165
+#: includes/admin/class-wpsm-admin-taxonomies.php:116
+#: includes/admin/class-wpsm-admin-taxonomies.php:147
 msgid "Longitude"
 msgstr "Longitude"
 
@@ -480,9 +228,9 @@ msgstr "Ajouter un nouveau match"
 msgid "Edit Match"
 msgstr "Modifier le match"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:160
-msgid "Opponents"
-msgstr "Adversaires"
+#: includes/installation/class-wpsm-create-custom-post-type.php:161
+msgid "Opponent"
+msgstr "Adversaire"
 
 #: includes/installation/class-wpsm-create-custom-post-type.php:162
 msgid "Add New Opponent"
@@ -511,8 +259,6 @@ msgid "Edit Training"
 msgstr "Modifier l’entraînement "
 
 #: includes/installation/class-wpsm-create-custom-post-type.php:259
-#: includes/installation/class-wpsm-create-menu.php:310
-#: includes/installation/class-wpsm-create-menu.php:311
 msgid "Tournaments"
 msgstr "Tournois"
 
@@ -561,10 +307,6 @@ msgstr "Tableau de bord"
 #: includes/installation/class-wpsm-create-menu.php:226
 #: includes/installation/class-wpsm-create-menu.php:296
 #: includes/installation/class-wpsm-create-menu.php:297
-#: includes/installation/class-wpsm-create-menu.php:382
-#: includes/installation/class-wpsm-create-menu.php:383
-#: includes/installation/class-wpsm-create-menu.php:467
-#: includes/installation/class-wpsm-create-menu.php:468
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -579,17 +321,11 @@ msgstr "Matchs"
 #: includes/installation/class-wpsm-create-menu.php:213
 #: includes/installation/class-wpsm-create-menu.php:254
 #: includes/installation/class-wpsm-create-menu.php:255
-#: includes/installation/class-wpsm-create-menu.php:326
-#: includes/installation/class-wpsm-create-menu.php:327
-#: includes/installation/class-wpsm-create-menu.php:454
-#: includes/installation/class-wpsm-create-menu.php:455
 msgid "Add"
 msgstr "Ajouter"
 
 #: includes/installation/class-wpsm-create-menu.php:141
 #: includes/installation/class-wpsm-create-menu.php:142
-#: includes/installation/class-wpsm-create-menu.php:340
-#: includes/installation/class-wpsm-create-menu.php:341
 msgid "Competitions"
 msgstr "Compétitions"
 
@@ -597,8 +333,6 @@ msgstr "Compétitions"
 #: includes/installation/class-wpsm-create-menu.php:156
 #: includes/installation/class-wpsm-create-menu.php:268
 #: includes/installation/class-wpsm-create-menu.php:269
-#: includes/installation/class-wpsm-create-menu.php:354
-#: includes/installation/class-wpsm-create-menu.php:355
 msgid "Seasons"
 msgstr "Saisons"
 
@@ -606,8 +340,6 @@ msgstr "Saisons"
 #: includes/installation/class-wpsm-create-menu.php:170
 #: includes/installation/class-wpsm-create-menu.php:282
 #: includes/installation/class-wpsm-create-menu.php:283
-#: includes/installation/class-wpsm-create-menu.php:368
-#: includes/installation/class-wpsm-create-menu.php:369
 msgid "Places"
 msgstr "Lieux"
 
@@ -615,11 +347,6 @@ msgstr "Lieux"
 #: includes/installation/class-wpsm-create-menu.php:198
 msgid "Teams"
 msgstr "Équipes"
-
-#: includes/installation/class-wpsm-create-menu.php:439
-#: includes/installation/class-wpsm-create-menu.php:440
-msgid "Club Members"
-msgstr "Membres du Club"
 
 #: includes/installation/class-wpsm-create-roles.php:48
 msgctxt "User role"
@@ -651,309 +378,648 @@ msgctxt "User role"
 msgid "Volunteer"
 msgstr "Volontaire"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:44
+#: includes/installation/class-wpsm-create-taxonomies.php:47
 msgctxt "taxonomy general name"
 msgid "Competitions"
 msgstr "Compétitions"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:45
+#: includes/installation/class-wpsm-create-taxonomies.php:48
 msgctxt "taxonomy singular name"
 msgid "Competition"
 msgstr "Compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:46
+#: includes/installation/class-wpsm-create-taxonomies.php:49
 msgid "Search Competitions"
 msgstr "Recherche une compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:47
+#: includes/installation/class-wpsm-create-taxonomies.php:50
 msgid "All Competitions"
 msgstr "Toutes les compétitions"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:48
+#: includes/installation/class-wpsm-create-taxonomies.php:51
 msgid "Parent Competition"
 msgstr "Compétition parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:49
+#: includes/installation/class-wpsm-create-taxonomies.php:52
 msgid "Parent Competition:"
 msgstr "Compétition parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:50
+#: includes/installation/class-wpsm-create-taxonomies.php:53
 msgid "Edit Competition"
 msgstr "Éditer la compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:51
+#: includes/installation/class-wpsm-create-taxonomies.php:54
 msgid "Update Competition"
 msgstr "Mettre à jour la compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:52
+#: includes/installation/class-wpsm-create-taxonomies.php:55
 msgid "Add New Competition"
 msgstr "Ajouter une nouvelle compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:53
+#: includes/installation/class-wpsm-create-taxonomies.php:56
 msgid "New Competition Name"
 msgstr "Nouveau nom de compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:54
+#: includes/installation/class-wpsm-create-taxonomies.php:57
 msgid "Competition"
 msgstr "Compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:74
+#: includes/installation/class-wpsm-create-taxonomies.php:77
 msgctxt "taxonomy general name"
 msgid "Typologies"
 msgstr "Typologies"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:75
+#: includes/installation/class-wpsm-create-taxonomies.php:78
 msgctxt "taxonomy singular name"
 msgid "Typologie"
 msgstr "Typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:76
+#: includes/installation/class-wpsm-create-taxonomies.php:79
 msgid "Search Typologies"
 msgstr "Rechercher"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:77
+#: includes/installation/class-wpsm-create-taxonomies.php:80
 msgid "All Typologies"
 msgstr "Toutes les Typologies"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:78
+#: includes/installation/class-wpsm-create-taxonomies.php:81
 msgid "Parent Typologie"
 msgstr "Typologie parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:79
+#: includes/installation/class-wpsm-create-taxonomies.php:82
 msgid "Parent Typologie :"
 msgstr "Typologie parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:80
+#: includes/installation/class-wpsm-create-taxonomies.php:83
 msgid "Edit Typologie"
 msgstr "Modifier la Typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:81
+#: includes/installation/class-wpsm-create-taxonomies.php:84
 msgid "Update Typologie"
 msgstr "Mettre à jour la typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:82
+#: includes/installation/class-wpsm-create-taxonomies.php:85
 msgid "Add New Typologie"
 msgstr "Ajouter une nouvelle typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:83
+#: includes/installation/class-wpsm-create-taxonomies.php:86
 msgid "New Typologie Name"
 msgstr "Nouvelle typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:84
+#: includes/installation/class-wpsm-create-taxonomies.php:87
 msgid "Typologie"
 msgstr "Typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:104
+#: includes/installation/class-wpsm-create-taxonomies.php:107
 msgctxt "taxonomy general name"
 msgid "Seasons"
 msgstr "Saisons"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:105
+#: includes/installation/class-wpsm-create-taxonomies.php:108
 msgctxt "taxonomy singular name"
 msgid "Season"
 msgstr "Saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:106
+#: includes/installation/class-wpsm-create-taxonomies.php:109
 msgid "Search Seasons"
 msgstr "Recherche de saisons"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:107
+#: includes/installation/class-wpsm-create-taxonomies.php:110
 msgid "All Seasons"
 msgstr "Toutes les saisons"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:108
+#: includes/installation/class-wpsm-create-taxonomies.php:111
 msgid "Parent Season"
 msgstr "Saison parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:109
+#: includes/installation/class-wpsm-create-taxonomies.php:112
 msgid "Parent Season :"
 msgstr "Saison parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:110
+#: includes/installation/class-wpsm-create-taxonomies.php:113
 msgid "Edit Season"
 msgstr "Éditer la saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:111
+#: includes/installation/class-wpsm-create-taxonomies.php:114
 msgid "Update Season"
 msgstr "Mettre à jour la saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:112
+#: includes/installation/class-wpsm-create-taxonomies.php:115
 msgid "Add New Season"
 msgstr "Ajouter une nouvelle saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:113
+#: includes/installation/class-wpsm-create-taxonomies.php:116
 msgid "New Season Name"
 msgstr "Nom de la nouvelle saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:114
+#: includes/installation/class-wpsm-create-taxonomies.php:117
 msgid "Season"
 msgstr "Saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:134
+#: includes/installation/class-wpsm-create-taxonomies.php:137
 msgctxt "taxonomy general name"
 msgid "Members typologies"
 msgstr "Typologies de membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:135
+#: includes/installation/class-wpsm-create-taxonomies.php:138
 msgctxt "taxonomy singular name"
 msgid "Members typology"
 msgstr "Typologie des membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:136
+#: includes/installation/class-wpsm-create-taxonomies.php:139
 msgid "Search Members typologies"
 msgstr "Recherche parmi les Membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:137
+#: includes/installation/class-wpsm-create-taxonomies.php:140
 msgid "All Members typologies"
 msgstr "Toutes les typologies de membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:138
+#: includes/installation/class-wpsm-create-taxonomies.php:141
 msgid "Parent Members typology"
 msgstr "Parent des typologies des membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:139
+#: includes/installation/class-wpsm-create-taxonomies.php:142
 msgid "Parent Members typology :"
 msgstr "Typologie des membres parents :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:140
+#: includes/installation/class-wpsm-create-taxonomies.php:143
 msgid "Edit Members typology"
 msgstr "Modifier la typologie des membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:141
+#: includes/installation/class-wpsm-create-taxonomies.php:144
 msgid "Update Members typology"
 msgstr "Typologie des membres mise à jour"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:142
+#: includes/installation/class-wpsm-create-taxonomies.php:145
 msgid "Add New Members typology"
 msgstr "Ajouter la typologie de nouveaux membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:143
+#: includes/installation/class-wpsm-create-taxonomies.php:146
 msgid "New Members typology Name"
 msgstr "Typologie des membres parents :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:144
+#: includes/installation/class-wpsm-create-taxonomies.php:147
 msgid "Members typology"
 msgstr "Typologie des membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:164
+#: includes/installation/class-wpsm-create-taxonomies.php:167
 msgctxt "taxonomy general name"
 msgid "Places"
 msgstr "Lieux"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:165
+#: includes/installation/class-wpsm-create-taxonomies.php:168
 msgctxt "taxonomy singular name"
 msgid "Place"
 msgstr "Lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:166
+#: includes/installation/class-wpsm-create-taxonomies.php:169
 msgid "Search Places"
 msgstr "Rechercher un lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:167
+#: includes/installation/class-wpsm-create-taxonomies.php:170
 msgid "All Places"
 msgstr "Tous les lieux"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:168
+#: includes/installation/class-wpsm-create-taxonomies.php:171
 msgid "Parent Place"
 msgstr "Lieu parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:169
+#: includes/installation/class-wpsm-create-taxonomies.php:172
 msgid "Parent Place :"
 msgstr "Lieu parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:170
+#: includes/installation/class-wpsm-create-taxonomies.php:173
 msgid "Edit Place"
 msgstr "Editer un lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:171
+#: includes/installation/class-wpsm-create-taxonomies.php:174
 msgid "Update Place"
 msgstr "Mettre à jour le lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:172
+#: includes/installation/class-wpsm-create-taxonomies.php:175
 msgid "Add New Place"
 msgstr "Ajouter un lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:173
+#: includes/installation/class-wpsm-create-taxonomies.php:176
 msgid "New Place Name"
 msgstr "Nouveau nom du lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:174
+#: includes/installation/class-wpsm-create-taxonomies.php:177
 msgid "Place"
 msgstr "Lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:194
+#: includes/installation/class-wpsm-create-taxonomies.php:197
 msgctxt "taxonomy general name"
 msgid "Club"
 msgstr "Club"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:195
+#: includes/installation/class-wpsm-create-taxonomies.php:198
 msgctxt "taxonomy singular name"
 msgid "Club"
 msgstr "Club"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:196
+#: includes/installation/class-wpsm-create-taxonomies.php:199
 msgid "Search Club"
 msgstr "Rechercher un club"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:197
+#: includes/installation/class-wpsm-create-taxonomies.php:200
 msgid "All Club"
 msgstr "Tous les clubs"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:198
+#: includes/installation/class-wpsm-create-taxonomies.php:201
 msgid "Parent Club"
 msgstr "Club parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:199
+#: includes/installation/class-wpsm-create-taxonomies.php:202
 msgid "Parent Club :"
 msgstr "Club parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:200
+#: includes/installation/class-wpsm-create-taxonomies.php:203
 msgid "Edit Club"
 msgstr "Modifier le club"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:201
+#: includes/installation/class-wpsm-create-taxonomies.php:204
 msgid "Update Club"
 msgstr "Mettre à jour le club"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:202
+#: includes/installation/class-wpsm-create-taxonomies.php:205
 msgid "Add New Club"
 msgstr "Ajouter un nouveau club"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:203
+#: includes/installation/class-wpsm-create-taxonomies.php:206
 msgid "New Club Name"
 msgstr "Ajouter nouveau club"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:204
+#: includes/installation/class-wpsm-create-taxonomies.php:207
 msgid "Club"
 msgstr "Club"
 
+#: includes/sports/wpsm_baseball.php:51
+msgid "Pitcher"
+msgstr "Lanceur"
+
+#: includes/sports/wpsm_baseball.php:52
+msgid "Catcher"
+msgstr "Rattrapeur"
+
+#: includes/sports/wpsm_baseball.php:53
+msgid "First base"
+msgstr "Première base"
+
+#: includes/sports/wpsm_baseball.php:54
+msgid "Second base"
+msgstr "Deuxième base"
+
+#: includes/sports/wpsm_baseball.php:55
+msgid "Short stop"
+msgstr "Arrêt-court"
+
+#: includes/sports/wpsm_baseball.php:56
+msgid "Third base"
+msgstr "Troisième base"
+
+#: includes/sports/wpsm_baseball.php:57
+msgid "Right field"
+msgstr "Champ droite"
+
+#: includes/sports/wpsm_baseball.php:58
+msgid "Center field"
+msgstr "Champ centre"
+
+#: includes/sports/wpsm_baseball.php:59
+msgid "Left field"
+msgstr "Champ gauche"
+
+#: includes/sports/wpsm_baseball.php:89
+msgctxt "taxonomy general name"
+msgid "Positions"
+msgstr "Positions"
+
+#: includes/sports/wpsm_baseball.php:90
+msgctxt "taxonomy singular name"
+msgid "Position"
+msgstr "Position"
+
+#: includes/sports/wpsm_baseball.php:91
+msgid "Search Positions"
+msgstr "Rechercher une position :"
+
+#: includes/sports/wpsm_baseball.php:92
+msgid "All Positions"
+msgstr "Tous les postes"
+
+#: includes/sports/wpsm_baseball.php:93
+msgid "Parent Position"
+msgstr "Position parente"
+
+#: includes/sports/wpsm_baseball.php:94
+msgid "Parent Position:"
+msgstr "Position parente"
+
+#: includes/sports/wpsm_baseball.php:95
+msgid "Edit Position"
+msgstr "Modifier le poste"
+
+#: includes/sports/wpsm_baseball.php:96
+msgid "Update Position"
+msgstr "Mettre à jour le poste"
+
+#: includes/sports/wpsm_baseball.php:97
+msgid "Add New Position"
+msgstr "Ajouter un nouveau poste"
+
+#: includes/sports/wpsm_baseball.php:98
+msgid "New Position Name"
+msgstr "Nouveau nom de position"
+
+#: includes/sports/wpsm_baseball.php:99 includes/sports/wpsm_baseball.php:161
+msgid "Position"
+msgstr "Position"
+
+#: includes/sports/wpsm_baseball.php:151
+msgid "Size"
+msgstr "Taille"
+
+#: includes/sports/wpsm_baseball.php:156
+msgid "Jersey Number"
+msgstr "Numéro de maillot"
+
 #: includes/vendors/cmb2-attached-posts/example-field-setup.php:22
 #: includes/vendors/cmb2-attached-posts/example-field-setup.php:30
+#: includes/vendors/cmb2-teams-to-match/example-field-setup.php:22
+#: includes/vendors/cmb2-teams-to-match/example-field-setup.php:30
 msgid "Attached Posts"
 msgstr ""
 
 #: includes/vendors/cmb2-attached-posts/init.php:72
+#: includes/vendors/cmb2-teams-to-match/init.php:72
 #, php-format
 msgid "Filter %s"
 msgstr ""
 
 #: includes/vendors/cmb2-attached-posts/init.php:94
+#: includes/vendors/cmb2-teams-to-match/init.php:94
 #, php-format
 msgid "Available %s"
 msgstr ""
 
 #: includes/vendors/cmb2-attached-posts/init.php:122
 #: includes/vendors/cmb2-attached-posts/init.php:200
+#: includes/vendors/cmb2-teams-to-match/init.php:122
+#: includes/vendors/cmb2-teams-to-match/init.php:200
 msgid "Edit"
 msgstr ""
 
 #: includes/vendors/cmb2-attached-posts/init.php:132
+#: includes/vendors/cmb2-teams-to-match/init.php:132
 #, php-format
 msgid "Attached %s"
 msgstr ""
 
+#: includes/vendors/cmb2/example-functions.php:91
+#: includes/vendors/cmb2/example-functions.php:383
+msgid "Test Text"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:92
+#: includes/vendors/cmb2/example-functions.php:104
+#: includes/vendors/cmb2/example-functions.php:112
+#: includes/vendors/cmb2/example-functions.php:120
+#: includes/vendors/cmb2/example-functions.php:129
+#: includes/vendors/cmb2/example-functions.php:137
+#: includes/vendors/cmb2/example-functions.php:152
+#: includes/vendors/cmb2/example-functions.php:160
+#: includes/vendors/cmb2/example-functions.php:168
+#: includes/vendors/cmb2/example-functions.php:185
+#: includes/vendors/cmb2/example-functions.php:194
+#: includes/vendors/cmb2/example-functions.php:207
+#: includes/vendors/cmb2/example-functions.php:214
+#: includes/vendors/cmb2/example-functions.php:221
+#: includes/vendors/cmb2/example-functions.php:235
+#: includes/vendors/cmb2/example-functions.php:248
+#: includes/vendors/cmb2/example-functions.php:261
+#: includes/vendors/cmb2/example-functions.php:273
+#: includes/vendors/cmb2/example-functions.php:282
+#: includes/vendors/cmb2/example-functions.php:290
+#: includes/vendors/cmb2/example-functions.php:299
+#: includes/vendors/cmb2/example-functions.php:306
+#: includes/vendors/cmb2/example-functions.php:320
+#: includes/vendors/cmb2/example-functions.php:384
+#: includes/vendors/cmb2/example-functions.php:475
+#: includes/vendors/cmb2/example-functions.php:483
+#: includes/vendors/cmb2/example-functions.php:490
+#: includes/vendors/cmb2/example-functions.php:497
+#: includes/vendors/cmb2/example-functions.php:504
+#: includes/vendors/cmb2/example-functions.php:511
+#: includes/vendors/cmb2/example-functions.php:518
+#: includes/vendors/cmb2/example-functions.php:545
+#: includes/vendors/cmb2/example-functions.php:553
+#: includes/vendors/cmb2/example-functions.php:560
+#: includes/vendors/cmb2/example-functions.php:597
+#: includes/vendors/cmb2/tests/test-cmb-field.php:305
+msgid "field description (optional)"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:103
+msgid "Test Text Small"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:111
+msgid "Test Text Medium"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:119
+msgid "Website URL"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:128
+msgid "Test Text Email"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:136
+msgid "Test Time"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:144
+#: includes/vendors/cmb2/example-functions.php:145
+msgid "Time zone"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:151
+msgid "Test Date Picker"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:159
+msgid "Test Date Picker (UNIX timestamp)"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:167
+msgid "Test Date/Time Picker Combo (UNIX timestamp)"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:184
+msgid "Test Money"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:193
+msgid "Test Color Picker"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:206
+msgid "Test Text Area"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:213
+msgid "Test Text Area Small"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:220
+msgid "Test Text Area for Code"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:227
+msgid "Test Title Weeeee"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:228
+msgid "This is a title description"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:234
+msgid "Test Select"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:240
+#: includes/vendors/cmb2/example-functions.php:253
+#: includes/vendors/cmb2/example-functions.php:265
+msgid "Option One"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:241
+#: includes/vendors/cmb2/example-functions.php:254
+#: includes/vendors/cmb2/example-functions.php:266
+msgid "Option Two"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:242
+#: includes/vendors/cmb2/example-functions.php:255
+#: includes/vendors/cmb2/example-functions.php:267
+msgid "Option Three"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:247
+msgid "Test Radio inline"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:260
+msgid "Test Radio"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:272
+msgid "Test Taxonomy Radio"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:281
+msgid "Test Taxonomy Select"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:289
+msgid "Test Taxonomy Multi Checkbox"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:298
+msgid "Test Checkbox"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:305
+#: includes/vendors/cmb2/tests/test-cmb-field.php:304
+msgid "Test Multi Checkbox"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:311
+#: includes/vendors/cmb2/tests/test-cmb-field.php:310
+msgid "Check One"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:312
+#: includes/vendors/cmb2/tests/test-cmb-field.php:311
+msgid "Check Two"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:313
+#: includes/vendors/cmb2/tests/test-cmb-field.php:312
+msgid "Check Three"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:319
+msgid "Test wysiwyg"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:327
+msgid "Test Image"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:334
+msgid "Multiple Files"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:335
+msgid "Upload or add multiple images/attachments."
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:342
+msgid "oEmbed"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:343
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
+"href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress.org/"
+"Embeds</a>."
+msgstr ""
+
 #: includes/vendors/cmb2/example-functions.php:374
 msgid "About Page Metabox"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:403
+msgid "Repeating Field Group"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:411
+msgid "Generates reusable form entries"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:413
+msgid "Entry {#}"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:414
+msgid "Add Another Entry"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:415
+msgid "Remove Entry"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:428
+msgid "Entry Title"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:435
+msgid "Description"
+msgstr "Description"
+
+#: includes/vendors/cmb2/example-functions.php:436
+msgid "Write a short description for this entry"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:442
+msgid "Entry Image"
+msgstr ""
+
+#: includes/vendors/cmb2/example-functions.php:448
+msgid "Image Caption"
 msgstr ""
 
 #: includes/vendors/cmb2/example-functions.php:467
@@ -1235,6 +1301,12 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "SportsManagerTeam"
 msgstr ""
+
+#~ msgid "Weight"
+#~ msgstr "Poids"
+
+#~ msgid "Club Members"
+#~ msgstr "Membres du Club"
 
 #~ msgid "Search "
 #~ msgstr "Recherche"
