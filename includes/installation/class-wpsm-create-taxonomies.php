@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
 /**
  * The public-facing functionality of the plugin.
@@ -119,7 +122,7 @@ class WP_Sports_Manager_Create_Taxonomies {
 			'rewrite'           => array( 'slug' => 'wpsm_season' ),
 		);
 
-		register_taxonomy( 'wpsm_season', array( 'wpsm_matchs' ), $args );
+		register_taxonomy( 'wpsm_season', array( 'wpsm_tournaments', 'wpsm_matchs' ), $args );
 
 	}
 

@@ -4,6 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+define('PREFIX', 'wpsm_members_');
+
 /**
  * The file that defines the core plugin class
  *
@@ -99,13 +101,16 @@ class WP_Sports_Manager {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
-		$this->create_custom_post_type();
 		$this->create_custom_taxonomies();
+		$this->create_custom_post_type();
+		// load typologic for selected sport
+		$this->load_typologic();
 
 		if ( is_admin() ) {
 			$this->create_admin_menu();
 			$this->admin_taxonomies_fields();
 			$this->admin_cpt_fields();
+			$this->remove_cpt_metabox();
 		}
 
 	}
@@ -144,6 +149,7 @@ class WP_Sports_Manager {
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb2-teams-to-match/cmb2-attached-teams-match.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb_field_map/cmb-field-map.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-taxonomies.php';
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-members-fields.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-matchs-fields.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-opponents-fields.php';
 		}
@@ -203,6 +209,17 @@ class WP_Sports_Manager {
 	}
 
 	/**
+	 * Remove taxo metabox for cpt
+	 * ( members : typologie )
+	 *
+	 */
+
+	private function remove_cpt_metabox() {
+		$createCustomPostType = new WP_Sports_Manager_Create_Custom_Post_Type();
+		$this->loader->add_action( 'admin_menu', $createCustomPostType, 'remove_metabox_members' );
+	}
+
+	/**
 	 * Create menu
 	 *
 	 * Uses the WP_Sports_Manager_Create_Menu class in order to set the menu
@@ -242,6 +259,7 @@ class WP_Sports_Manager {
 
 		$matchs_cpt_fields = new WP_Sports_Manager_Admin_Matchs_Fields();
 		$opponents_cpt_fields = new WP_Sports_Manager_Admin_Opponents_Fields();
+		$members_cpt_fields = new WP_Sports_Manager_Admin_Members_Fields();
 
 	}
 
@@ -297,10 +315,21 @@ class WP_Sports_Manager {
 	 * @since    0.0.1
 	 */
 	public function typology() {
+		// define selected sport :
 		$this->typology = 'baseball';
 		return $this->typology;
 	}
 
+	/**
+	 * Load typologic
+	 *
+	 * @since 0.0.1
+	 */
+	public function load_typologic() {
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/sports/wpsm_' . $this->typology() . '.php';
+		$typologie = new WP_Sports_Typologic();
+		// var_dump($typologie::get_name());
+	}
 
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.

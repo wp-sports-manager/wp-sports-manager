@@ -57,6 +57,7 @@
  * Corrige le margin quand il n'y a pas de titre
  *
  */
-.wp-admin.post-type-wpsm_matchs #post-body-content{
+.wp-admin.post-type-wpsm_matchs #post-body-content,
+.wp-admin.post-type-wpsm_members #post-body-content{
     margin: 0;
 }

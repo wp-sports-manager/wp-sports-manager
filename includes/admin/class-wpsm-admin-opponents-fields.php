@@ -62,7 +62,7 @@ class WP_Sports_Manager_Admin_Opponents_Fields {
 				'desc' 		=> __( 'Drag the marker to set the exact location', 'wp-sports-manager'),
 				'id' 		=> $prefix . '_location',
 				'type' 		=> 'pw_map',
-				'split_values' => false, // Save latitude and longitude as two separate fields
+				'split_values' => true, // Save latitude and longitude as two separate fields
 			));
 		
 	}

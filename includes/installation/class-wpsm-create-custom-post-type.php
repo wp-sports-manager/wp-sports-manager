@@ -273,11 +273,11 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 					'publicly_queryable' 	=> true,
 					'exclude_from_search' 	=> false,
 					'hierarchical' 			=> false,
-					'supports' 				=> array( 'title', 'editor', 'page-attributes', 'excerpt' ),
+					'supports' 				=> array('title'),
 					'has_archive' 			=> false,
-					'show_in_nav_menus' 	=> false,
-					'can_export' 			=> false,
-					'show_in_menu' 			=> false,
+					'show_in_nav_menus' 	=> true,
+					'menu_icon'           	=> 'dashicons-networking',
+					'menu_position'			=> self::$order['tournaments'],
 					'show_in_rest'			=> true,
 					'taxonomies'			=> array(
 						'wpsm_competition', 'wpsm_place', 'wpsm_season'
@@ -321,15 +321,18 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 					'publicly_queryable' 	=> true,
 					'exclude_from_search' 	=> false,
 					'hierarchical' 			=> false,
-					'supports' 				=> array( 'title', 'editor', 'page-attributes', 'excerpt' ),
+					'supports' 				=> false,
 					'has_archive' 			=> false,
 					'show_in_nav_menus' 	=> false,
 					'can_export' 			=> false,
-					'show_in_menu' 			=> false,
+					'show_in_menu' 			=> true,
+					'show_in_nav_menus' 	=> true,
+					'menu_icon'           	=> 'dashicons-id-alt',
+					'menu_position'			=> self::$order['members'],
 					'show_in_rest'			=> true,
-					'taxonomies'			=> array(
-						'wpsm_members_typology'
-					)
+					// 'taxonomies'			=> array(
+					// 	'wpsm_members_typology'
+					// )
 				)
 			)
 		);
@@ -338,8 +341,11 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 
 	}
 
-	public static function remove_cpt() {
-		// remove ctp on unactivate
+	public static function remove_metabox_members () {
+
+		remove_meta_box('tagsdiv-wpsm_members_typology', 'wpsm_members', 'side' );
+	        
 	}
+
 
 }
