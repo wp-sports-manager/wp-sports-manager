@@ -347,6 +347,7 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 	        
 	}
 
+
 	public static function remove_cpt_members_columns ( $columns ) {
 
 		$prefix = PREFIX;
