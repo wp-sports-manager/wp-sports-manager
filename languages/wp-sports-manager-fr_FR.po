@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Sports Manager\n"
-"POT-Creation-Date: 2016-05-14 16:20+0200\n"
-"PO-Revision-Date: 2016-05-14 16:20+0200\n"
+"POT-Creation-Date: 2016-05-14 17:17+0200\n"
+"PO-Revision-Date: 2016-05-14 17:17+0200\n"
 "Last-Translator: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language-Team: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language: fr_FR\n"
@@ -50,73 +50,73 @@ msgstr ""
 msgid "Opponents"
 msgstr "Adversaires"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:54
+#: includes/admin/class-wpsm-admin-members-fields.php:56
 msgid "Personal profil"
 msgstr "Profil personnel"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:71
+#: includes/admin/class-wpsm-admin-members-fields.php:73
 msgid "First Name"
 msgstr "Prénom"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:73
-#: includes/admin/class-wpsm-admin-members-fields.php:79
+#: includes/admin/class-wpsm-admin-members-fields.php:75
+#: includes/admin/class-wpsm-admin-members-fields.php:81
 msgid "used for login : firstname.lastname"
 msgstr "Utilisé pour la connexion: prénom.nom"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:78
+#: includes/admin/class-wpsm-admin-members-fields.php:80
 msgid "Last Name"
 msgstr "Nom"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:85
+#: includes/admin/class-wpsm-admin-members-fields.php:87
 msgid "Nickname"
 msgstr "Surnom"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:91
+#: includes/admin/class-wpsm-admin-members-fields.php:93
 msgid "Phone"
 msgstr "Téléphone"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:97
+#: includes/admin/class-wpsm-admin-members-fields.php:99
 msgid "Email"
 msgstr "Email"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:119
+#: includes/admin/class-wpsm-admin-members-fields.php:121
 msgid "Player profil"
 msgstr "Profil du joueur"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:125
+#: includes/admin/class-wpsm-admin-members-fields.php:127
 msgid "Role"
 msgstr "Rôle"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:130
-#: includes/sports/wpsm_baseball.php:166
+#: includes/admin/class-wpsm-admin-members-fields.php:132
+#: includes/sports/wpsm_baseball.php:178
 msgid "Sorry, no terms could be found."
 msgstr "Désolé, aucun terme n’a pu être trouvée."
 
-#: includes/admin/class-wpsm-admin-members-fields.php:135
+#: includes/admin/class-wpsm-admin-members-fields.php:137
 msgid "Birthday"
 msgstr "Date de naissance"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:147
+#: includes/admin/class-wpsm-admin-members-fields.php:150
 msgid "Arrival date"
 msgstr "Date d’arrivée"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:159
+#: includes/admin/class-wpsm-admin-members-fields.php:163
 msgid "License Number"
 msgstr "Numéro de licence"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:165
+#: includes/admin/class-wpsm-admin-members-fields.php:169
 msgid "License validity"
 msgstr "Validité de la licence"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:167
+#: includes/admin/class-wpsm-admin-members-fields.php:171
 msgid "until"
 msgstr "Jusque"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:177
+#: includes/admin/class-wpsm-admin-members-fields.php:181
 msgid "Photo"
 msgstr "Photo"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:178
+#: includes/admin/class-wpsm-admin-members-fields.php:182
 #: includes/admin/class-wpsm-admin-opponents-fields.php:55
 #: includes/vendors/cmb2/example-functions.php:328
 msgid "Upload an image or enter a URL."
@@ -289,6 +289,14 @@ msgstr "Ajouter un Membre"
 #: includes/installation/class-wpsm-create-custom-post-type.php:310
 msgid "Edit Member"
 msgstr "Modifier le Membre"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:361
+msgid "First name"
+msgstr "Nom"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:362
+msgid "Last name"
+msgstr "Prénom"
 
 #: includes/installation/class-wpsm-create-menu.php:66
 msgid "Sports Manager"
@@ -654,42 +662,6 @@ msgstr "Ajouter nouveau club"
 msgid "Club"
 msgstr "Club"
 
-#: includes/sports/wpsm_baseball.php:51
-msgid "Pitcher"
-msgstr "Lanceur"
-
-#: includes/sports/wpsm_baseball.php:52
-msgid "Catcher"
-msgstr "Rattrapeur"
-
-#: includes/sports/wpsm_baseball.php:53
-msgid "First base"
-msgstr "Première base"
-
-#: includes/sports/wpsm_baseball.php:54
-msgid "Second base"
-msgstr "Deuxième base"
-
-#: includes/sports/wpsm_baseball.php:55
-msgid "Short stop"
-msgstr "Arrêt-court"
-
-#: includes/sports/wpsm_baseball.php:56
-msgid "Third base"
-msgstr "Troisième base"
-
-#: includes/sports/wpsm_baseball.php:57
-msgid "Right field"
-msgstr "Champ droite"
-
-#: includes/sports/wpsm_baseball.php:58
-msgid "Center field"
-msgstr "Champ centre"
-
-#: includes/sports/wpsm_baseball.php:59
-msgid "Left field"
-msgstr "Champ gauche"
-
 #: includes/sports/wpsm_baseball.php:89
 msgctxt "taxonomy general name"
 msgid "Positions"
@@ -732,15 +704,51 @@ msgstr "Ajouter un nouveau poste"
 msgid "New Position Name"
 msgstr "Nouveau nom de position"
 
-#: includes/sports/wpsm_baseball.php:99 includes/sports/wpsm_baseball.php:161
+#: includes/sports/wpsm_baseball.php:99 includes/sports/wpsm_baseball.php:173
 msgid "Position"
 msgstr "Position"
 
-#: includes/sports/wpsm_baseball.php:151
+#: includes/sports/wpsm_baseball.php:120
+msgid "Pitcher"
+msgstr "Lanceur"
+
+#: includes/sports/wpsm_baseball.php:121
+msgid "Catcher"
+msgstr "Rattrapeur"
+
+#: includes/sports/wpsm_baseball.php:122
+msgid "First base"
+msgstr "Première base"
+
+#: includes/sports/wpsm_baseball.php:123
+msgid "Second base"
+msgstr "Deuxième base"
+
+#: includes/sports/wpsm_baseball.php:124
+msgid "Short stop"
+msgstr "Arrêt-court"
+
+#: includes/sports/wpsm_baseball.php:125
+msgid "Third base"
+msgstr "Troisième base"
+
+#: includes/sports/wpsm_baseball.php:126
+msgid "Right field"
+msgstr "Champ droite"
+
+#: includes/sports/wpsm_baseball.php:127
+msgid "Center field"
+msgstr "Champ centre"
+
+#: includes/sports/wpsm_baseball.php:128
+msgid "Left field"
+msgstr "Champ gauche"
+
+#: includes/sports/wpsm_baseball.php:163
 msgid "Size"
 msgstr "Taille"
 
-#: includes/sports/wpsm_baseball.php:156
+#: includes/sports/wpsm_baseball.php:168
 msgid "Jersey Number"
 msgstr "Numéro de maillot"
 

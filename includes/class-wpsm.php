@@ -185,7 +185,12 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_opponent_cpt' );
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_training_cpt' );
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_tournaments_cpt' );
+		/**
+		 * Members CTP management
+		 */
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_members_cpt' );
+		$this->loader->add_filter( 'manage_edit-wpsm_members_columns', $createCustomPostType, 'remove_cpt_members_columns' );
+		$this->loader->add_action( 'manage_posts_custom_column', $createCustomPostType, 'wpsm_content_columns' );
 
 	}
 
@@ -216,6 +221,7 @@ class WP_Sports_Manager {
 
 	private function remove_cpt_metabox() {
 		$createCustomPostType = new WP_Sports_Manager_Create_Custom_Post_Type();
+		$this->loader->add_action( 'admin_menu', $createCustomPostType, 'remove_metabox_members' );
 		$this->loader->add_action( 'admin_menu', $createCustomPostType, 'remove_metabox_members' );
 	}
 

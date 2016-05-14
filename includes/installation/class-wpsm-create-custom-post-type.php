@@ -347,5 +347,31 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 	        
 	}
 
+	public static function remove_cpt_members_columns ( $columns ) {
+
+		$prefix = PREFIX;
+
+		unset($columns['title']);
+		unset($columns['author']);
+		unset($columns['categories']);
+		unset($columns['tags']);
+		unset($columns['comments']);
+
+		$new_columns = array(
+			$prefix . 'firstname' => __('First name', 'wp-sports-manager'),
+			$prefix . 'lastname' => __('Last name', 'wp-sports-manager'),
+		);
+
+    	return array_merge($columns, $new_columns);
+
+	}
+
+
+	public static function wpsm_content_columns($column_name) {
+		//<a class="row-title" href="http://sports-manager.dev/wp-admin/post.php?post=289&amp;action=edit" aria-label="«&nbsp;veve&nbsp;» (Modifier)">veve</a>
+		$prefix = PREFIX;
+		$text = get_post_meta( get_the_ID(), $column_name, true );
+		echo esc_html( $text );
+	}
 
 }

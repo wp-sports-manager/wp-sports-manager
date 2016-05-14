@@ -48,6 +48,8 @@ class WP_Sports_Manager_Admin_Members_Fields {
 	public static function add_meta_boxs() {
 
 			$prefix = PREFIX;
+			// $date_format = get_option( 'date_format', 'm-d-Y' );
+			$date_format = 'm/d/Y';
 
 			$private_profil = new_cmb2_box( array(
 				'id'            => $prefix . 'private_profil',
@@ -135,7 +137,8 @@ class WP_Sports_Manager_Admin_Members_Fields {
 				'name' => __( 'Birthday', 'wp-sports-manager' ),
 				'id'   => $prefix . 'birthday',
 				'type' => 'text_date',
-				// 'date_format' => 'Y-m-d',
+				'desc' => str_replace('-','/',$date_format),
+				'date_format' => $date_format,
 				'attributes' => array(
 				    'data-datepicker' => json_encode( array(
 				        'yearRange' => '1950:'. date( 'Y' ),
@@ -147,7 +150,8 @@ class WP_Sports_Manager_Admin_Members_Fields {
 				'name' => __( 'Arrival date', 'wp-sports-manager' ),
 				'id'   => $prefix . 'arrivalday',
 				'type' => 'text_date',
-				// 'date_format' => 'Y-m-d',
+				'desc' => str_replace('-','/',$date_format),
+				'date_format' => $date_format,
 				'attributes' => array(
 				    'data-datepicker' => json_encode( array(
 				        'yearRange' => '1950:'. date( 'Y' ),
