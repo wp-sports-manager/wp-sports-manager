@@ -144,7 +144,11 @@ class WP_Sports_Manager {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions-wpsm.php';
 
 		if ( is_admin() ) {
-			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/CMB2/init.php';
+			if ( file_exists(  plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/CMB2/init.php' ) ) {
+				require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/CMB2/init.php';
+			}elseif( plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb2/init.php' ) {
+				require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb2/init.php';
+			}
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb2-attached-posts/cmb2-attached-posts-field.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb2-teams-to-match/cmb2-attached-teams-match.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb_field_map/cmb-field-map.php';
