@@ -183,5 +183,23 @@ class WP_Sports_Typologic {
 		return $fields;
 	}
 
+	/** 
+	 * Add teams profil
+	 * 
+	 *
+	 */
+	public static function add_teams_fields() {
+		$prefix = PREFIX;
+		$fields = array(
+			array(
+				'name' => __( 'Size', 'wp-sports-manager' ),
+				'id'   => $prefix . 'size',
+				'type' => 'text_small'
+			),
+		);
+
+		return $fields;
+	}
+
 
 }

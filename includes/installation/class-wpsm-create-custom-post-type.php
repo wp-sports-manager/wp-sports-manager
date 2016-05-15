@@ -50,12 +50,13 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 		"opponents" 		=> 36,
 	];
 
+	public $prefix = PREFIX;
+
 	/**
 	 * Team Custom Post Type
 	 *
 	 *
 	 */
-
 	public static function add_team_cpt() {
 
 		do_action( 'wpsm_team_register_custom_post_type' );
@@ -76,17 +77,19 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 					),
 					'public' 				=> true,
 					'show_ui' 				=> true,
-					'capability_type' 		=> 'edit_posts',
+					'capability_type' 		=> 'post',
 					'map_meta_cap' 			=> true,
 					'publicly_queryable' 	=> true,
 					'exclude_from_search' 	=> false,
 					'hierarchical' 			=> false,
-					'supports' 				=> array( 'title', 'editor', 'page-attributes', 'excerpt' ),
+					'supports' 				=> array( 'title', 'editor' ),
 					'has_archive' 			=> false,
-					'show_in_nav_menus' 	=> false,
-					'show_in_rest'			=> true,
 					'can_export' 			=> false,
-					'show_in_menu' 			=> false
+					'show_in_menu' 			=> true,
+					'show_in_nav_menus' 	=> true,
+					'menu_icon'           	=> 'dashicons-groups',
+					'menu_position'			=> self::$order['teams'],
+					'show_in_rest'			=> true
 				)
 			)
 		);
@@ -176,7 +179,6 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 					'hierarchical' 			=> false,
 					'supports' 				=> array( 'title' ),
 					'has_archive' 			=> false,
-					'show_in_nav_menus' 	=> false,
 					'can_export' 			=> false,
 					'show_in_menu' 			=> true,
 					'show_in_nav_menus' 	=> true,
@@ -341,38 +343,5 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 
 	}
 
-	public static function remove_metabox_members () {
-
-		remove_meta_box('tagsdiv-wpsm_members_typology', 'wpsm_members', 'side' );
-	        
-	}
-
-
-	public static function remove_cpt_members_columns ( $columns ) {
-
-		$prefix = PREFIX;
-
-		unset($columns['title']);
-		unset($columns['author']);
-		unset($columns['categories']);
-		unset($columns['tags']);
-		unset($columns['comments']);
-
-		$new_columns = array(
-			$prefix . 'firstname' => __('First name', 'wp-sports-manager'),
-			$prefix . 'lastname' => __('Last name', 'wp-sports-manager'),
-		);
-
-    	return array_merge($columns, $new_columns);
-
-	}
-
-
-	public static function wpsm_content_columns($column_name) {
-		//<a class="row-title" href="http://sports-manager.dev/wp-admin/post.php?post=289&amp;action=edit" aria-label="«&nbsp;veve&nbsp;» (Modifier)">veve</a>
-		$prefix = PREFIX;
-		$text = get_post_meta( get_the_ID(), $column_name, true );
-		echo esc_html( $text );
-	}
 
 }
