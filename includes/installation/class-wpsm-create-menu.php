@@ -192,43 +192,44 @@ class WP_Sports_Manager_Create_Menu {
 		 * Teams menu
 		 *
 		 */
-		$teams_page = add_menu_page( 
+		// $teams_page = add_menu_page( 
 
-			__('Teams',' wp-sports-manager'), 
-			__('Teams', 'wp-sports-manager'), 
-				'manage_options', 
-				'wpsm-teams',
-				array( &$this, 'teams' ),	
-				'dashicons-groups',
-				$this->order['teams']	
-		); 
-				/**
-				 * Add Matchs
-				 *
-				 */
-				add_submenu_page( 
+		// 	__('Teams',' wp-sports-manager'), 
+		// 	__('Teams', 'wp-sports-manager'), 
+		// 		'manage_options', 
+		// 		'wpsm-teams',
+		// 		array( &$this, 'teams' ),	
+		// 		'dashicons-groups',
+		// 		$this->order['teams']	
+		// ); 
+		// 		/**
+		// 		 * Add Matchs
+		// 		 *
+		// 		 */
+		// 		add_submenu_page( 
 
-					'wpsm-teams',
-					__('Add'), 
-					__('Add'), 
-						'edit_posts', 
-						'post-new.php?post_type=wpsm_teams'
+		// 			'wpsm-teams',
+		// 			__('Add'), 
+		// 			__('Add'), 
+		// 				'edit_posts', 
+		// 				'post-new.php?post_type=wpsm_teams'
 
-				); 
-				/**
-				 * Settings Teams
-				 *
-				 */
-				add_submenu_page( 
+		// 		); 
+		// 		/**
+		// 		 * Settings Teams
+		// 		 *
+		// 		 */
+		// 		add_submenu_page( 
 
-					'wpsm-teams',
-					__('Settings',' wp-sports-manager'), 
-					__('Settings', 'wp-sports-manager'), 
-						'manage_options', 
-						'wpsm-settings',
-						array( &$this, 'settingsTeams' )
+		// 			'wpsm-teams',
+		// 			__('Settings',' wp-sports-manager'), 
+		// 			__('Settings', 'wp-sports-manager'), 
+		// 				'manage_options', 
+		// 				'wpsm-settings',
+		// 				array( &$this, 'settingsTeams' )
 
-				); 
+		// 		); 
+				
 		/**
 		 * Trainings menu
 		 *

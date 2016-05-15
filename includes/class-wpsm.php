@@ -95,8 +95,6 @@ class WP_Sports_Manager {
 		$this->plugin_name = 'wp-sports-manager';
 		$this->version = '0.0.2';
 
-		// add_action( 'init', array( $this, 'load_dependencies' ) );
-
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
@@ -110,7 +108,9 @@ class WP_Sports_Manager {
 			$this->create_admin_menu();
 			$this->admin_taxonomies_fields();
 			$this->admin_cpt_fields();
-			$this->remove_cpt_metabox();
+			// members admin managements
+			$this->admin_members();
+			$this->admin_teams();
 		}
 
 	}
@@ -153,7 +153,8 @@ class WP_Sports_Manager {
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb2-teams-to-match/cmb2-attached-teams-match.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/cmb_field_map/cmb-field-map.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-taxonomies.php';
-			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-members-fields.php';
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-members.php';
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-teams.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-matchs-fields.php';
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/admin/class-wpsm-admin-opponents-fields.php';
 		}
@@ -189,14 +190,9 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_opponent_cpt' );
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_training_cpt' );
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_tournaments_cpt' );
-		/**
-		 * Members CTP management
-		 */
 		$this->loader->add_action( 'init', $createCustomPostType, 'add_members_cpt' );
-		$this->loader->add_filter( 'manage_edit-wpsm_members_columns', $createCustomPostType, 'remove_cpt_members_columns' );
-		$this->loader->add_action( 'manage_posts_custom_column', $createCustomPostType, 'wpsm_content_columns' );
 
-	}
+	}	
 
 	/**
 	 * Create Taxonomies
@@ -215,18 +211,6 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_places' );
 		$this->loader->add_action( 'init', $createCustomTaxonomies, 'add_clubs' );
 
-	}
-
-	/**
-	 * Remove taxo metabox for cpt
-	 * ( members : typologie )
-	 *
-	 */
-
-	private function remove_cpt_metabox() {
-		$createCustomPostType = new WP_Sports_Manager_Create_Custom_Post_Type();
-		$this->loader->add_action( 'admin_menu', $createCustomPostType, 'remove_metabox_members' );
-		$this->loader->add_action( 'admin_menu', $createCustomPostType, 'remove_metabox_members' );
 	}
 
 	/**
@@ -260,6 +244,42 @@ class WP_Sports_Manager {
 	}
 
 	/**
+	 * Members Admin Fields Management
+	 *
+	 *
+	 */
+	public function admin_members() {
+
+		$members = new WP_Sports_Manager_Admin_Members();
+		/**
+		 * Members CTP management
+		 */
+		$this->loader->add_filter( 'manage_edit-wpsm_members_columns', $members, 'wpsm_members_remove_cpt_columns' );
+		$this->loader->add_action( 'manage_posts_custom_column', $members, 'wpsm_members_content_columns' );
+		$this->loader->add_filter( 'manage_edit-wpsm_members_sortable_columns', $members, 'wpsm_members_column_register_sortable' );
+		$this->loader->add_filter( 'request', $members, 'wpsm_members_column_orderby' );
+		$this->loader->add_action( 'admin_menu', $members, 'remove_metabox_members' );
+	}
+
+	/**
+	 * Teams Admin Fields Management
+	 *
+	 *
+	 */
+	public function admin_teams() {
+
+		$teams = new WP_Sports_Manager_Admin_Teams();
+		/**
+		 * Members CTP management
+		 */
+		$this->loader->add_filter( 'manage_edit-wpsm_teams_columns', $teams, 'wpsm_teams_remove_cpt_columns' );
+		$this->loader->add_action( 'manage_posts_custom_column', $teams, 'wpsm_teams_content_columns' );
+		$this->loader->add_filter( 'manage_edit-wpsm_teams_sortable_columns', $teams, 'wpsm_teams_column_register_sortable' );
+		$this->loader->add_filter( 'request', $teams, 'wpsm_teams_column_orderby' );
+		$this->loader->add_action( 'admin_menu', $teams, 'remove_metabox_teams' );
+	}
+
+	/**
 	 * Add WPSM Matchs CPT fields
 	 *
 	 * @since 	0.0.1
@@ -269,7 +289,6 @@ class WP_Sports_Manager {
 
 		$matchs_cpt_fields = new WP_Sports_Manager_Admin_Matchs_Fields();
 		$opponents_cpt_fields = new WP_Sports_Manager_Admin_Opponents_Fields();
-		$members_cpt_fields = new WP_Sports_Manager_Admin_Members_Fields();
 
 	}
 
