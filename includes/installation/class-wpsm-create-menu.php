@@ -55,12 +55,8 @@ class WP_Sports_Manager_Create_Menu {
 	 * Add menu item
 	 */
 	public function admin_menu() {
-		global $menu;
 
-		if ( current_user_can( 'manage_wp_sports_manager' ) )
-			$menu[] = array( '', 'read', 'separator-wpsportsmanager', '', 'wp-menu-separator wpsportsmanager' );
-
-
+		add_admin_menu_separator(30);
 
 		$main_page = add_menu_page( 
 			__( 'Sports Manager', 'wp-sports-manager' ), 	// page title

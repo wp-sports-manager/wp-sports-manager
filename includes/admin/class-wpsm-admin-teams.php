@@ -24,14 +24,19 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  */
 class WP_Sports_Manager_Admin_Teams {
 
+	public static $prefix;
+
 	/**
 	 * Add box to Matchs CPT
 	 *
 	 * @since    0.0.1
 	 */
 	public function __construct() {
+
+		self::$prefix = WPSM_PREFIX . 'teams_';
+
 		add_action( 'cmb2_admin_init', array( &$this,'add_meta_boxs_fields') );
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'sports/wpsm_' . $this->typology() . '.php';
+		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'sports/wpsm_' . $this->typology() . '.php';
 	}
 
 	/**
@@ -47,12 +52,11 @@ class WP_Sports_Manager_Admin_Teams {
 
 	public static function add_meta_boxs_fields() {
 
-		$prefix = WPSM_PREFIX;
 		// $date_format = get_option( 'date_format', 'm-d-Y' );
 		$date_format = 'm/d/Y';
 
 		$team_profil = new_cmb2_box( array(
-			'id'            => $prefix . 'team_profil',
+			'id'            => self::$prefix . 'team_profil',
 			'title'         => __( 'Team profil', 'wp-sports-manager' ),
 			'object_types'  => array( 'wpsm_teams', ), // Post type
 			'priority'   => 'high'
@@ -64,10 +68,12 @@ class WP_Sports_Manager_Admin_Teams {
 		 *
 		 *
 		 */
-		$fields = WP_Sports_Typologic::add_teams_fields();
-		if( count( $fields ) > 0 ){
-			foreach ($fields as $field => $value) {
-				$team_profil->add_field( $value );
+		if( get_option( '_wpsm_installed' ) ){
+			$fields = WP_Sports_Typologic::add_teams_fields();
+			if( count( $fields ) > 0 ){
+				foreach ($fields as $field => $value) {
+					$team_profil->add_field( $value );
+				}
 			}
 		}
 
@@ -92,7 +98,6 @@ class WP_Sports_Manager_Admin_Teams {
 	 */
 	public static function wpsm_teams_remove_cpt_columns ( $columns ) {
 
-		$prefix = WPSM_PREFIX;
 
 		// unset($columns['title']);
 		// unset($columns['author']);
@@ -119,7 +124,6 @@ class WP_Sports_Manager_Admin_Teams {
 	 */
 	public static function wpsm_teams_content_columns($column_name) {
 		//http://sports-manager.dev/wp-admin/post.php?post=289&amp;action=edit" aria-label="«&nbsp;veve&nbsp;» (Modifier)">veve</a>
-		$prefix = WPSM_PREFIX;
 		$text = get_post_meta( get_the_ID(), $column_name, true );
 		echo '<a class="row-title" href="' . admin_url( 'post.php?post=' . get_the_ID() . '&amp;action=edit' ) . '" aria-label="«&nbsp;veve&nbsp;» (Modifier)">' . esc_html( $text ) . '</a>';
 	}
@@ -130,7 +134,7 @@ class WP_Sports_Manager_Admin_Teams {
 	 *
 	 */
 	public static function wpsm_teams_column_register_sortable() {
-		$columns[ WPSM_PREFIX . 'firstname' ] = WPSM_PREFIX . 'firstname';
+		$columns[ self::$prefix . 'firstname' ] = self::$prefix . 'firstname';
 		// $columns[ PREFIX . 'nickname' ] = PREFIX . 'nickname';
 		return $columns;
 	}

@@ -24,15 +24,22 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  */
 class WP_Sports_Manager_Admin_Opponents_Fields {
 
+	public static $prefix;
+
 	/**
 	 * Add box to Opponents CPT
 	 *
 	 * @since    0.0.2
 	 */
 	public function __construct() {
+
+		self::$prefix = WPSM_PREFIX . 'opponents_';
+
+
 		add_action( 'cmb2_admin_init', array( &$this,'add_meta_boxs_opponents') );
 		add_filter( 'enter_title_here', array( &$this,'change_title')  );
 	}
+
 
 	/**
 	 * Add fields using CMB2
@@ -41,10 +48,9 @@ class WP_Sports_Manager_Admin_Opponents_Fields {
 	 */
 	public static function add_meta_boxs_opponents() {
 
-			$prefix = 'wpsm_opponent_metabox';
 
 			$opponents_fields = new_cmb2_box( array(
-				'id'            => $prefix,
+				'id'            => self::$prefix,
 				'title'         => __( 'Opponents informations', 'wp-sports-manager' ),
 				'object_types'  => array( 'wpsm_opponents', ),
 				'priority'   	=> 'high',
@@ -53,14 +59,14 @@ class WP_Sports_Manager_Admin_Opponents_Fields {
 			$opponents_fields->add_field( array(
 				'name' => __( 'Logo', 'wp-sports-manager' ),
 				'desc' => __( 'Upload an image or enter a URL.', 'wp-sports-manager' ),
-				'id'   => $prefix . '_logo',
+				'id'   => self::$prefix . 'logo',
 				'type' => 'file',
 			) );
 
 			$opponents_fields->add_field(array(
 				'name'      => __( 'City', 'wp-sports-manager' ),
 				'desc' 		=> __( 'Drag the marker to set the exact location', 'wp-sports-manager'),
-				'id' 		=> $prefix . '_location',
+				'id' 		=> self::$prefix . 'location',
 				'type' 		=> 'pw_map',
 				'split_values' => true, // Save latitude and longitude as two separate fields
 			));
