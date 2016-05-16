@@ -34,7 +34,7 @@ class WP_Sports_Typologic {
 	 * @access   protected
 	 * @var      array    $actions    The actions registered with WordPress to fire when the plugin loads.
 	 */
-	public static $name = 'Baseball';
+	public static $name = 'Football';
 
 	/**
 	 * The name of taxonomy
@@ -69,8 +69,8 @@ class WP_Sports_Typologic {
 	public function __construct() {
 		add_action( 'init', array( &$this, 'create_position_taxonomy' ), 10, 2 );
 		if ( is_admin() ) {
-			add_action( 'admin_init', array( &$this, 'add_positions_terms' ), 10, 2 );
-			add_action( 'admin_init', array( &$this, 'remove_taxo_widget' ), 10, 2 );
+			add_action( 'admin_init', array( $this, 'add_positions_terms' ), 10, 2 );
+			add_action( 'admin_init', array( $this, 'remove_taxo_widget' ), 10, 2 );
 		}
 	}	
 
@@ -125,7 +125,8 @@ class WP_Sports_Typologic {
 			'thirdbase'		=> __( 'Third base', 'wp-sports-manager' ),
 			'rightfield'	=> __( 'Right field', 'wp-sports-manager' ),
 			'centerfield'	=> __( 'Center field', 'wp-sports-manager' ),
-			'leftfield'		=> __( 'Left field', 'wp-sports-manager' )
+			'leftfield'		=> __( 'Left field', 'wp-sports-manager' ),
+			'attaquant'		=> __( 'Attaquant', 'wp-sports-manager' ),
 		);
 
 		if( ! get_option( '_wpsm_typology_populated' ) ){		
@@ -207,4 +208,4 @@ class WP_Sports_Typologic {
 
 }
 
-// new WP_Sports_Baseball();
+// new WP_Sports_Football();

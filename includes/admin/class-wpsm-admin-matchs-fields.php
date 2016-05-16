@@ -36,7 +36,7 @@ class WP_Sports_Manager_Admin_Matchs_Fields {
 
 	public static function add_meta_boxs() {
 
-			$prefix = 'wpsm_matchs_';
+			$prefix = WPSM_PREFIX . 'matchs_';
 
 			/**
 			 * Sample metabox to demonstrate each field type included

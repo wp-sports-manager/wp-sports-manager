@@ -39,6 +39,8 @@ class WP_Sports_Manager_Activator {
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wpsm-create-roles.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wpsm-welcome.php';
+		delete_option( '_wpsm_typology_populated' );
+
 		/**
 		 * Add Roles
 		 * 

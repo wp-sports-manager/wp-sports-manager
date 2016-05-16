@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Sports Manager\n"
-"POT-Creation-Date: 2016-05-14 17:17+0200\n"
-"PO-Revision-Date: 2016-05-14 17:17+0200\n"
+"POT-Creation-Date: 2016-05-16 22:47+0200\n"
+"PO-Revision-Date: 2016-05-16 22:48+0200\n"
 "Last-Translator: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language-Team: David Massiani <davidmassianirennes@gmail.com>\n"
 "Language: fr_FR\n"
@@ -23,6 +23,19 @@ msgstr ""
 "X-Poedit-SearchPath-3: admin\n"
 "X-Poedit-SearchPath-4: public\n"
 
+#: admin/views/wpsm-welcome.php:17
+msgid "WordPress Sports Manager Welcome!"
+msgstr ""
+
+#: admin/views/wpsm-welcome.php:22
+msgid "Club Name"
+msgstr "Nom du club"
+
+#: admin/views/wpsm-welcome.php:37
+#: includes/vendors/cmb2/includes/helper-functions.php:250
+msgid "Save"
+msgstr "Enregister"
+
 #: includes/admin/class-wpsm-admin-matchs-fields.php:46
 #: includes/vendors/cmb2/example-functions.php:80
 #: includes/vendors/cmb2/tests/test-cmb-field.php:293
@@ -30,8 +43,8 @@ msgid "Test Metabox"
 msgstr ""
 
 #: includes/admin/class-wpsm-admin-matchs-fields.php:58
-#: includes/installation/class-wpsm-create-custom-post-type.php:67
 #: includes/installation/class-wpsm-create-custom-post-type.php:68
+#: includes/installation/class-wpsm-create-custom-post-type.php:69
 msgid "Team"
 msgstr "Equipe"
 
@@ -46,99 +59,109 @@ msgid ""
 msgstr ""
 
 #: includes/admin/class-wpsm-admin-matchs-fields.php:71
-#: includes/installation/class-wpsm-create-custom-post-type.php:160
+#: includes/installation/class-wpsm-create-custom-post-type.php:163
 msgid "Opponents"
 msgstr "Adversaires"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:56
+#: includes/admin/class-wpsm-admin-members.php:63
 msgid "Personal profil"
 msgstr "Profil personnel"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:73
+#: includes/admin/class-wpsm-admin-members.php:80
 msgid "First Name"
 msgstr "Prénom"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:75
-#: includes/admin/class-wpsm-admin-members-fields.php:81
+#: includes/admin/class-wpsm-admin-members.php:82
+#: includes/admin/class-wpsm-admin-members.php:88
 msgid "used for login : firstname.lastname"
 msgstr "Utilisé pour la connexion: prénom.nom"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:80
+#: includes/admin/class-wpsm-admin-members.php:87
 msgid "Last Name"
 msgstr "Nom"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:87
+#: includes/admin/class-wpsm-admin-members.php:94
+#: includes/admin/class-wpsm-admin-members.php:238
 msgid "Nickname"
 msgstr "Surnom"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:93
+#: includes/admin/class-wpsm-admin-members.php:100
+#: includes/admin/class-wpsm-admin-members.php:239
 msgid "Phone"
 msgstr "Téléphone"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:99
+#: includes/admin/class-wpsm-admin-members.php:106
 msgid "Email"
 msgstr "Email"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:121
+#: includes/admin/class-wpsm-admin-members.php:128
 msgid "Player profil"
 msgstr "Profil du joueur"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:127
+#: includes/admin/class-wpsm-admin-members.php:134
 msgid "Role"
 msgstr "Rôle"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:132
-#: includes/sports/wpsm_baseball.php:178
+#: includes/admin/class-wpsm-admin-members.php:139
+#: includes/sports/wpsm_baseball.php:181 includes/sports/wpsm_football.php:182
 msgid "Sorry, no terms could be found."
 msgstr "Désolé, aucun terme n’a pu être trouvée."
 
-#: includes/admin/class-wpsm-admin-members-fields.php:137
+#: includes/admin/class-wpsm-admin-members.php:144
 msgid "Birthday"
 msgstr "Date de naissance"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:150
+#: includes/admin/class-wpsm-admin-members.php:157
 msgid "Arrival date"
 msgstr "Date d’arrivée"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:163
+#: includes/admin/class-wpsm-admin-members.php:170
 msgid "License Number"
 msgstr "Numéro de licence"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:169
+#: includes/admin/class-wpsm-admin-members.php:176
 msgid "License validity"
 msgstr "Validité de la licence"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:171
+#: includes/admin/class-wpsm-admin-members.php:178
 msgid "until"
 msgstr "Jusque"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:181
+#: includes/admin/class-wpsm-admin-members.php:188
 msgid "Photo"
 msgstr "Photo"
 
-#: includes/admin/class-wpsm-admin-members-fields.php:182
-#: includes/admin/class-wpsm-admin-opponents-fields.php:55
+#: includes/admin/class-wpsm-admin-members.php:189
+#: includes/admin/class-wpsm-admin-opponents-fields.php:61
 #: includes/vendors/cmb2/example-functions.php:328
 msgid "Upload an image or enter a URL."
 msgstr "Ajouter une image ou entrer une URL."
 
-#: includes/admin/class-wpsm-admin-opponents-fields.php:48
+#: includes/admin/class-wpsm-admin-members.php:236
+msgid "First name"
+msgstr "Nom"
+
+#: includes/admin/class-wpsm-admin-members.php:237
+msgid "Last name"
+msgstr "Prénom"
+
+#: includes/admin/class-wpsm-admin-opponents-fields.php:54
 msgid "Opponents informations"
 msgstr "Informations des adversaires"
 
-#: includes/admin/class-wpsm-admin-opponents-fields.php:54
+#: includes/admin/class-wpsm-admin-opponents-fields.php:60
 msgid "Logo"
 msgstr "Logo"
 
-#: includes/admin/class-wpsm-admin-opponents-fields.php:61
+#: includes/admin/class-wpsm-admin-opponents-fields.php:67
 msgid "City"
 msgstr "VIlle"
 
-#: includes/admin/class-wpsm-admin-opponents-fields.php:62
+#: includes/admin/class-wpsm-admin-opponents-fields.php:68
 msgid "Drag the marker to set the exact location"
 msgstr "Déplacez le marqueur pour définir le lieu exact"
 
-#: includes/admin/class-wpsm-admin-opponents-fields.php:73
+#: includes/admin/class-wpsm-admin-opponents-fields.php:79
 msgid "Name of your opponent"
 msgstr "Nom de l’adversaire"
 
@@ -165,196 +188,183 @@ msgstr "Latitude"
 msgid "Longitude"
 msgstr "Longitude"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:69
+#: includes/admin/class-wpsm-admin-teams.php:60
+msgid "Team profil"
+msgstr "Profil du joueur au sein de l’équipe"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:70
 msgid "Add New Team"
 msgstr "Ajouter une nouvelle équipe"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:70
+#: includes/installation/class-wpsm-create-custom-post-type.php:71
 msgid "Edit Team"
 msgstr "Modifier l’équipe"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:71
-#: includes/installation/class-wpsm-create-custom-post-type.php:116
-#: includes/installation/class-wpsm-create-custom-post-type.php:164
-#: includes/installation/class-wpsm-create-custom-post-type.php:215
-#: includes/installation/class-wpsm-create-custom-post-type.php:263
-#: includes/installation/class-wpsm-create-custom-post-type.php:311
-msgid "New"
-msgstr "Nouveau"
-
 #: includes/installation/class-wpsm-create-custom-post-type.php:72
-#: includes/installation/class-wpsm-create-custom-post-type.php:117
-#: includes/installation/class-wpsm-create-custom-post-type.php:165
-#: includes/installation/class-wpsm-create-custom-post-type.php:216
-#: includes/installation/class-wpsm-create-custom-post-type.php:264
-#: includes/installation/class-wpsm-create-custom-post-type.php:312
-msgid "View"
-msgstr "Voir"
-
-#: includes/installation/class-wpsm-create-custom-post-type.php:73
-#: includes/installation/class-wpsm-create-custom-post-type.php:118
-#: includes/installation/class-wpsm-create-custom-post-type.php:166
+#: includes/installation/class-wpsm-create-custom-post-type.php:119
+#: includes/installation/class-wpsm-create-custom-post-type.php:167
 #: includes/installation/class-wpsm-create-custom-post-type.php:217
 #: includes/installation/class-wpsm-create-custom-post-type.php:265
 #: includes/installation/class-wpsm-create-custom-post-type.php:313
+msgid "New"
+msgstr "Nouveau"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:73
+#: includes/installation/class-wpsm-create-custom-post-type.php:120
+#: includes/installation/class-wpsm-create-custom-post-type.php:168
+#: includes/installation/class-wpsm-create-custom-post-type.php:218
+#: includes/installation/class-wpsm-create-custom-post-type.php:266
+#: includes/installation/class-wpsm-create-custom-post-type.php:314
+msgid "View"
+msgstr "Voir"
+
+#: includes/installation/class-wpsm-create-custom-post-type.php:74
+#: includes/installation/class-wpsm-create-custom-post-type.php:121
+#: includes/installation/class-wpsm-create-custom-post-type.php:169
+#: includes/installation/class-wpsm-create-custom-post-type.php:219
+#: includes/installation/class-wpsm-create-custom-post-type.php:267
+#: includes/installation/class-wpsm-create-custom-post-type.php:315
 msgid "Search"
 msgstr "Rechercher"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:74
 #: includes/installation/class-wpsm-create-custom-post-type.php:75
-#: includes/installation/class-wpsm-create-custom-post-type.php:119
-#: includes/installation/class-wpsm-create-custom-post-type.php:120
-#: includes/installation/class-wpsm-create-custom-post-type.php:167
-#: includes/installation/class-wpsm-create-custom-post-type.php:168
-#: includes/installation/class-wpsm-create-custom-post-type.php:218
-#: includes/installation/class-wpsm-create-custom-post-type.php:219
-#: includes/installation/class-wpsm-create-custom-post-type.php:266
-#: includes/installation/class-wpsm-create-custom-post-type.php:267
-#: includes/installation/class-wpsm-create-custom-post-type.php:314
-#: includes/installation/class-wpsm-create-custom-post-type.php:315
+#: includes/installation/class-wpsm-create-custom-post-type.php:76
+#: includes/installation/class-wpsm-create-custom-post-type.php:122
+#: includes/installation/class-wpsm-create-custom-post-type.php:123
+#: includes/installation/class-wpsm-create-custom-post-type.php:170
+#: includes/installation/class-wpsm-create-custom-post-type.php:171
+#: includes/installation/class-wpsm-create-custom-post-type.php:220
+#: includes/installation/class-wpsm-create-custom-post-type.php:221
+#: includes/installation/class-wpsm-create-custom-post-type.php:268
+#: includes/installation/class-wpsm-create-custom-post-type.php:269
+#: includes/installation/class-wpsm-create-custom-post-type.php:316
+#: includes/installation/class-wpsm-create-custom-post-type.php:317
 msgid "No results found."
 msgstr "Aucun résultat !"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:112
-#: includes/installation/class-wpsm-create-custom-post-type.php:113
+#: includes/installation/class-wpsm-create-custom-post-type.php:115
+#: includes/installation/class-wpsm-create-custom-post-type.php:116
 msgid "Match"
 msgstr "Match"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:114
+#: includes/installation/class-wpsm-create-custom-post-type.php:117
 msgid "Add New Match"
 msgstr "Ajouter un nouveau match"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:115
+#: includes/installation/class-wpsm-create-custom-post-type.php:118
 msgid "Edit Match"
 msgstr "Modifier le match"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:161
+#: includes/installation/class-wpsm-create-custom-post-type.php:164
 msgid "Opponent"
 msgstr "Adversaire"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:162
+#: includes/installation/class-wpsm-create-custom-post-type.php:165
 msgid "Add New Opponent"
 msgstr "Ajouter un nouvel adversaire"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:163
+#: includes/installation/class-wpsm-create-custom-post-type.php:166
 msgid "Edit Opponent"
 msgstr "Modifier l’adversaire"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:211
-#: includes/installation/class-wpsm-create-menu.php:238
-#: includes/installation/class-wpsm-create-menu.php:239
+#: includes/installation/class-wpsm-create-custom-post-type.php:213
+#: includes/installation/class-wpsm-create-menu.php:235
+#: includes/installation/class-wpsm-create-menu.php:236
 msgid "Trainings"
 msgstr "Entrainements"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:212
+#: includes/installation/class-wpsm-create-custom-post-type.php:214
 msgid "Training"
 msgstr "Entrainement"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:213
+#: includes/installation/class-wpsm-create-custom-post-type.php:215
 msgid "Add New Training"
 msgstr "Ajouter un nouveau entrainement"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:214
+#: includes/installation/class-wpsm-create-custom-post-type.php:216
 msgid "Edit Training"
 msgstr "Modifier l’entraînement "
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:259
+#: includes/installation/class-wpsm-create-custom-post-type.php:261
 msgid "Tournaments"
 msgstr "Tournois"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:260
+#: includes/installation/class-wpsm-create-custom-post-type.php:262
 msgid "Tournament"
 msgstr "Tournoi"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:261
+#: includes/installation/class-wpsm-create-custom-post-type.php:263
 msgid "Add New Tournament"
 msgstr "Ajouter un nouveau tournoi"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:262
+#: includes/installation/class-wpsm-create-custom-post-type.php:264
 msgid "Edit Tournament"
 msgstr "Modifier le tournoi"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:307
+#: includes/installation/class-wpsm-create-custom-post-type.php:309
 msgid "Members"
 msgstr "Membres"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:308
+#: includes/installation/class-wpsm-create-custom-post-type.php:310
 msgid "Member"
 msgstr "Membre"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:309
+#: includes/installation/class-wpsm-create-custom-post-type.php:311
 msgid "Add New Member"
 msgstr "Ajouter un Membre"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:310
+#: includes/installation/class-wpsm-create-custom-post-type.php:312
 msgid "Edit Member"
 msgstr "Modifier le Membre"
 
-#: includes/installation/class-wpsm-create-custom-post-type.php:361
-msgid "First name"
-msgstr "Nom"
-
-#: includes/installation/class-wpsm-create-custom-post-type.php:362
-msgid "Last name"
-msgstr "Prénom"
-
-#: includes/installation/class-wpsm-create-menu.php:66
+#: includes/installation/class-wpsm-create-menu.php:62
 msgid "Sports Manager"
 msgstr "Directeur des Sports"
 
-#: includes/installation/class-wpsm-create-menu.php:82
-#: includes/installation/class-wpsm-create-menu.php:83
+#: includes/installation/class-wpsm-create-menu.php:78
+#: includes/installation/class-wpsm-create-menu.php:79
 msgid "Dashboard"
 msgstr "Tableau de bord"
 
-#: includes/installation/class-wpsm-create-menu.php:97
-#: includes/installation/class-wpsm-create-menu.php:98
-#: includes/installation/class-wpsm-create-menu.php:183
-#: includes/installation/class-wpsm-create-menu.php:184
-#: includes/installation/class-wpsm-create-menu.php:225
-#: includes/installation/class-wpsm-create-menu.php:226
-#: includes/installation/class-wpsm-create-menu.php:296
-#: includes/installation/class-wpsm-create-menu.php:297
+#: includes/installation/class-wpsm-create-menu.php:93
+#: includes/installation/class-wpsm-create-menu.php:94
+#: includes/installation/class-wpsm-create-menu.php:179
+#: includes/installation/class-wpsm-create-menu.php:180
+#: includes/installation/class-wpsm-create-menu.php:293
+#: includes/installation/class-wpsm-create-menu.php:294
 msgid "Settings"
 msgstr "Paramètres"
 
-#: includes/installation/class-wpsm-create-menu.php:111
-#: includes/installation/class-wpsm-create-menu.php:112
+#: includes/installation/class-wpsm-create-menu.php:107
+#: includes/installation/class-wpsm-create-menu.php:108
 msgid "Matchs"
 msgstr "Matchs"
 
-#: includes/installation/class-wpsm-create-menu.php:127
-#: includes/installation/class-wpsm-create-menu.php:128
-#: includes/installation/class-wpsm-create-menu.php:212
-#: includes/installation/class-wpsm-create-menu.php:213
-#: includes/installation/class-wpsm-create-menu.php:254
-#: includes/installation/class-wpsm-create-menu.php:255
+#: includes/installation/class-wpsm-create-menu.php:123
+#: includes/installation/class-wpsm-create-menu.php:124
+#: includes/installation/class-wpsm-create-menu.php:251
+#: includes/installation/class-wpsm-create-menu.php:252
 msgid "Add"
 msgstr "Ajouter"
 
-#: includes/installation/class-wpsm-create-menu.php:141
-#: includes/installation/class-wpsm-create-menu.php:142
+#: includes/installation/class-wpsm-create-menu.php:137
+#: includes/installation/class-wpsm-create-menu.php:138
 msgid "Competitions"
 msgstr "Compétitions"
 
-#: includes/installation/class-wpsm-create-menu.php:155
-#: includes/installation/class-wpsm-create-menu.php:156
-#: includes/installation/class-wpsm-create-menu.php:268
-#: includes/installation/class-wpsm-create-menu.php:269
+#: includes/installation/class-wpsm-create-menu.php:151
+#: includes/installation/class-wpsm-create-menu.php:152
+#: includes/installation/class-wpsm-create-menu.php:265
+#: includes/installation/class-wpsm-create-menu.php:266
 msgid "Seasons"
 msgstr "Saisons"
 
-#: includes/installation/class-wpsm-create-menu.php:169
-#: includes/installation/class-wpsm-create-menu.php:170
-#: includes/installation/class-wpsm-create-menu.php:282
-#: includes/installation/class-wpsm-create-menu.php:283
+#: includes/installation/class-wpsm-create-menu.php:165
+#: includes/installation/class-wpsm-create-menu.php:166
+#: includes/installation/class-wpsm-create-menu.php:279
+#: includes/installation/class-wpsm-create-menu.php:280
 msgid "Places"
 msgstr "Lieux"
-
-#: includes/installation/class-wpsm-create-menu.php:197
-#: includes/installation/class-wpsm-create-menu.php:198
-msgid "Teams"
-msgstr "Équipes"
 
 #: includes/installation/class-wpsm-create-roles.php:48
 msgctxt "User role"
@@ -386,371 +396,382 @@ msgctxt "User role"
 msgid "Volunteer"
 msgstr "Volontaire"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:47
+#: includes/installation/class-wpsm-create-taxonomies.php:48
 msgctxt "taxonomy general name"
 msgid "Competitions"
 msgstr "Compétitions"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:48
+#: includes/installation/class-wpsm-create-taxonomies.php:49
 msgctxt "taxonomy singular name"
 msgid "Competition"
 msgstr "Compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:49
+#: includes/installation/class-wpsm-create-taxonomies.php:50
 msgid "Search Competitions"
 msgstr "Recherche une compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:50
+#: includes/installation/class-wpsm-create-taxonomies.php:51
 msgid "All Competitions"
 msgstr "Toutes les compétitions"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:51
+#: includes/installation/class-wpsm-create-taxonomies.php:52
 msgid "Parent Competition"
 msgstr "Compétition parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:52
+#: includes/installation/class-wpsm-create-taxonomies.php:53
 msgid "Parent Competition:"
 msgstr "Compétition parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:53
+#: includes/installation/class-wpsm-create-taxonomies.php:54
 msgid "Edit Competition"
 msgstr "Éditer la compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:54
+#: includes/installation/class-wpsm-create-taxonomies.php:55
 msgid "Update Competition"
 msgstr "Mettre à jour la compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:55
+#: includes/installation/class-wpsm-create-taxonomies.php:56
 msgid "Add New Competition"
 msgstr "Ajouter une nouvelle compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:56
+#: includes/installation/class-wpsm-create-taxonomies.php:57
 msgid "New Competition Name"
 msgstr "Nouveau nom de compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:57
+#: includes/installation/class-wpsm-create-taxonomies.php:58
 msgid "Competition"
 msgstr "Compétition"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:77
+#: includes/installation/class-wpsm-create-taxonomies.php:78
 msgctxt "taxonomy general name"
 msgid "Typologies"
 msgstr "Typologies"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:78
+#: includes/installation/class-wpsm-create-taxonomies.php:79
 msgctxt "taxonomy singular name"
 msgid "Typologie"
 msgstr "Typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:79
+#: includes/installation/class-wpsm-create-taxonomies.php:80
 msgid "Search Typologies"
 msgstr "Rechercher"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:80
+#: includes/installation/class-wpsm-create-taxonomies.php:81
 msgid "All Typologies"
 msgstr "Toutes les Typologies"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:81
+#: includes/installation/class-wpsm-create-taxonomies.php:82
 msgid "Parent Typologie"
 msgstr "Typologie parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:82
+#: includes/installation/class-wpsm-create-taxonomies.php:83
 msgid "Parent Typologie :"
 msgstr "Typologie parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:83
+#: includes/installation/class-wpsm-create-taxonomies.php:84
 msgid "Edit Typologie"
 msgstr "Modifier la Typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:84
+#: includes/installation/class-wpsm-create-taxonomies.php:85
 msgid "Update Typologie"
 msgstr "Mettre à jour la typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:85
+#: includes/installation/class-wpsm-create-taxonomies.php:86
 msgid "Add New Typologie"
 msgstr "Ajouter une nouvelle typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:86
+#: includes/installation/class-wpsm-create-taxonomies.php:87
 msgid "New Typologie Name"
 msgstr "Nouvelle typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:87
+#: includes/installation/class-wpsm-create-taxonomies.php:88
 msgid "Typologie"
 msgstr "Typologie"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:107
+#: includes/installation/class-wpsm-create-taxonomies.php:108
 msgctxt "taxonomy general name"
 msgid "Seasons"
 msgstr "Saisons"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:108
+#: includes/installation/class-wpsm-create-taxonomies.php:109
 msgctxt "taxonomy singular name"
 msgid "Season"
 msgstr "Saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:109
+#: includes/installation/class-wpsm-create-taxonomies.php:110
 msgid "Search Seasons"
 msgstr "Recherche de saisons"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:110
+#: includes/installation/class-wpsm-create-taxonomies.php:111
 msgid "All Seasons"
 msgstr "Toutes les saisons"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:111
+#: includes/installation/class-wpsm-create-taxonomies.php:112
 msgid "Parent Season"
 msgstr "Saison parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:112
+#: includes/installation/class-wpsm-create-taxonomies.php:113
 msgid "Parent Season :"
 msgstr "Saison parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:113
+#: includes/installation/class-wpsm-create-taxonomies.php:114
 msgid "Edit Season"
 msgstr "Éditer la saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:114
+#: includes/installation/class-wpsm-create-taxonomies.php:115
 msgid "Update Season"
 msgstr "Mettre à jour la saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:115
+#: includes/installation/class-wpsm-create-taxonomies.php:116
 msgid "Add New Season"
 msgstr "Ajouter une nouvelle saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:116
+#: includes/installation/class-wpsm-create-taxonomies.php:117
 msgid "New Season Name"
 msgstr "Nom de la nouvelle saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:117
+#: includes/installation/class-wpsm-create-taxonomies.php:118
 msgid "Season"
 msgstr "Saison"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:137
+#: includes/installation/class-wpsm-create-taxonomies.php:138
 msgctxt "taxonomy general name"
 msgid "Members typologies"
 msgstr "Typologies de membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:138
+#: includes/installation/class-wpsm-create-taxonomies.php:139
 msgctxt "taxonomy singular name"
 msgid "Members typology"
 msgstr "Typologie des membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:139
+#: includes/installation/class-wpsm-create-taxonomies.php:140
 msgid "Search Members typologies"
 msgstr "Recherche parmi les Membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:140
+#: includes/installation/class-wpsm-create-taxonomies.php:141
 msgid "All Members typologies"
 msgstr "Toutes les typologies de membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:141
+#: includes/installation/class-wpsm-create-taxonomies.php:142
 msgid "Parent Members typology"
 msgstr "Parent des typologies des membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:142
+#: includes/installation/class-wpsm-create-taxonomies.php:143
 msgid "Parent Members typology :"
 msgstr "Typologie des membres parents :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:143
+#: includes/installation/class-wpsm-create-taxonomies.php:144
 msgid "Edit Members typology"
 msgstr "Modifier la typologie des membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:144
+#: includes/installation/class-wpsm-create-taxonomies.php:145
 msgid "Update Members typology"
 msgstr "Typologie des membres mise à jour"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:145
+#: includes/installation/class-wpsm-create-taxonomies.php:146
 msgid "Add New Members typology"
 msgstr "Ajouter la typologie de nouveaux membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:146
+#: includes/installation/class-wpsm-create-taxonomies.php:147
 msgid "New Members typology Name"
 msgstr "Typologie des membres parents :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:147
+#: includes/installation/class-wpsm-create-taxonomies.php:148
 msgid "Members typology"
 msgstr "Typologie des membres"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:167
+#: includes/installation/class-wpsm-create-taxonomies.php:168
 msgctxt "taxonomy general name"
 msgid "Places"
 msgstr "Lieux"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:168
+#: includes/installation/class-wpsm-create-taxonomies.php:169
 msgctxt "taxonomy singular name"
 msgid "Place"
 msgstr "Lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:169
+#: includes/installation/class-wpsm-create-taxonomies.php:170
 msgid "Search Places"
 msgstr "Rechercher un lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:170
+#: includes/installation/class-wpsm-create-taxonomies.php:171
 msgid "All Places"
 msgstr "Tous les lieux"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:171
+#: includes/installation/class-wpsm-create-taxonomies.php:172
 msgid "Parent Place"
 msgstr "Lieu parent"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:172
+#: includes/installation/class-wpsm-create-taxonomies.php:173
 msgid "Parent Place :"
 msgstr "Lieu parent :"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:173
+#: includes/installation/class-wpsm-create-taxonomies.php:174
 msgid "Edit Place"
 msgstr "Editer un lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:174
+#: includes/installation/class-wpsm-create-taxonomies.php:175
 msgid "Update Place"
 msgstr "Mettre à jour le lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:175
+#: includes/installation/class-wpsm-create-taxonomies.php:176
 msgid "Add New Place"
 msgstr "Ajouter un lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:176
+#: includes/installation/class-wpsm-create-taxonomies.php:177
 msgid "New Place Name"
 msgstr "Nouveau nom du lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:177
+#: includes/installation/class-wpsm-create-taxonomies.php:178
 msgid "Place"
 msgstr "Lieu"
 
-#: includes/installation/class-wpsm-create-taxonomies.php:197
-msgctxt "taxonomy general name"
-msgid "Club"
-msgstr "Club"
-
 #: includes/installation/class-wpsm-create-taxonomies.php:198
-msgctxt "taxonomy singular name"
+msgctxt "taxonomy general name"
 msgid "Club"
 msgstr "Club"
 
 #: includes/installation/class-wpsm-create-taxonomies.php:199
-msgid "Search Club"
-msgstr "Rechercher un club"
-
-#: includes/installation/class-wpsm-create-taxonomies.php:200
-msgid "All Club"
-msgstr "Tous les clubs"
-
-#: includes/installation/class-wpsm-create-taxonomies.php:201
-msgid "Parent Club"
-msgstr "Club parent"
-
-#: includes/installation/class-wpsm-create-taxonomies.php:202
-msgid "Parent Club :"
-msgstr "Club parent :"
-
-#: includes/installation/class-wpsm-create-taxonomies.php:203
-msgid "Edit Club"
-msgstr "Modifier le club"
-
-#: includes/installation/class-wpsm-create-taxonomies.php:204
-msgid "Update Club"
-msgstr "Mettre à jour le club"
-
-#: includes/installation/class-wpsm-create-taxonomies.php:205
-msgid "Add New Club"
-msgstr "Ajouter un nouveau club"
-
-#: includes/installation/class-wpsm-create-taxonomies.php:206
-msgid "New Club Name"
-msgstr "Ajouter nouveau club"
-
-#: includes/installation/class-wpsm-create-taxonomies.php:207
+msgctxt "taxonomy singular name"
 msgid "Club"
 msgstr "Club"
 
-#: includes/sports/wpsm_baseball.php:89
+#: includes/installation/class-wpsm-create-taxonomies.php:200
+msgid "Search Club"
+msgstr "Rechercher un club"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:201
+msgid "All Club"
+msgstr "Tous les clubs"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:202
+msgid "Parent Club"
+msgstr "Club parent"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:203
+msgid "Parent Club :"
+msgstr "Club parent :"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:204
+msgid "Edit Club"
+msgstr "Modifier le club"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:205
+msgid "Update Club"
+msgstr "Mettre à jour le club"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:206
+msgid "Add New Club"
+msgstr "Ajouter un nouveau club"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:207
+msgid "New Club Name"
+msgstr "Ajouter nouveau club"
+
+#: includes/installation/class-wpsm-create-taxonomies.php:208
+msgid "Club"
+msgstr "Club"
+
+#: includes/installation/class-wpsm-welcome.php:72
+#: includes/installation/class-wpsm-welcome.php:73
+msgid "Welcome to WP Sports Manager"
+msgstr ""
+
+#: includes/sports/wpsm_baseball.php:89 includes/sports/wpsm_football.php:89
 msgctxt "taxonomy general name"
 msgid "Positions"
 msgstr "Positions"
 
-#: includes/sports/wpsm_baseball.php:90
+#: includes/sports/wpsm_baseball.php:90 includes/sports/wpsm_football.php:90
 msgctxt "taxonomy singular name"
 msgid "Position"
 msgstr "Position"
 
-#: includes/sports/wpsm_baseball.php:91
+#: includes/sports/wpsm_baseball.php:91 includes/sports/wpsm_football.php:91
 msgid "Search Positions"
 msgstr "Rechercher une position :"
 
-#: includes/sports/wpsm_baseball.php:92
+#: includes/sports/wpsm_baseball.php:92 includes/sports/wpsm_football.php:92
 msgid "All Positions"
 msgstr "Tous les postes"
 
-#: includes/sports/wpsm_baseball.php:93
+#: includes/sports/wpsm_baseball.php:93 includes/sports/wpsm_football.php:93
 msgid "Parent Position"
 msgstr "Position parente"
 
-#: includes/sports/wpsm_baseball.php:94
+#: includes/sports/wpsm_baseball.php:94 includes/sports/wpsm_football.php:94
 msgid "Parent Position:"
 msgstr "Position parente"
 
-#: includes/sports/wpsm_baseball.php:95
+#: includes/sports/wpsm_baseball.php:95 includes/sports/wpsm_football.php:95
 msgid "Edit Position"
 msgstr "Modifier le poste"
 
-#: includes/sports/wpsm_baseball.php:96
+#: includes/sports/wpsm_baseball.php:96 includes/sports/wpsm_football.php:96
 msgid "Update Position"
 msgstr "Mettre à jour le poste"
 
-#: includes/sports/wpsm_baseball.php:97
+#: includes/sports/wpsm_baseball.php:97 includes/sports/wpsm_football.php:97
 msgid "Add New Position"
 msgstr "Ajouter un nouveau poste"
 
-#: includes/sports/wpsm_baseball.php:98
+#: includes/sports/wpsm_baseball.php:98 includes/sports/wpsm_football.php:98
 msgid "New Position Name"
 msgstr "Nouveau nom de position"
 
-#: includes/sports/wpsm_baseball.php:99 includes/sports/wpsm_baseball.php:173
+#: includes/sports/wpsm_baseball.php:99 includes/sports/wpsm_baseball.php:176
+#: includes/sports/wpsm_football.php:99 includes/sports/wpsm_football.php:177
 msgid "Position"
 msgstr "Position"
 
-#: includes/sports/wpsm_baseball.php:120
+#: includes/sports/wpsm_baseball.php:120 includes/sports/wpsm_football.php:120
 msgid "Pitcher"
 msgstr "Lanceur"
 
-#: includes/sports/wpsm_baseball.php:121
+#: includes/sports/wpsm_baseball.php:121 includes/sports/wpsm_football.php:121
 msgid "Catcher"
 msgstr "Rattrapeur"
 
-#: includes/sports/wpsm_baseball.php:122
+#: includes/sports/wpsm_baseball.php:122 includes/sports/wpsm_football.php:122
 msgid "First base"
 msgstr "Première base"
 
-#: includes/sports/wpsm_baseball.php:123
+#: includes/sports/wpsm_baseball.php:123 includes/sports/wpsm_football.php:123
 msgid "Second base"
 msgstr "Deuxième base"
 
-#: includes/sports/wpsm_baseball.php:124
+#: includes/sports/wpsm_baseball.php:124 includes/sports/wpsm_football.php:124
 msgid "Short stop"
 msgstr "Arrêt-court"
 
-#: includes/sports/wpsm_baseball.php:125
+#: includes/sports/wpsm_baseball.php:125 includes/sports/wpsm_football.php:125
 msgid "Third base"
 msgstr "Troisième base"
 
-#: includes/sports/wpsm_baseball.php:126
+#: includes/sports/wpsm_baseball.php:126 includes/sports/wpsm_football.php:126
 msgid "Right field"
 msgstr "Champ droite"
 
-#: includes/sports/wpsm_baseball.php:127
+#: includes/sports/wpsm_baseball.php:127 includes/sports/wpsm_football.php:127
 msgid "Center field"
 msgstr "Champ centre"
 
-#: includes/sports/wpsm_baseball.php:128
+#: includes/sports/wpsm_baseball.php:128 includes/sports/wpsm_football.php:128
 msgid "Left field"
 msgstr "Champ gauche"
 
-#: includes/sports/wpsm_baseball.php:163
+#: includes/sports/wpsm_baseball.php:166 includes/sports/wpsm_baseball.php:198
+#: includes/sports/wpsm_football.php:167 includes/sports/wpsm_football.php:199
 msgid "Size"
 msgstr "Taille"
 
-#: includes/sports/wpsm_baseball.php:168
+#: includes/sports/wpsm_baseball.php:171 includes/sports/wpsm_football.php:172
 msgid "Jersey Number"
 msgstr "Numéro de maillot"
+
+#: includes/sports/wpsm_football.php:129
+msgid "Attaquant"
+msgstr ""
 
 #: includes/vendors/cmb2-attached-posts/example-field-setup.php:22
 #: includes/vendors/cmb2-attached-posts/example-field-setup.php:30
@@ -1261,7 +1282,7 @@ msgstr ""
 #: includes/vendors/cmb2/includes/CMB2_Types.php:768
 #: includes/vendors/cmb2/includes/CMB2_Types.php:816
 msgid "No terms"
-msgstr ""
+msgstr "Aucun terme"
 
 #: includes/vendors/cmb2/includes/CMB2_Types.php:884
 #: includes/vendors/cmb2/tests/test-cmb-types.php:737
@@ -1285,10 +1306,6 @@ msgstr ""
 msgid "Term metaboxes configuration requires a 'taxonomies' parameter"
 msgstr ""
 
-#: includes/vendors/cmb2/includes/helper-functions.php:250
-msgid "Save"
-msgstr ""
-
 #. Plugin Name of the plugin/theme
 msgid "WP Sports Manager"
 msgstr ""
@@ -1309,6 +1326,9 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "SportsManagerTeam"
 msgstr ""
+
+#~ msgid "Teams"
+#~ msgstr "Équipes"
 
 #~ msgid "Weight"
 #~ msgstr "Poids"

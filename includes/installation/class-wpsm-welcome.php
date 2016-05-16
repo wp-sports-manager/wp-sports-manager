@@ -40,20 +40,21 @@ class WP_Sports_Manager_Welcome {
 		add_action( 'admin_init', array( $this, 'wpsm_welcome_screen_do_activation_redirect') );
 	}
 
-	public function install() {
+	public static function install() {
 
-		set_transient( '_welcome_screen_activation_redirect', true, 30 );
+		set_transient( '_wpsm_welcome_screen_activation_redirect', true, 30 );
 
 	}
 
 	public function wpsm_welcome_screen_do_activation_redirect() {
 		// Bail if no activation redirect
-		if ( ! get_transient( '_welcome_screen_activation_redirect' ) ) {
+		if ( ! get_transient( '_wpsm_welcome_screen_activation_redirect' ) ) {
 			return;
 		}
 
 		// Delete the redirect transient
-		delete_transient( '_welcome_screen_activation_redirect' );
+		delete_transient( '_wpsm_welcome_screen_activation_redirect' );
+
 
 		// Bail if activating from network, or bulk
 		if ( is_network_admin() || isset( $_GET['activate-multi'] ) || defined( 'IFRAME_REQUEST' ) )

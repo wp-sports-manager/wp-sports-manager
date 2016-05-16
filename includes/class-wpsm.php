@@ -80,6 +80,16 @@ class WP_Sports_Manager {
 	protected $typology;
 
 	/**
+	 * available typologic
+	 *
+	 *
+	 */
+	public static $availableTypologic = array(
+		'baseball',
+		'football'
+	); 
+
+	/**
 	 * Define the core functionality of the plugin.
 	 *
 	 * Set the plugin name and the plugin version that can be used throughout the plugin.
@@ -97,10 +107,14 @@ class WP_Sports_Manager {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+		
 		$this->create_custom_taxonomies();
 		$this->create_custom_post_type();
+
 		// load typologic for selected sport
-		$this->load_typologic();
+		if( get_option( '_wpsm_installed' ) ){
+			$this->load_typologic();
+		}
 
 		if ( is_admin() ) {
 			$this->create_admin_menu();
@@ -111,6 +125,7 @@ class WP_Sports_Manager {
 			$this->admin_teams();
 		}
 
+
 	}
 
 	/**
@@ -119,9 +134,13 @@ class WP_Sports_Manager {
 	 *
 	 */
 	private function define_constants() {
-		define( 'WPSM_PREFIX', 'wpsm_members_');
+		define( 'WPSM_PREFIX', 'wpsm_');
 		define( 'WPSM_PLUGIN_FILE', __FILE__ );
 		define( 'WPSM_VERSION', $this->version );
+	}
+
+	public static function get_typologics() {
+		return self::$availableTypologic;
 	}
 
 	/**
@@ -180,7 +199,6 @@ class WP_Sports_Manager {
 		$this->loader = new WP_Sports_Manager_Loader();
 
 	}
-
 
 	/**
 	 * Create CPT
@@ -267,7 +285,7 @@ class WP_Sports_Manager {
 		 * Members CTP management
 		 */
 		$this->loader->add_filter( 'manage_edit-wpsm_members_columns', $members, 'wpsm_members_remove_cpt_columns' );
-		$this->loader->add_action( 'manage_posts_custom_column', $members, 'wpsm_members_content_columns' );
+		$this->loader->add_action( 'manage_wpsm_members_posts_custom_column', $members, 'wpsm_members_content_columns' );
 		$this->loader->add_filter( 'manage_edit-wpsm_members_sortable_columns', $members, 'wpsm_members_column_register_sortable' );
 		$this->loader->add_filter( 'request', $members, 'wpsm_members_column_orderby' );
 		$this->loader->add_action( 'admin_menu', $members, 'remove_metabox_members' );
@@ -285,7 +303,7 @@ class WP_Sports_Manager {
 		 * Members CTP management
 		 */
 		$this->loader->add_filter( 'manage_edit-wpsm_teams_columns', $teams, 'wpsm_teams_remove_cpt_columns' );
-		$this->loader->add_action( 'manage_posts_custom_column', $teams, 'wpsm_teams_content_columns' );
+		$this->loader->add_action( 'manage_wpsm_teams_posts_custom_column', $teams, 'wpsm_teams_content_columns' );
 		$this->loader->add_filter( 'manage_edit-wpsm_teams_sortable_columns', $teams, 'wpsm_teams_column_register_sortable' );
 		$this->loader->add_filter( 'request', $teams, 'wpsm_teams_column_orderby' );
 		$this->loader->add_action( 'admin_menu', $teams, 'remove_metabox_teams' );
@@ -357,7 +375,7 @@ class WP_Sports_Manager {
 	 */
 	public function typology() {
 		// define selected sport :
-		$this->typology = 'baseball';
+		$this->typology = get_option( WPSM_PREFIX . 'typology' , 'football' );
 		return $this->typology;
 	}
 
@@ -369,7 +387,6 @@ class WP_Sports_Manager {
 	public function load_typologic() {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/sports/wpsm_' . $this->typology() . '.php';
 		$typologie = new WP_Sports_Typologic();
-		// var_dump($typologie::get_name());
 	}
 
 	/**

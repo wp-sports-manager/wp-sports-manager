@@ -1,6 +1,8 @@
 <?php
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ){
+	exit; // Exit if accessed directly
+}
 
 /**
  * The public-facing functionality of the plugin.
@@ -24,14 +26,19 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  */
 class WP_Sports_Manager_Admin_Members {
 
+	public static $prefix;
+	
 	/**
 	 * Add box to Matchs CPT
 	 *
 	 * @since    0.0.1
 	 */
 	public function __construct() {
+
+		self::$prefix =  WPSM_PREFIX . 'members_';
+
 		add_action( 'cmb2_admin_init', array( &$this,'add_meta_boxs_fields') );
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'sports/wpsm_' . $this->typology() . '.php';
+		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'sports/wpsm_' . $this->typology() . '.php';
 	}
 
 	/**
@@ -45,14 +52,14 @@ class WP_Sports_Manager_Admin_Members {
 		return $this->typology;
 	}
 
+
 	public static function add_meta_boxs_fields() {
 
-		$prefix = WPSM_PREFIX;
 		// $date_format = get_option( 'date_format', 'm-d-Y' );
 		$date_format = 'm/d/Y';
 
 		$private_profil = new_cmb2_box( array(
-			'id'            => $prefix . 'private_profil',
+			'id'            => self::$prefix . 'private_profil',
 			'title'         => __( 'Personal profil', 'wp-sports-manager' ),
 			'object_types'  => array( 'wpsm_members', ), // Post type
 			'priority'   => 'high'
@@ -71,7 +78,7 @@ class WP_Sports_Manager_Admin_Members {
 
 		$private_profil->add_field( array(
 			'name' => __( 'First Name', 'wp-sports-manager' ),
-			'id'   => $prefix . 'firstname',
+			'id'   => self::$prefix . 'firstname',
 			'desc' => __( 'used for login : firstname.lastname', 'wp-sports-manager' ),
 			'type' => 'text'
 		) );
@@ -79,25 +86,25 @@ class WP_Sports_Manager_Admin_Members {
 		$private_profil->add_field( array(
 			'name' => __( 'Last Name', 'wp-sports-manager' ),
 			'desc' => __( 'used for login : firstname.lastname', 'wp-sports-manager' ),
-			'id'   => $prefix . 'lastname',
+			'id'   => self::$prefix . 'lastname',
 			'type' => 'text'
 		) );
 
 		$private_profil->add_field( array(
 			'name'       => __( 'Nickname', 'wp-sports-manager' ),
-			'id'         => $prefix . 'nickname',
+			'id'         => self::$prefix . 'nickname',
 			'type'       => 'text'
 		) );
 
 		$private_profil->add_field( array(
 			'name' => __( 'Phone', 'wp-sports-manager' ),
-			'id'   => $prefix . 'phone',
+			'id'   => self::$prefix . 'phone',
 			'type' => 'text'
 		) );
 
 		$private_profil->add_field( array(
 			'name' => __( 'Email', 'wp-sports-manager' ),
-			'id'   => $prefix . 'email',
+			'id'   => self::$prefix . 'email',
 			'type' => 'text_email'
 		) );
 
@@ -117,7 +124,7 @@ class WP_Sports_Manager_Admin_Members {
 		 * - Role admin
 		 */
 		$player_profil = new_cmb2_box( array(
-			'id'            => $prefix . 'player_profil',
+			'id'            => self::$prefix . 'player_profil',
 			'title'         => __( 'Player profil', 'wp-sports-manager' ),
 			'object_types'  => array( 'wpsm_members', ), // Post type
 			'priority'   => 'high'
@@ -125,7 +132,7 @@ class WP_Sports_Manager_Admin_Members {
 
 		$player_profil->add_field( array(
 			'name'     => __( 'Role', 'wp-sports-manager' ),
-			'id'       => $prefix . 'role',
+			'id'       => self::$prefix . 'role',
 			'type'     => 'taxonomy_multicheck_inline',
 			'taxonomy' => 'wpsm_members_typology', // Taxonomy Slug
 		    'text'      => array(
@@ -135,7 +142,7 @@ class WP_Sports_Manager_Admin_Members {
 
 		$player_profil->add_field( array(
 			'name' => __( 'Birthday', 'wp-sports-manager' ),
-			'id'   => $prefix . 'birthday',
+			'id'   => self::$prefix . 'birthday',
 			'type' => 'text_date',
 			'desc' => str_replace('-','/',$date_format),
 			'date_format' => $date_format,
@@ -148,7 +155,7 @@ class WP_Sports_Manager_Admin_Members {
 
 		$player_profil->add_field( array(
 			'name' => __( 'Arrival date', 'wp-sports-manager' ),
-			'id'   => $prefix . 'arrivalday',
+			'id'   => self::$prefix . 'arrivalday',
 			'type' => 'text_date',
 			'desc' => str_replace('-','/',$date_format),
 			'date_format' => $date_format,
@@ -161,13 +168,13 @@ class WP_Sports_Manager_Admin_Members {
 
 		$player_profil->add_field( array(
 			'name' => __( 'License Number', 'wp-sports-manager' ),
-			'id'   => $prefix . 'licensenumber',
+			'id'   => self::$prefix . 'licensenumber',
 			'type' => 'text'
 		) );
 
 		$player_profil->add_field( array(
 			'name' => __( 'License validity', 'wp-sports-manager' ),
-			'id'   => $prefix . 'licensevalidity',
+			'id'   => self::$prefix . 'licensevalidity',
 			'desc' => __('until', 'wp-sports-manager'),
 			'type' => 'text_date',
 			'attributes' => array(
@@ -180,7 +187,7 @@ class WP_Sports_Manager_Admin_Members {
 		$player_profil->add_field( array(
 			'name' => __( 'Photo' ),
 			'desc' => __( 'Upload an image or enter a URL.', 'wp-sports-manager' ),
-			'id'   => $prefix . 'photo',
+			'id'   => self::$prefix . 'photo',
 			'type' => 'file',
 		) );
 
@@ -189,10 +196,12 @@ class WP_Sports_Manager_Admin_Members {
 		 *
 		 *
 		 */
-		$fields = WP_Sports_Typologic::add_profil_fields();
-		if( count( $fields ) > 0 ){
-			foreach ($fields as $field => $value) {
-				$player_profil->add_field( $value );
+		if( get_option( '_wpsm_installed' ) ){
+			$fields = WP_Sports_Typologic::add_profil_fields();
+			if( count( $fields ) > 0 ){
+				foreach ($fields as $field => $value) {
+					$player_profil->add_field( $value );
+				}
 			}
 		}
 
@@ -217,8 +226,6 @@ class WP_Sports_Manager_Admin_Members {
 	 */
 	public static function wpsm_members_remove_cpt_columns ( $columns ) {
 
-		$prefix = WPSM_PREFIX;
-
 		unset($columns['title']);
 		unset($columns['author']);
 		unset($columns['categories']);
@@ -226,10 +233,10 @@ class WP_Sports_Manager_Admin_Members {
 		unset($columns['comments']);
 
 		$new_columns = array(
-			$prefix . 'firstname' => __('First name', 'wp-sports-manager'),
-			$prefix . 'lastname' => __('Last name', 'wp-sports-manager'),
-			$prefix . 'nickname' => __('Nickname', 'wp-sports-manager'),
-			$prefix . 'phone' => __('Phone', 'wp-sports-manager'),
+			self::$prefix . 'firstname' => __('First name', 'wp-sports-manager'),
+			self::$prefix . 'lastname' => __('Last name', 'wp-sports-manager'),
+			self::$prefix . 'nickname' => __('Nickname', 'wp-sports-manager'),
+			self::$prefix . 'phone' => __('Phone', 'wp-sports-manager'),
 		);
 
     	return array_merge($columns, $new_columns);
@@ -244,8 +251,8 @@ class WP_Sports_Manager_Admin_Members {
 	 */
 	public static function wpsm_members_content_columns($column_name) {
 		//http://sports-manager.dev/wp-admin/post.php?post=289&amp;action=edit" aria-label="«&nbsp;veve&nbsp;» (Modifier)">veve</a>
-		$prefix = WPSM_PREFIX;
 		$text = get_post_meta( get_the_ID(), $column_name, true );
+		// var_dump($text);
 		echo '<a class="row-title" href="' . admin_url( 'post.php?post=' . get_the_ID() . '&amp;action=edit' ) . '" aria-label="«&nbsp;veve&nbsp;» (Modifier)">' . esc_html( $text ) . '</a>';
 	}
 
@@ -255,8 +262,8 @@ class WP_Sports_Manager_Admin_Members {
 	 *
 	 */
 	public static function wpsm_members_column_register_sortable() {
-		$columns[ WPSM_PREFIX . 'firstname' ] = WPSM_PREFIX . 'firstname';
-		$columns[ WPSM_PREFIX . 'nickname' ] = WPSM_PREFIX . 'nickname';
+		$columns[ self::$prefix . 'firstname' ] = self::$prefix . 'firstname';
+		$columns[ self::$prefix . 'nickname' ] = self::$prefix . 'nickname';
 		return $columns;
 	}
 
@@ -266,14 +273,14 @@ class WP_Sports_Manager_Admin_Members {
 	 *
 	 */
 	public static function wpsm_members_column_orderby( $vars ) {
-		if ( isset( $vars['orderby'] ) && WPSM_PREFIX . 'firstname' == $vars['orderby'] ) {
+		if ( isset( $vars['orderby'] ) && self::$prefix . 'firstname' == $vars['orderby'] ) {
 			$vars = array_merge( $vars, array(
-				'meta_key' => WPSM_PREFIX . 'firstname'
+				'meta_key' => self::$prefix . 'firstname'
 			) );
 		}
-		if ( isset( $vars['orderby'] ) && WPSM_PREFIX . 'nickname' == $vars['orderby'] ) {
+		if ( isset( $vars['orderby'] ) && self::$prefix . 'nickname' == $vars['orderby'] ) {
 			$vars = array_merge( $vars, array(
-				'meta_key' => WPSM_PREFIX . 'nickname'
+				'meta_key' => self::$prefix . 'nickname'
 			) );
 		}
 
