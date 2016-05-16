@@ -4,8 +4,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-define('PREFIX', 'wpsm_members_');
-
 /**
  * The file that defines the core plugin class
  *
@@ -61,7 +59,7 @@ class WP_Sports_Manager {
 	 * @access   protected
 	 * @var      string    $version    The current version of the plugin.
 	 */
-	protected $version;
+	protected $version = '0.0.2';
 
 	/**
 	 * The settings.
@@ -93,8 +91,8 @@ class WP_Sports_Manager {
 	public function __construct() {
 
 		$this->plugin_name = 'wp-sports-manager';
-		$this->version = '0.0.2';
 
+		$this->define_constants();
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
@@ -113,6 +111,17 @@ class WP_Sports_Manager {
 			$this->admin_teams();
 		}
 
+	}
+
+	/**
+	 * Define constants
+	 *
+	 *
+	 */
+	private function define_constants() {
+		define( 'WPSM_PREFIX', 'wpsm_members_');
+		define( 'WPSM_PLUGIN_FILE', __FILE__ );
+		define( 'WPSM_VERSION', $this->version );
 	}
 
 	/**
@@ -142,6 +151,7 @@ class WP_Sports_Manager {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wpsm-create-custom-post-type.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wpsm-create-taxonomies.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions-wpsm.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wpsm-welcome.php';
 
 		if ( is_admin() ) {
 			if ( file_exists(  plugin_dir_path( dirname( __FILE__ ) ) . 'includes/vendors/CMB2/init.php' ) ) {
@@ -228,6 +238,8 @@ class WP_Sports_Manager {
 		$this->loader->add_action( 'admin_menu', $create_menu, 'admin_menu' );
 		$menu_correction = new WP_Sports_Manager_Modify_Menu();
 
+		$install = new WP_Sports_Manager_Welcome();
+		// error_log('actvate done');
 	}	
 
 

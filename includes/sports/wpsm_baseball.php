@@ -157,7 +157,7 @@ class WP_Sports_Typologic {
 	 *
 	 */
 	public static function add_profil_fields() {
-		$prefix = PREFIX;
+		$prefix = WPSM_PREFIX;
 		$fields = array(
 			array(
 				'name' => __( 'Size', 'wp-sports-manager' ),
@@ -189,7 +189,7 @@ class WP_Sports_Typologic {
 	 *
 	 */
 	public static function add_teams_fields() {
-		$prefix = PREFIX;
+		$prefix = WPSM_PREFIX;
 		$fields = array(
 			array(
 				'name' => __( 'Size', 'wp-sports-manager' ),
