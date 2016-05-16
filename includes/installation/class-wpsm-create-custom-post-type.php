@@ -50,7 +50,7 @@ class WP_Sports_Manager_Create_Custom_Post_type {
 		"opponents" 		=> 36,
 	];
 
-	public $prefix = PREFIX;
+	public $prefix = WPSM_PREFIX;
 
 	/**
 	 * Team Custom Post Type

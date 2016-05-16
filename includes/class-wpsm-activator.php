@@ -38,7 +38,21 @@ class WP_Sports_Manager_Activator {
 	public static function activate() {
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wpsm-create-roles.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/installation/class-wpsm-welcome.php';
+		/**
+		 * Add Roles
+		 * 
+		 *
+		 *
+		 */
 		WP_Sports_Manager_Create_Roles::add_roles();
+
+		/**
+		 * Add transient installation for welcome page
+		 *
+		 *
+		 */
+		WP_Sports_Manager_Welcome::install();
 
 	}
 

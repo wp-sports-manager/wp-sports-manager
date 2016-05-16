@@ -47,7 +47,7 @@ class WP_Sports_Manager_Admin_Teams {
 
 	public static function add_meta_boxs_fields() {
 
-		$prefix = PREFIX;
+		$prefix = WPSM_PREFIX;
 		// $date_format = get_option( 'date_format', 'm-d-Y' );
 		$date_format = 'm/d/Y';
 
@@ -92,7 +92,7 @@ class WP_Sports_Manager_Admin_Teams {
 	 */
 	public static function wpsm_teams_remove_cpt_columns ( $columns ) {
 
-		$prefix = PREFIX;
+		$prefix = WPSM_PREFIX;
 
 		// unset($columns['title']);
 		// unset($columns['author']);
@@ -119,7 +119,7 @@ class WP_Sports_Manager_Admin_Teams {
 	 */
 	public static function wpsm_teams_content_columns($column_name) {
 		//http://sports-manager.dev/wp-admin/post.php?post=289&amp;action=edit" aria-label="«&nbsp;veve&nbsp;» (Modifier)">veve</a>
-		$prefix = PREFIX;
+		$prefix = WPSM_PREFIX;
 		$text = get_post_meta( get_the_ID(), $column_name, true );
 		echo '<a class="row-title" href="' . admin_url( 'post.php?post=' . get_the_ID() . '&amp;action=edit' ) . '" aria-label="«&nbsp;veve&nbsp;» (Modifier)">' . esc_html( $text ) . '</a>';
 	}
@@ -130,7 +130,7 @@ class WP_Sports_Manager_Admin_Teams {
 	 *
 	 */
 	public static function wpsm_teams_column_register_sortable() {
-		$columns[ PREFIX . 'firstname' ] = PREFIX . 'firstname';
+		$columns[ WPSM_PREFIX . 'firstname' ] = WPSM_PREFIX . 'firstname';
 		// $columns[ PREFIX . 'nickname' ] = PREFIX . 'nickname';
 		return $columns;
 	}

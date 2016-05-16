@@ -47,7 +47,7 @@ class WP_Sports_Manager_Admin_Members {
 
 	public static function add_meta_boxs_fields() {
 
-		$prefix = PREFIX;
+		$prefix = WPSM_PREFIX;
 		// $date_format = get_option( 'date_format', 'm-d-Y' );
 		$date_format = 'm/d/Y';
 
@@ -217,7 +217,7 @@ class WP_Sports_Manager_Admin_Members {
 	 */
 	public static function wpsm_members_remove_cpt_columns ( $columns ) {
 
-		$prefix = PREFIX;
+		$prefix = WPSM_PREFIX;
 
 		unset($columns['title']);
 		unset($columns['author']);
@@ -244,7 +244,7 @@ class WP_Sports_Manager_Admin_Members {
 	 */
 	public static function wpsm_members_content_columns($column_name) {
 		//http://sports-manager.dev/wp-admin/post.php?post=289&amp;action=edit" aria-label="«&nbsp;veve&nbsp;» (Modifier)">veve</a>
-		$prefix = PREFIX;
+		$prefix = WPSM_PREFIX;
 		$text = get_post_meta( get_the_ID(), $column_name, true );
 		echo '<a class="row-title" href="' . admin_url( 'post.php?post=' . get_the_ID() . '&amp;action=edit' ) . '" aria-label="«&nbsp;veve&nbsp;» (Modifier)">' . esc_html( $text ) . '</a>';
 	}
@@ -255,8 +255,8 @@ class WP_Sports_Manager_Admin_Members {
 	 *
 	 */
 	public static function wpsm_members_column_register_sortable() {
-		$columns[ PREFIX . 'firstname' ] = PREFIX . 'firstname';
-		$columns[ PREFIX . 'nickname' ] = PREFIX . 'nickname';
+		$columns[ WPSM_PREFIX . 'firstname' ] = WPSM_PREFIX . 'firstname';
+		$columns[ WPSM_PREFIX . 'nickname' ] = WPSM_PREFIX . 'nickname';
 		return $columns;
 	}
 
@@ -266,14 +266,14 @@ class WP_Sports_Manager_Admin_Members {
 	 *
 	 */
 	public static function wpsm_members_column_orderby( $vars ) {
-		if ( isset( $vars['orderby'] ) && PREFIX . 'firstname' == $vars['orderby'] ) {
+		if ( isset( $vars['orderby'] ) && WPSM_PREFIX . 'firstname' == $vars['orderby'] ) {
 			$vars = array_merge( $vars, array(
-				'meta_key' => PREFIX . 'firstname'
+				'meta_key' => WPSM_PREFIX . 'firstname'
 			) );
 		}
-		if ( isset( $vars['orderby'] ) && PREFIX . 'nickname' == $vars['orderby'] ) {
+		if ( isset( $vars['orderby'] ) && WPSM_PREFIX . 'nickname' == $vars['orderby'] ) {
 			$vars = array_merge( $vars, array(
-				'meta_key' => PREFIX . 'nickname'
+				'meta_key' => WPSM_PREFIX . 'nickname'
 			) );
 		}
 
